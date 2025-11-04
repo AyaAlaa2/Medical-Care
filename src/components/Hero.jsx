@@ -12,23 +12,35 @@ const Hero = () => {
         backgroundSize: "cover",
         backgroundPosition: "center",
         width: "100%",
-        height: "100vh",
+        height: { xs: "80vh", sm: "90vh", md: "100vh" },
         display: "flex",
         alignItems: "center",
         color: "var(--main-color)",
-        textAlign: "left",
-        overflowY: "hidden",
+        textAlign: { xs: "center", md: "left" },
+        position: "relative",
+        overflow: "hidden",
+        px: { xs: 2, sm: 3 },
+        fontFamily: "Macondo, cursive",
       }}
     >
       <Container maxWidth="lg">
-        <Stack spacing={3} sx={{ maxWidth: 600 }}>
+        <Stack
+          spacing={{ xs: 2, md: 3 }}
+          sx={{ maxWidth: { xs: "100%", md: 600 } }}
+        >
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <Typography variant="span" fontWeight="normal" fontSize="37px">
+            <Typography
+              variant="span"
+              fontWeight="normal"
+              sx={{
+                fontSize: { xs: "30px", sm: "34px", md: "37px" },
+              }}
+            >
               Make Someone
             </Typography>
           </motion.div>
@@ -46,8 +58,8 @@ const Hero = () => {
             <Typography
               variant="h3"
               fontWeight="bold"
-              fontSize="114px"
               sx={{
+                fontSize: { xs: "70px", sm: "114px" },
                 background:
                   "linear-gradient(to bottom, var(--second-color), var(--main-color))",
                 WebkitBackgroundClip: "text",
@@ -67,17 +79,29 @@ const Hero = () => {
               ease: "easeOut",
             }}
             viewport={{ once: true }}
-            style={{
+            sx={{
               display: "flex",
               alignItems: "center",
-              justifyContent: "start",
-              gap: "10px",
+              justifyContent: { xs: "center", md: "flex-start" },
+              gap: "15px",
             }}
           >
-            <Typography variant="span" fontWeight="normal" fontSize="37px">
+            <Typography
+              variant="span"
+              fontWeight="normal"
+              sx={{
+                fontSize: { xs: "30px", sm: "34px", md: "37px" },
+              }}
+            >
               With
             </Typography>
-            <Typography variant="span" fontWeight="normal" fontSize="37px">
+            <Typography
+              variant="span"
+              fontWeight="normal"
+              sx={{
+                fontSize: "37px",
+              }}
+            >
               <CiFaceSmile />
             </Typography>
           </motion.div>
@@ -94,7 +118,7 @@ const Hero = () => {
             }}
             style={{
               position: "absolute",
-              width: "500px",
+              maxWidth: "500px",
               height: "auto",
             }}
           />
