@@ -453,10 +453,10 @@ const LatestProduct = () => {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         }}
-        spaceBetween={5}
+        spaceBetween={15}
         slidesPerView={4}
         breakpoints={{
-          320: { slidesPerView: 2 },
+          320: { slidesPerView: 1.3 },
           768: { slidesPerView: 3 },
           1024: { slidesPerView: 4 },
         }}
