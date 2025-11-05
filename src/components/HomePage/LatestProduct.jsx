@@ -456,8 +456,10 @@ const LatestProduct = () => {
         spaceBetween={15}
         slidesPerView={4}
         breakpoints={{
-          320: { slidesPerView: 1.3 },
-          768: { slidesPerView: 3 },
+          320: { slidesPerView: 1 },
+          640: { slidesPerView: 2 },
+          768: { slidesPerView: 2.4 },
+          900: { slidesPerView: 3 },
           1024: { slidesPerView: 4 },
         }}
         style={{ border: "1px solid #dbdbdbff" }}
@@ -469,7 +471,7 @@ const LatestProduct = () => {
                 padding: "8px",
                 scrollSnapAlign: "center",
                 borderRight: "1px solid #dbdbdbff",
-                height: "500px",
+                height: "520px",
               }}
             >
               <Card
