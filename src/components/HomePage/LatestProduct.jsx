@@ -460,7 +460,7 @@ const LatestProduct = () => {
           768: { slidesPerView: 3 },
           1024: { slidesPerView: 4 },
         }}
-        style={{ paddingBottom: "40px" }}
+        style={{ border: "1px solid #dbdbdbff" }}
       >
         {products.map((product) => (
           <SwiperSlide key={product.id}>
@@ -468,8 +468,8 @@ const LatestProduct = () => {
               style={{
                 padding: "8px",
                 scrollSnapAlign: "center",
-                borderLeft: "1px solid #dbdbdbff",
-                height: "470px",
+                borderRight: "1px solid #dbdbdbff",
+                height: "500px",
               }}
             >
               <Card
