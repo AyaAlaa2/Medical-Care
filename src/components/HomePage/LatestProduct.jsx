@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import {
   Box,
   Card,
@@ -13,10 +13,12 @@ import { FaChevronLeft } from "react-icons/fa";
 import { FaChevronRight } from "react-icons/fa";
 import { CiStar } from "react-icons/ci";
 import { FaStar } from "react-icons/fa";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
 
 const LatestProduct = () => {
-  const scrollRef = useRef(null);
-
   const products = [
     {
       id: "1",
@@ -71,7 +73,7 @@ const LatestProduct = () => {
     },
     {
       id: "2",
-      name: "The Ordinary Niacinamide 10% + Zinc 1% #2",
+      name: "The Ordinary Niacinamide 10% + Zinc 1%",
       brand: "The Ordinary",
       active_ingredient: "Niacinamide, Zinc PCA",
       description: "Reduces the appearance of blemishes and congestion.",
@@ -107,7 +109,7 @@ const LatestProduct = () => {
     },
     {
       id: "3",
-      name: "La Roche-Posay Anthelios SPF 60 #3",
+      name: "La Roche-Posay Anthelios SPF 60",
       brand: "La Roche-Posay",
       active_ingredient: "Avobenzone, Homosalate, Octocrylene",
       description: "Broad-spectrum sunscreen for sensitive skin.",
@@ -220,7 +222,7 @@ const LatestProduct = () => {
     },
     {
       id: "6",
-      name: "Neutrogena Daily Moisturizer #4",
+      name: "Neutrogena Daily Moisturizer",
       brand: "Neutrogena",
       active_ingredient: "Glycerin, Hyaluronic Acid",
       description:
@@ -261,7 +263,7 @@ const LatestProduct = () => {
     },
     {
       id: "7",
-      name: "Eucerin Balancing Toner #5",
+      name: "Eucerin Balancing Toner",
       brand: "Eucerin",
       active_ingredient: "Niacinamide, Panthenol",
       description:
@@ -297,7 +299,7 @@ const LatestProduct = () => {
     },
     {
       id: "8",
-      name: "Vichy Detox Mask #6",
+      name: "Vichy Detox Mask",
       brand: "Vichy",
       active_ingredient: "Kaolin, Charcoal",
       description:
@@ -329,7 +331,7 @@ const LatestProduct = () => {
     },
     {
       id: "9",
-      name: "Paula's Choice Anti-Aging Serum #7",
+      name: "Paula's Choice Anti-Aging Serum",
       brand: "Paula's Choice",
       active_ingredient: "Retinol, Peptides",
       description:
@@ -361,7 +363,7 @@ const LatestProduct = () => {
     },
     {
       id: "10",
-      name: "Bioderma Hydrating Toner #8",
+      name: "Bioderma Hydrating Toner",
       brand: "Bioderma",
       active_ingredient: "Glycerin, Allantoin",
       description:
@@ -400,15 +402,6 @@ const LatestProduct = () => {
 
   const stars = [1, 2, 3, 4, 5];
 
-  const scroll = (direction) => {
-    if (scrollRef.current) {
-      const { scrollLeft } = scrollRef.current;
-      const scrollAmount =
-        direction === "left" ? scrollLeft - 280 : scrollLeft + 280;
-      scrollRef.current.scrollTo({ left: scrollAmount, behavior: "smooth" });
-    }
-  };
-
   return (
     <Box
       sx={{
@@ -426,7 +419,7 @@ const LatestProduct = () => {
       </Typography>
 
       <IconButton
-        onClick={() => scroll("left")}
+        className="swiper-button-prev"
         sx={{
           position: "absolute",
           top: "50%",
@@ -441,7 +434,7 @@ const LatestProduct = () => {
       </IconButton>
 
       <IconButton
-        onClick={() => scroll("right")}
+        className="swiper-button-next"
         sx={{
           position: "absolute",
           top: "50%",
@@ -454,102 +447,104 @@ const LatestProduct = () => {
       >
         <FaChevronRight />
       </IconButton>
-
-      <Box
-        ref={scrollRef}
-        sx={{
-          height: "auto",
-          display: "flex",
-          overflowX: "auto",
-          scrollSnapType: "x mandatory",
-          gap: 2,
-          "&::-webkit-scrollbar": { display: "none" },
-          scrollBehavior: "smooth",
-          border: "1px solid #dbdbdbff",
-          borderRadius: 3,
+      <Swiper
+        modules={[Navigation]}
+        navigation={{
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         }}
+        spaceBetween={5}
+        slidesPerView={4}
+        breakpoints={{
+          320: { slidesPerView: 2 },
+          768: { slidesPerView: 3 },
+          1024: { slidesPerView: 4 },
+        }}
+        style={{ paddingBottom: "40px" }}
       >
         {products.map((product) => (
-          <motion.div
-            key={product.id}
-            style={{
-              padding: "8px",
-              scrollSnapAlign: "center",
-              borderLeft: "1px solid #dbdbdbff",
-              width: "270px",
-            }}
-          >
-            <Card
-              sx={{
-                minWidth: 270,
-                borderRadius: 3,
-                height: "100%",
-                bgcolor: "transparent",
-                boxShadow: "none",
+          <SwiperSlide key={product.id}>
+            <motion.div
+              style={{
+                padding: "8px",
+                scrollSnapAlign: "center",
+                borderLeft: "1px solid #dbdbdbff",
+                height: "470px",
               }}
             >
-              <CardMedia
-                component="img"
-                height="240"
-                image={product.gallery_images}
-                alt={product.name}
+              <Card
                 sx={{
-                  objectFit: "contain",
-                  "&:hover ": { scale: "1.05" },
-                  transition: "0.5s",
+                  borderRadius: 3,
+                  bgcolor: "transparent",
+                  boxShadow: "none",
                 }}
-              />
-              <CardContent sx={{ textAlign: "left" }}>
-                <Typography
-                  variant="subtitle1"
-                  fontWeight={600}
-                  fontSize={15}
+              >
+                <CardMedia
+                  component="img"
+                  height="240"
+                  image={product.gallery_images}
+                  alt={product.name}
                   sx={{
-                    "&:hover": { color: "var(--main-color)" },
-                    cursor: "pointer",
-                    transition: "0.3s",
-                    paddingY: product.name.length > 25 ? "20px" : "34px",
-                    textOverflow: "ellipsis",
-                  }}
-                >
-                  {product.name}
-                </Typography>
-                <Typography variant="body1" sx={{ pb: "10px" }}>
-                  {stars.map((item) =>
-                    item < product.customer_reviews.average_rating ? (
-                      <FaStar color="#ffb908ff" />
-                    ) : (
-                      <CiStar color="#ffb908ff" />
-                    )
-                  )}
-                </Typography>
-                <Typography
-                  variant="h6"
-                  color="var(--main-color)"
-                  fontWeight={700}
-                >
-                  {product.price}
-                </Typography>
-                <Button
-                  variant="contained"
-                  color="gray"
-                  sx={{
-                    mt: 1,
-                    borderRadius: 2,
-                    width: "100%",
-                    textTransform: "capitalize",
-                    "&:hover": { bgcolor: "var(--main-color)", color: "white" },
+                    objectFit: "contain",
+                    "&:hover ": { scale: "1.05" },
                     transition: "0.5s",
-                    fontSize: "16px",
                   }}
-                >
-                  Add To Card
-                </Button>
-              </CardContent>
-            </Card>
-          </motion.div>
+                />
+                <CardContent sx={{ textAlign: "left" }}>
+                  <Typography
+                    variant="subtitle1"
+                    fontWeight={600}
+                    fontSize={15}
+                    sx={{
+                      "&:hover": { color: "var(--main-color)" },
+                      cursor: "pointer",
+                      transition: "0.3s",
+                      paddingY: product.name.length > 34 ? "20px" : "34px",
+                      textOverflow: "ellipsis",
+                    }}
+                  >
+                    {product.name}
+                  </Typography>
+                  <Typography variant="body1" sx={{ pb: "10px" }}>
+                    {stars.map((item) =>
+                      item < product.customer_reviews.average_rating ? (
+                        <FaStar color="#ffb908ff" />
+                      ) : (
+                        <CiStar color="#ffb908ff" />
+                      )
+                    )}
+                  </Typography>
+                  <Typography
+                    variant="h6"
+                    color="var(--main-color)"
+                    fontWeight={700}
+                  >
+                    {product.price}
+                  </Typography>
+                  <Button
+                    variant="contained"
+                    color="gray"
+                    sx={{
+                      mt: 1,
+                      borderRadius: 2,
+                      width: "100%",
+                      textTransform: "capitalize",
+                      "&:hover": {
+                        bgcolor: "var(--main-color)",
+                        color: "white",
+                      },
+                      transition: "0.5s",
+                      fontSize: "16px",
+                    }}
+                  >
+                    Add To Card
+                  </Button>
+                </CardContent>
+              </Card>
+            </motion.div>
+          </SwiperSlide>
         ))}
-      </Box>
+      </Swiper>
     </Box>
   );
 };
