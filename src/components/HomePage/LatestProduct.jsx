@@ -14,7 +14,7 @@ import { FaChevronRight } from "react-icons/fa";
 import { CiStar } from "react-icons/ci";
 import { FaStar } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 
@@ -448,19 +448,19 @@ const LatestProduct = () => {
         <FaChevronRight />
       </IconButton>
       <Swiper
-        modules={[Navigation]}
+        modules={[Navigation, Autoplay]}
         navigation={{
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         }}
+        autoplay={{ delay: 3000 }}
         spaceBetween={15}
         slidesPerView={4}
         breakpoints={{
           320: { slidesPerView: 1 },
           640: { slidesPerView: 2 },
           768: { slidesPerView: 2.4 },
-          900: { slidesPerView: 3 },
-          1024: { slidesPerView: 4 },
+          900: { slidesPerView: 3.4 },
         }}
         style={{ border: "1px solid #dbdbdbff" }}
       >
@@ -471,7 +471,7 @@ const LatestProduct = () => {
                 padding: "8px",
                 scrollSnapAlign: "center",
                 borderRight: "1px solid #dbdbdbff",
-                height: "520px",
+                height: "auto",
               }}
             >
               <Card
@@ -483,13 +483,13 @@ const LatestProduct = () => {
               >
                 <CardMedia
                   component="img"
-                  height="240"
                   image={product.gallery_images}
                   alt={product.name}
                   sx={{
                     objectFit: "contain",
                     "&:hover ": { scale: "1.05" },
                     transition: "0.5s",
+                    height: "240px",
                   }}
                 />
                 <CardContent sx={{ textAlign: "left" }}>
@@ -501,7 +501,20 @@ const LatestProduct = () => {
                       "&:hover": { color: "var(--main-color)" },
                       cursor: "pointer",
                       transition: "0.3s",
-                      paddingY: product.name.length > 34 ? "20px" : "34px",
+                      paddingY:
+                        product.name.length > 30
+                          ? {
+                              xs: "10px",
+                              sm: "22px",
+                              md: "28px",
+                              lg: "40px",
+                            }
+                          : {
+                              xs: "18px",
+                              sm: "35px",
+                              md: "41px",
+                              lg: "40px",
+                            },
                       textOverflow: "ellipsis",
                     }}
                   >
