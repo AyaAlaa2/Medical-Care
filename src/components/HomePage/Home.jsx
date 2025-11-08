@@ -3,6 +3,7 @@ import Hero from "./Hero";
 import Adv from "./AdvSec/Adv";
 import SwiperContainer from "./SwiperContainer";
 import { useGetProductsQuery } from "../store/apiSlice";
+import CategoriesSection from "./Category/CategoriesSection";
 
 const Home = () => {
   const { data, error, isLoading } = useGetProductsQuery();
@@ -21,6 +22,7 @@ const Home = () => {
     <div>
       <Hero />
       <Adv />
+      <CategoriesSection />
       <SwiperContainer
         headerOfSection="Latest Products"
         products={latestProduct}
