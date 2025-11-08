@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 
-const CategoriesCard = ({ title, img }) => {
+const CategoriesCard = ({cat}) => {
   return (
     <Box sx={{ textAlign: "center", userSelect: "none" }}>
       <Box
@@ -18,8 +18,8 @@ const CategoriesCard = ({ title, img }) => {
       >
         <Box
           component="img"
-          src={img}
-          alt={title}
+          src={cat.img}
+          alt={cat.title}
           loading="lazy"
           sx={{
             width: "70%",
@@ -31,7 +31,7 @@ const CategoriesCard = ({ title, img }) => {
         />
       </Box>
       <Typography variant="subtitle2" align="center" sx={{ fontWeight: 600 }}>
-        {title}
+        {cat.title}
       </Typography>
     </Box>
   );

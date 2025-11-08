@@ -34,12 +34,12 @@ export default function CategoriesSection() {
           style={{ paddingBottom: 55 }}
           className="custom-swiper"
         >
-          {CATEGORIES.map((c) => (
+          {CATEGORIES.map((cat) => (
             <SwiperSlide
-              key={c.id}
+              key={cat.id}
               style={{ width: 180, display: "flex", justifyContent: "center" }}
             >
-              <CategoryCard title={c.title} img={c.img} />
+              <CategoryCard cat={cat} />
             </SwiperSlide>
           ))}
         </Swiper>
