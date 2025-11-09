@@ -15,8 +15,8 @@ export default function CategoriesSection() {
       <Container maxWidth="xl">
         <Typography
           variant="h4"
-          sx={{ mb: 2, textAlign: "center" }}
-          fontWeight="bold"
+          align="center"
+          sx={{ fontWeight: 800, mb: { xs: 3, md: 5 } }}
         >
           Popular Categories
         </Typography>
@@ -25,13 +25,13 @@ export default function CategoriesSection() {
           modules={[Pagination]}
           pagination={{ clickable: true }}
           slidesPerView={3}
-          spaceBetween={28}
           breakpoints={{
-            600: { slidesPerView: 5 },
-            900: { slidesPerView: 6 },
-            1200: { slidesPerView: 8 },
+            0: { slidesPerView: 2, spaceBetween: 10 },
+            480: { slidesPerView: 3, spaceBetween: 12 },
+            900: { slidesPerView: 6, spaceBetween: 16 },
+            1200: { slidesPerView: 8, spaceBetween: 18 },
           }}
-          style={{ paddingBottom: 55 }}
+          style={{ paddingBottom: 20 }}
           className="custom-swiper"
         >
           {CATEGORIES.map((cat) => (
@@ -39,7 +39,7 @@ export default function CategoriesSection() {
               key={cat.id}
               style={{ width: 180, display: "flex", justifyContent: "center" }}
             >
-              <CategoryCard cat={cat} />
+              <CategoryCard category={cat} />
             </SwiperSlide>
           ))}
         </Swiper>

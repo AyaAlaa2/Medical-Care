@@ -748,7 +748,7 @@
     },
     {
       "id": "23",
-      "name": "Neutrogena Brightening Cleanser #9",
+      "name": "Neutrogena Brightening Cleanser",
       "brand": "Neutrogena",
       "active_ingredient": "Vitamin C, Glycerin",
       "description": "A Brightening Cleanser by Neutrogena suitable for Normal, Combination. Helps improve skin health and appearance.",
@@ -841,7 +841,7 @@
     },
     {
       "id": "26",
-      "name": "CeraVe Moisturizing Cream #10",
+      "name": "CeraVe Moisturizing Cream",
       "brand": "CeraVe",
       "active_ingredient": "Ceramides, Hyaluronic Acid",
       "description": "A Moisturizing Cream by CeraVe suitable for Dry, Sensitive. Helps improve skin health and appearance.",
@@ -909,7 +909,7 @@
     },
     {
       "id": "28",
-      "name": "The Ordinary Vitamin C Serum #11",
+      "name": "The Ordinary Vitamin C Serum",
       "brand": "The Ordinary",
       "active_ingredient": "Vitamin C, Hyaluronic Acid",
       "description": "A Vitamin C Serum by The Ordinary suitable for Normal, Dry, Combination. Helps improve skin health and appearance.",
@@ -972,7 +972,7 @@
     },
     {
       "id": "30",
-      "name": "La Roche-Posay Effaclar Cleanser #12",
+      "name": "La Roche-Posay Effaclar Cleanser",
       "brand": "La Roche-Posay",
       "active_ingredient": "Salicylic Acid, Zinc",
       "description": "A Cleanser by La Roche-Posay suitable for Oily, Combination. Helps improve skin health and appearance.",
@@ -1035,7 +1035,7 @@
     },
     {
       "id": "32",
-      "name": "Neutrogena Oil-Free Moisturizer #13",
+      "name": "Neutrogena Oil-Free Moisturizer",
       "brand": "Neutrogena",
       "active_ingredient": "Glycerin, Dimethicone",
       "description": "An Oil-Free Moisturizer by Neutrogena suitable for Oily, Combination. Helps improve skin health and appearance.",
@@ -1129,7 +1129,7 @@
     },
     {
       "id": "35",
-      "name": "Eucerin Daily Hydrating Lotion #14",
+      "name": "Eucerin Daily Hydrating Lotion",
       "brand": "Eucerin",
       "active_ingredient": "Glycerin, Panthenol",
       "description": "A Daily Hydrating Lotion by Eucerin suitable for Dry, Sensitive. Helps improve skin health and appearance.",
@@ -1165,7 +1165,7 @@
     },
     {
       "id": "36",
-      "name": "Vichy Mineral Sunscreen SPF50 #15",
+      "name": "Vichy Mineral Sunscreen SPF50",
       "brand": "Vichy",
       "active_ingredient": "Titanium Dioxide, Zinc Oxide",
       "description": "A Mineral Sunscreen by Vichy suitable for All Skin Types. Helps improve skin health and appearance.",
@@ -1237,7 +1237,7 @@
     },
     {
       "id": "38",
-      "name": "Paula's Choice Pore-Reducing Toner #16",
+      "name": "Paula's Choice Pore-Reducing Toner",
       "brand": "Paula's Choice",
       "active_ingredient": "Niacinamide, Witch Hazel",
       "description": "A Pore-Reducing Toner by Paula's Choice suitable for Oily, Combination. Helps improve skin health and appearance.",
@@ -1300,7 +1300,7 @@
     },
     {
       "id": "40",
-      "name": "Bioderma Sebium Mask #17",
+      "name": "Bioderma Sebium Mask",
       "brand": "Bioderma",
       "active_ingredient": "Kaolin, Salicylic Acid",
       "description": "A Sebum-Reducing Mask by Bioderma suitable for Oily, Combination. Helps improve skin health and appearance.",
@@ -1340,7 +1340,7 @@
     },
     {
       "id": "41",
-      "name": "The Ordinary Retinol Serum #19",
+      "name": "The Ordinary Retinol Serum",
       "brand": "The Ordinary",
       "active_ingredient": "Retinol",
       "description": "A Retinol Serum by The Ordinary suitable for Dry, Sensitive. Helps improve skin health and appearance.",
@@ -1430,7 +1430,7 @@
     },
     {
       "id": "44",
-      "name": "La Roche-Posay Toleriane Moisturizer #20",
+      "name": "La Roche-Posay Toleriane Moisturizer",
       "brand": "La Roche-Posay",
       "active_ingredient": "Ceramides, Niacinamide",
       "description": "A Moisturizer by La Roche-Posay suitable for Sensitive, Dry. Helps improve skin health and appearance.",
@@ -1493,7 +1493,7 @@
     },
     {
       "id": "46",
-      "name": "Neutrogena Bright Boost Mask #21",
+      "name": "Neutrogena Bright Boost Mask",
       "brand": "Neutrogena",
       "active_ingredient": "Vitamin C, Glycerin",
       "description": "A Bright Boost Mask by Neutrogena suitable for All Skin Types. Helps improve skin health and appearance.",
@@ -1556,7 +1556,7 @@
     },
     {
       "id": "48",
-      "name": "CeraVe PM Facial Moisturizing Lotion #22",
+      "name": "CeraVe PM Facial Moisturizing Lotion",
       "brand": "CeraVe",
       "active_ingredient": "Ceramides, Niacinamide",
       "description": "A PM Facial Moisturizer by CeraVe suitable for Normal, Dry. Helps improve skin health and appearance.",
@@ -1628,7 +1628,7 @@
     },
     {
       "id": "50",
-      "name": "The Ordinary Buffet Serum #23",
+      "name": "The Ordinary Buffet Serum",
       "brand": "The Ordinary",
       "active_ingredient": "Peptides, Amino Acids",
       "description": "A Multi-Technology Peptide Serum by The Ordinary suitable for All Skin Types. Helps improve skin health and appearance.",
@@ -1691,7 +1691,7 @@
     },
     {
       "id": "52",
-      "name": "La Roche-Posay Hydraphase Mask #24",
+      "name": "La Roche-Posay Hydraphase Mask",
       "brand": "La Roche-Posay",
       "active_ingredient": "Hyaluronic Acid, Glycerin",
       "description": "A Hydrating Mask by La Roche-Posay suitable for Normal, Dry. Helps improve skin health and appearance.",
@@ -1786,7 +1786,7 @@
     },
     {
       "id": "55",
-      "name": "Neutrogena Rapid Clear Toner #25",
+      "name": "Neutrogena Rapid Clear Toner",
       "brand": "Neutrogena",
       "active_ingredient": "Salicylic Acid",
       "description": "A Rapid Clear Toner by Neutrogena suitable for Oily, Combination. Helps improve skin health and appearance.",
@@ -1826,7 +1826,7 @@
     },
     {
       "id": "56",
-      "name": "The Ordinary Hyaluronic Acid Serum #27",
+      "name": "The Ordinary Hyaluronic Acid Serum",
       "brand": "The Ordinary",
       "active_ingredient": "Hyaluronic Acid",
       "description": "A Hyaluronic Acid Serum by The Ordinary suitable for All Skin Types. Helps improve skin health and appearance.",
@@ -1894,7 +1894,7 @@
     },
     {
       "id": "58",
-      "name": "La Roche-Posay Anthelios SPF 50+ #28",
+      "name": "La Roche-Posay Anthelios SPF 50+",
       "brand": "La Roche-Posay",
       "active_ingredient": "Avobenzone, Homosalate, Octocrylene",
       "description": "A Broad Spectrum SPF 50+ Sunscreen by La Roche-Posay suitable for All Skin Types. Helps improve skin health and appearance.",
@@ -1930,7 +1930,7 @@
     },
     {
       "id": "59",
-      "name": "Neutrogena Hydro Boost Water Gel #29",
+      "name": "Neutrogena Hydro Boost Water Gel",
       "brand": "Neutrogena",
       "active_ingredient": "Hyaluronic Acid",
       "description": "A Water Gel Moisturizer by Neutrogena suitable for All Skin Types. Helps improve skin health and appearance.",
@@ -1971,7 +1971,7 @@
     },
     {
       "id": "60",
-      "name": "Eucerin Anti-Redness Soothing Cream #30",
+      "name": "Eucerin Anti-Redness Soothing Cream",
       "brand": "Eucerin",
       "active_ingredient": "Licorice Root Extract, Glycerin",
       "description": "A Soothing Cream by Eucerin suitable for Sensitive, Dry. Helps improve skin health and appearance.",
@@ -2039,7 +2039,7 @@
     },
     {
       "id": "62",
-      "name": "La Roche-Posay Effaclar Duo+ #32",
+      "name": "La Roche-Posay Effaclar Duo+",
       "brand": "La Roche-Posay",
       "active_ingredient": "Niacinamide, Salicylic Acid",
       "description": "A Blemish-Correcting Moisturizer by La Roche-Posay suitable for Oily, Acne-Prone Skin. Helps improve skin health and appearance.",
@@ -2134,7 +2134,7 @@
     },
     {
       "id": "65",
-      "name": "Neutrogena Deep Clean Facial Cleanser #33",
+      "name": "Neutrogena Deep Clean Facial Cleanser",
       "brand": "Neutrogena",
       "active_ingredient": "Salicylic Acid",
       "description": "A Deep Clean Facial Cleanser by Neutrogena suitable for Oily, Combination. Helps improve skin health and appearance.",
@@ -2170,7 +2170,7 @@
     },
     {
       "id": "66",
-      "name": "Bioderma Atoderm Cream #34",
+      "name": "Bioderma Atoderm Cream",
       "brand": "Bioderma",
       "active_ingredient": "Glycerin, Niacinamide",
       "description": "A Moisturizing Cream by Bioderma suitable for Dry, Very Dry Skin. Helps improve skin health and appearance.",
@@ -2291,7 +2291,7 @@
     },
     {
       "id": "70",
-      "name": "Eucerin Hyaluron-Filler Day Cream SPF 30 #35",
+      "name": "Eucerin Hyaluron-Filler Day Cream SPF 30",
       "brand": "Eucerin",
       "active_ingredient": "Hyaluronic Acid, Glycine Saponin",
       "description": "A Day Cream with SPF by Eucerin suitable for Normal, Dry Skin. Helps improve skin health and appearance.",
@@ -2332,7 +2332,7 @@
     },
     {
       "id": "71",
-      "name": "Neutrogena Oil-Free Acne Moisturizer #36",
+      "name": "Neutrogena Oil-Free Acne Moisturizer",
       "brand": "Neutrogena",
       "active_ingredient": "Salicylic Acid",
       "description": "An Oil-Free Moisturizer by Neutrogena suitable for Oily, Acne-Prone Skin. Helps improve skin health and appearance.",
@@ -2404,7 +2404,7 @@
     },
     {
       "id": "73",
-      "name": "La Roche-Posay Cicaplast Baume B5 #37",
+      "name": "La Roche-Posay Cicaplast Baume B5",
       "brand": "La Roche-Posay",
       "active_ingredient": "Panthenol, Madecassoside",
       "description": "A Multi-Repairing Balm by La Roche-Posay suitable for Sensitive, Dry Skin. Helps improve skin health and appearance.",
@@ -2530,7 +2530,7 @@
     },
     {
       "id": "77",
-      "name": "The Ordinary Alpha Arbutin 2% + HA #39",
+      "name": "The Ordinary Alpha Arbutin 2% + HA",
       "brand": "The Ordinary",
       "active_ingredient": "Alpha Arbutin, Hyaluronic Acid",
       "description": "A Brightening Serum by The Ordinary suitable for All Skin Types. Helps improve skin health and appearance.",

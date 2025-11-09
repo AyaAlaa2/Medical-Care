@@ -75,7 +75,7 @@ const SwiperSlideHook = ({ product }) => {
             />
           </Box>
           <Typography variant="h6" color="var(--main-color)" fontWeight={700}>
-            {product.price}
+            {product.price} $
           </Typography>
           <Button
             variant="contained"
@@ -89,7 +89,7 @@ const SwiperSlideHook = ({ product }) => {
                 bgcolor: "var(--main-color)",
                 color: "white",
               },
-              transition: "0.5s",
+              transition: "all 0.8s",
               fontSize: "16px",
             }}
           >

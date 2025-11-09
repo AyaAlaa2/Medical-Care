@@ -96,8 +96,8 @@ const DealCard = ({ product }) => {
           >
             ${product.price}
           </Typography>
-          <Typography variant="h6" color="primary">
-            ${(product.price * product.discount) / 100}
+          <Typography variant="h6" color="var(--main-color)">
+            ${product.price - (product.price * product.discount) / 100}
           </Typography>
         </Box>
 
