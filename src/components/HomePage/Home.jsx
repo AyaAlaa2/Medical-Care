@@ -4,6 +4,7 @@ import Adv from "./AdvSec/Adv";
 import SwiperContainer from "./SwiperContainer";
 import { useGetProductsQuery } from "../store/apiSlice";
 import CategoriesSection from "./Category/CategoriesSection";
+import PopularBrands from "./popularBrand/PopularBrand";
 
 const Home = () => {
   const { data, error, isLoading } = useGetProductsQuery();
@@ -31,6 +32,7 @@ const Home = () => {
         mdBreakPoint={2.4}
         lgBreakPoint={3.4}
       />
+      <PopularBrands />
       <SwiperContainer
         headerOfSection="Deal Of The Week"
         products={dealProduct}
