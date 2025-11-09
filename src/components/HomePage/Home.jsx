@@ -4,7 +4,7 @@ import Adv from "./AdvSec/Adv";
 import SwiperContainer from "./SwiperContainer";
 import { useGetProductsQuery } from "../store/apiSlice";
 import CategoriesSection from "./Category/CategoriesSection";
-
+import PopularBrands from "./popular brand/PopularBrand";
 const Home = () => {
   const { data, error, isLoading } = useGetProductsQuery();
 
@@ -39,6 +39,7 @@ const Home = () => {
         mdBreakPoint={1}
         lgBreakPoint={2}
       />
+      <PopularBrands />
     </div>
   );
 };

@@ -8,7 +8,9 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "script": "json-server --watch data.json --port 8000"
+    "script": "json-server --watch data.json --port 8000",
+        "api": "json-server --watch data.json --port 8000",
+    "dev:all": "npm-run-all --parallel api dev"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
@@ -30,7 +32,9 @@
     "react-redux": "^9.2.0",
     "react-router-dom": "^7.9.5",
     "swiper": "^12.0.3",
-    "zod": "^4.1.12"
+    "zod": "^4.1.12",
+       "json-server": "^0.17.4",
+    "npm-run-all": "^4.1.5"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",
