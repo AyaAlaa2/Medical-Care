@@ -7,12 +7,12 @@ const Adv = () => {
     <Box
       sx={{
         py: { xs: 4, md: 8 },
-        px: { xs: 2, md: 6 },
+        px: { xs: 2, md: 2 },
         backgroundColor: "var(--third-color)",
       }}
     >
       <Container
-        maxWidth="lg"
+        maxWidth="xl"
         spacing={1}
         sx={{
           display: "flex",
