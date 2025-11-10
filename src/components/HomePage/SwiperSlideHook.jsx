@@ -89,7 +89,7 @@ const SwiperSlideHook = ({ product }) => {
                 bgcolor: "var(--main-color)",
                 color: "white",
               },
-              transition: "all 0.8s",
+              transition: "all 0.5s",
               fontSize: "16px",
             }}
           >

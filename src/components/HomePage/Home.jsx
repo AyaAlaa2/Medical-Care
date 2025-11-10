@@ -5,6 +5,10 @@ import SwiperContainer from "./SwiperContainer";
 import { useGetProductsQuery } from "../store/apiSlice";
 import CategoriesSection from "./Category/CategoriesSection";
 import PopularBrands from "./popularBrand/PopularBrand";
+import FixedSection from "./fixedSection.jsx/FixedSection";
+import LatestProduct from "./latestProducts/LatestProducts";
+import DealOfTheWeek from "./dealOfTheWeek/DealOfTheWeek";
+import FeaturedProduct from "./featuredProduct/FeaturedProduct";
 
 const Home = () => {
   const { data, error, isLoading } = useGetProductsQuery();
@@ -18,29 +22,19 @@ const Home = () => {
   }
 
   const latestProduct = data.slice(0, 30);
-  const dealProduct = data.filter((product) => product.discount > 0);
+  const dealOfTheWeekProduct = data.filter((product) => product.discount > 0);
+  const featuredProducts = data.slice(35, 55);
+
   return (
     <div>
       <Hero />
       <Adv />
       <CategoriesSection />
-      <SwiperContainer
-        headerOfSection="Latest Products"
-        products={latestProduct}
-        xsBreakPoint={1}
-        smBreakPoint={2}
-        mdBreakPoint={2.4}
-        lgBreakPoint={3.4}
-      />
+      <LatestProduct latestProduct={latestProduct} />
+      <DealOfTheWeek dealOfTheWeekProduct={dealOfTheWeekProduct} />
+      <FixedSection />
+      <FeaturedProduct featuredProducts={featuredProducts} />
       <PopularBrands />
-      <SwiperContainer
-        headerOfSection="Deal Of The Week"
-        products={dealProduct}
-        xsBreakPoint={1}
-        smBreakPoint={1}
-        mdBreakPoint={1}
-        lgBreakPoint={2}
-      />
     </div>
   );
 };
