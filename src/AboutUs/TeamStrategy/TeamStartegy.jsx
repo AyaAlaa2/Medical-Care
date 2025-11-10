@@ -7,7 +7,7 @@ import data from "./teamData";
 
 export default function AboutTabs() {
   const theme = useTheme();
-  const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
+  const isDesktop = useMediaQuery(theme.breakpoints.up("sm"));
   const [index, setIndex] = React.useState(0);
 
   return isDesktop ? (
