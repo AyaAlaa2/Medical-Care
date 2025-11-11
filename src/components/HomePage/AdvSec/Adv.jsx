@@ -1,8 +1,8 @@
 import React from "react";
-import { Box, Typography, Button, Container } from "@mui/material";
+import { Box, Container } from "@mui/material";
 import AdvCard from "./AdvCard";
 
-const Adv = () => {
+const Adv = ({ advs }) => {
   return (
     <Box
       sx={{
@@ -22,16 +22,9 @@ const Adv = () => {
           alignItems: "center",
         }}
       >
-        <AdvCard
-          imgSrc="../adv1.jpg"
-          subTitle="FABRIC SURGICAL MASK"
-          title="Ply Surgical Mask <br> With Filter"
-        />
-        <AdvCard
-          imgSrc="../adv2.jpg"
-          subTitle="FABRIC SURGICAL MASK"
-          title="Digital Stethoscope <br> For Doctors"
-        />
+        {advs.map((adv, index) => (
+          <AdvCard adv={adv} key={index} />
+        ))}
       </Container>
     </Box>
   );

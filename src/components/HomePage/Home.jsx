@@ -1,7 +1,6 @@
 import React from "react";
 import Hero from "./Hero";
 import Adv from "./AdvSec/Adv";
-import SwiperContainer from "./SwiperContainer";
 import { useGetProductsQuery } from "../store/apiSlice";
 import CategoriesSection from "./Category/CategoriesSection";
 import PopularBrands from "./popularBrand/PopularBrand";
@@ -10,6 +9,7 @@ import LatestProduct from "./latestProducts/LatestProducts";
 import DealOfTheWeek from "./dealOfTheWeek/DealOfTheWeek";
 import FeaturedProduct from "./featuredProduct/FeaturedProduct";
 import FeatureBar from "./featureBar/FeatureBAr";
+import { advs1, advs2 } from "./AdvSec/advData";
 
 const Home = () => {
   const { data, error, isLoading } = useGetProductsQuery();
@@ -29,11 +29,12 @@ const Home = () => {
   return (
     <div>
       <Hero />
-      <Adv />
+      <Adv advs={advs1} />
       <CategoriesSection />
       <LatestProduct latestProduct={latestProduct} />
       <DealOfTheWeek dealOfTheWeekProduct={dealOfTheWeekProduct} />
       <FixedSection />
+      <Adv advs={advs2} />
       <FeaturedProduct featuredProducts={featuredProducts} />
       <FeatureBar />
       <PopularBrands />
