@@ -3,7 +3,7 @@ import { useMediaQuery } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import AboutTabsMobile from "./TeamStrategyMobile";
 import AboutTabsDesktop from "./TeamStrategyDesk";
-import data from "./teamStrategy/teamData";
+import data from "./teamData";
 
 export default function AboutTabs() {
   const theme = useTheme();

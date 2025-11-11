@@ -1,0 +1,141 @@
+import React from "react";
+import { AppBar, Toolbar, IconButton, Box, Typography } from "@mui/material";
+import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+import ShoppingBagOutlinedIcon from "@mui/icons-material/ShoppingBagOutlined";
+import Mobilemenu from "./Mobilemenu";
+import SearchBar from "./SearchBar";
+import { Link } from "react-router-dom";
+export default function NavBar() {
+  const icons = [
+    { icon: AccountCircleOutlinedIcon, path: "/profile" },
+    { icon: FavoriteBorderIcon, path: "/favorites" },
+    { icon: ShoppingBagOutlinedIcon, path: "/cart" },
+  ];
+  return (
+    <AppBar
+      sx={{
+        position: { xs: "sticky", md: "static" },
+        backgroundColor: "white",
+        height: 80,
+        justifyContent: "center",
+        zIndex: 1100,
+        px: 2,
+        boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
+      }}
+    >
+      <Toolbar
+        sx={{
+          display: "flex",
+          maxWidth: "100vw",
+          justifyContent: "space-between",
+          alignItems: "center",
+          gap: 2,
+        }}
+      >
+        <Box sx={{ display: "flex", alignItems: "center" }}>
+          <Mobilemenu />
+          <Box
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              gap: 2,
+              flexGrow: 1,
+              justifyContent: { xs: "center", md: "flex-start" },
+            }}
+          >
+            {/* logo */}
+            <Box
+              component={Link}
+              to="/"
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                textDecoration: "none",
+              }}
+            >
+              <img
+                src="/logoo.png"
+                alt="Logo"
+                loading="lazy"
+                style={{ maxHeight: 60, padding: "10px" }}
+              />
+              <Typography
+                variant="h6"
+                sx={{
+                  color: "var(--main-color)",
+                  fontWeight: "bold",
+                  fontSize: { xs: 16, md: 22 },
+                }}
+              >
+                Medical Care
+              </Typography>
+            </Box>
+
+            {/*  search bar */}
+            <Box
+              sx={{
+                display: { xs: "none", lg: "flex" },
+                flexGrow: 1,
+                maxWidth: 300,
+                ml: 2,
+              }}
+            >
+              <SearchBar />
+            </Box>
+          </Box>
+        </Box>
+
+        <Box
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            gap: { xs: 1, md: 2 },
+          }}
+        >
+          <Box
+            sx={{
+              display: { xs: "none", lg: "flex" },
+              flexDirection: "column",
+              alignItems: "flex-start",
+              mr: 2,
+            }}
+          >
+            <Typography
+              variant="subtitle1"
+              sx={{ fontWeight: 500, color: "black", fontSize: "20px" }}
+            >
+              Need Help?
+            </Typography>
+            <Typography
+              variant="subtitle2"
+              sx={{
+                fontWeight: "bold",
+                color: "var(--main-color)",
+              }}
+            >
+              Call Us: +123 456 7890
+            </Typography>
+          </Box>
+
+          {/* icons */}
+          {icons.map((icon, i) => (
+            <IconButton key={i} component={Link} to={icon.path}>
+              <icon.icon
+                sx={{
+                  fontSize: 28,
+                  color: "black",
+                  transition: "0.2s",
+                  "&:hover": {
+                    transform: "scale(1.2)",
+                    color: "var(--main-color)",
+                  },
+                }}
+              />
+            </IconButton>
+          ))}
+        </Box>
+      </Toolbar>
+    </AppBar>
+  );
+}
