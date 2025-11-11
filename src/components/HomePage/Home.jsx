@@ -9,6 +9,7 @@ import FixedSection from "./fixedSection.jsx/FixedSection";
 import LatestProduct from "./latestProducts/LatestProducts";
 import DealOfTheWeek from "./dealOfTheWeek/DealOfTheWeek";
 import FeaturedProduct from "./featuredProduct/FeaturedProduct";
+import FeatureBar from "./featureBar/FeatureBAr";
 
 const Home = () => {
   const { data, error, isLoading } = useGetProductsQuery();
@@ -34,6 +35,7 @@ const Home = () => {
       <DealOfTheWeek dealOfTheWeekProduct={dealOfTheWeekProduct} />
       <FixedSection />
       <FeaturedProduct featuredProducts={featuredProducts} />
+      <FeatureBar />
       <PopularBrands />
     </div>
   );
