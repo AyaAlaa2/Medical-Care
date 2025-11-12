@@ -50,8 +50,8 @@ export default function ReviewsSec() {
             style={{ paddingBottom: "50px" }}
             className="custom-swiper"
           >
-            {reviews.map((review, i) => (
-              <SwiperSlide key={i}>
+            {reviews.map((review, index) => (
+              <SwiperSlide key={index}>
                 <Card
                   sx={{
                     height: "100%",
