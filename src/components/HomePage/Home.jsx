@@ -10,6 +10,7 @@ import DealOfTheWeek from "./dealOfTheWeek/DealOfTheWeek";
 import FeaturedProduct from "./featuredProduct/FeaturedProduct";
 import FeatureBar from "./featureBar/FeatureBAr";
 import { advs1, advs2 } from "./AdvSec/advData";
+import ReviewsSec from "./review/ReviewsSec";
 
 const Home = () => {
   const { data, error, isLoading } = useGetProductsQuery();
@@ -37,6 +38,7 @@ const Home = () => {
       <Adv advs={advs2} />
       <FeaturedProduct featuredProducts={featuredProducts} />
       <FeatureBar />
+      <ReviewsSec />
       <PopularBrands />
     </div>
   );

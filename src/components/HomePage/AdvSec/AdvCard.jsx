@@ -2,7 +2,6 @@ import React from "react";
 import { Box, Typography, Button } from "@mui/material";
 
 const AdvCard = ({ adv }) => {
-  console.log(adv);
   return (
     <Box sx={{ mb: 4, width: { xs: "100%", md: "50%" } }}>
       <Box
@@ -12,14 +11,13 @@ const AdvCard = ({ adv }) => {
           backgroundPosition: "center",
           borderRadius: 3,
           display: "flex",
-          alignItems: "center",
+          alignItems: "flex-end",
           justifyContent: "space-between",
           p: { xs: 2, sm: 3, md: 5 },
           flexDirection: { xs: "column", sm: "row" },
           textAlign: "right",
         }}
       >
-        <Box width="55%"></Box>
         <Box sx={{ flex: 1, textAlign: "left" }}>
           <Typography
             variant="subtitle2"
