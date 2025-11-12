@@ -41,7 +41,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   },
 }));
 
-export default function SearchBar() {
+const SearchBar = () => {
   return (
     <Search>
       <SearchIconWrapper sx={{ backgroundColor: "var(--main-color)" }}>
@@ -66,4 +66,6 @@ export default function SearchBar() {
       />
     </Search>
   );
-}
+};
+
+export default SearchBar;

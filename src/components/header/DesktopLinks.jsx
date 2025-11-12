@@ -1,14 +1,24 @@
 import { Menu, MenuItem, Button, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { useEffect } from "react";
 
-export default function DesktopLinks({
+const DesktopLinks = ({
   handleClose,
   baseTextStyle,
   item,
   handleOpen,
   anchorEl,
-}) {
+  setAnchorEl,
+  isMobile,
+}) => {
+  useEffect(() => {
+    if (!isMobile) {
+      if (anchorEl) {
+        setAnchorEl(null);
+      }
+    }
+  }, [isMobile, anchorEl, setAnchorEl]);
   return (
     <div>
       <Button
@@ -51,4 +61,5 @@ export default function DesktopLinks({
       </Menu>
     </div>
   );
-}
+};
+export default DesktopLinks;

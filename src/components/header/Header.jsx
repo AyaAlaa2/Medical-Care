@@ -1,10 +1,12 @@
 import React from "react";
-import { AppBar, Toolbar, Box } from "@mui/material";
+import { useMediaQuery, AppBar, Toolbar, Box } from "@mui/material";
 import PercentIcon from "@mui/icons-material/Percent";
 import HeaderLinks from "./HeaderLinks";
-import DropdownMenu from "./DropdownMenu";
 import { Link } from "react-router-dom";
-export default function Header() {
+import Links from "./Links";
+
+const Header = () => {
+  const isMobile = useMediaQuery("(max-width:900px)");
   return (
     <>
       <AppBar
@@ -25,10 +27,9 @@ export default function Header() {
         >
           <Box></Box>
 
-          {/* Desktop links */}
           <Box sx={{ display: { xs: "none", md: "flex" }, gap: 4 }}>
             {HeaderLinks.map((item) => (
-              <DropdownMenu key={item.name} item={item} isMobile={false} />
+              <Links key={item.name} item={item} isMobile={isMobile} />
             ))}
           </Box>
           <Box
@@ -52,4 +53,5 @@ export default function Header() {
       </AppBar>
     </>
   );
-}
+};
+export default Header;

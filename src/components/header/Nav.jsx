@@ -3,7 +3,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import { Link } from "react-router-dom";
 
-export default function Nav() {
+const Nav = () => {
   return (
     <AppBar
       position="static"
@@ -38,4 +38,5 @@ export default function Nav() {
       </Toolbar>
     </AppBar>
   );
-}
+};
+export default Nav;

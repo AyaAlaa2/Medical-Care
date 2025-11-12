@@ -8,13 +8,13 @@ import { Link } from "react-router-dom";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 
-export default function MobileLinks({
+const MobileLinks = ({
   handleOpen,
   baseTextStyle,
   item,
-  openMobile,
+  openDrop,
   onLinkClick,
-}) {
+}) => {
   return (
     <>
       <ListItemButton
@@ -26,10 +26,10 @@ export default function MobileLinks({
             <Typography sx={{ ...baseTextStyle }}>{item.name}</Typography>
           }
         />
-        {openMobile ? <ExpandLessIcon /> : <ExpandMoreIcon />}
+        {openDrop ? <ExpandLessIcon /> : <ExpandMoreIcon />}
       </ListItemButton>
 
-      <Collapse in={openMobile} timeout="auto" unmountOnExit>
+      <Collapse in={openDrop} timeout="auto" unmountOnExit>
         {item.subLinks.map((sub) => (
           <ListItemButton
             key={sub.name}
@@ -49,4 +49,5 @@ export default function MobileLinks({
       </Collapse>
     </>
   );
-}
+};
+export default MobileLinks;

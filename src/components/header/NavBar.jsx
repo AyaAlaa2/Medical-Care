@@ -5,8 +5,10 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import ShoppingBagOutlinedIcon from "@mui/icons-material/ShoppingBagOutlined";
 import Mobilemenu from "./Mobilemenu";
 import SearchBar from "./SearchBar";
+import Logo from "./Logo";
 import { Link } from "react-router-dom";
-export default function NavBar() {
+
+const NavBar = () => {
   const icons = [
     { icon: AccountCircleOutlinedIcon, path: "/profile" },
     { icon: FavoriteBorderIcon, path: "/favorites" },
@@ -45,32 +47,7 @@ export default function NavBar() {
             }}
           >
             {/* logo */}
-            <Box
-              component={Link}
-              to="/"
-              sx={{
-                display: "flex",
-                alignItems: "center",
-                textDecoration: "none",
-              }}
-            >
-              <img
-                src="/logoo.png"
-                alt="Logo"
-                loading="lazy"
-                style={{ maxHeight: 60, padding: "10px" }}
-              />
-              <Typography
-                variant="h6"
-                sx={{
-                  color: "var(--main-color)",
-                  fontWeight: "bold",
-                  fontSize: { xs: 16, md: 22 },
-                }}
-              >
-                Medical Care
-              </Typography>
-            </Box>
+            <Logo />
 
             {/*  search bar */}
             <Box
@@ -103,7 +80,7 @@ export default function NavBar() {
           >
             <Typography
               variant="subtitle1"
-              sx={{ fontWeight: 500, color: "black", fontSize: "20px" }}
+              sx={{ fontWeight: 500, color: "black" }}
             >
               Need Help?
             </Typography>
@@ -119,9 +96,9 @@ export default function NavBar() {
           </Box>
 
           {/* icons */}
-          {icons.map((icon, i) => (
-            <IconButton key={i} component={Link} to={icon.path}>
-              <icon.icon
+          {/* {icons.map((icon, i) => (
+            <IconButton key={i} component={Link} to={icon.path}> */}
+          {/* <icon.icon
                 sx={{
                   fontSize: 28,
                   color: "black",
@@ -131,11 +108,38 @@ export default function NavBar() {
                     color: "var(--main-color)",
                   },
                 }}
-              />
-            </IconButton>
-          ))}
+              /> */}
+
+          <Box sx={{ display: "flex", gap: 1 }}>
+            {icons.map((icon, i) => (
+              <IconButton
+                key={i}
+                component={Link}
+                to={icon.path}
+                sx={{
+                  p: 0,
+                  "&:hover": {
+                    backgroundColor: "transparent",
+                  },
+                }}
+              >
+                <icon.icon
+                  sx={{
+                    fontSize: 28,
+                    color: "black",
+                    transition: "0.2s",
+                    "&:hover": {
+                      color: "var(--main-color)",
+                    },
+                  }}
+                />
+              </IconButton>
+            ))}
+          </Box>
         </Box>
       </Toolbar>
     </AppBar>
   );
-}
+};
+
+export default NavBar;
