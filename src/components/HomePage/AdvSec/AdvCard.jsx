@@ -18,6 +18,7 @@ const AdvCard = ({ adv }) => {
           textAlign: "right",
         }}
       >
+        <Box sx={{ width: "55%" }}></Box>
         <Box sx={{ flex: 1, textAlign: "left" }}>
           <Typography
             variant="subtitle2"
