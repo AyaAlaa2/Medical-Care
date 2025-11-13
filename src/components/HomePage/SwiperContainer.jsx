@@ -7,7 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import SwiperSlideHook from "./SwiperSlideHook";
+import CardProduct from "./CardProduct";
 import DealCard from "./DealCard";
 
 const SwiperContainer = ({
@@ -89,7 +89,7 @@ const SwiperContainer = ({
             {headerOfSection === "Deal Of The Week" ? (
               <DealCard product={product} />
             ) : (
-              <SwiperSlideHook product={product} />
+              <CardProduct product={product} />
             )}
           </SwiperSlide>
         ))}

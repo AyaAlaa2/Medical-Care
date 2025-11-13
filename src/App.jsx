@@ -4,6 +4,7 @@ import Header from "./components/header/Header";
 import Nav from "./components/header/Nav";
 import NavBar from "./components/header/NavBar";
 import Home from "./components/HomePage/Home";
+import Shop from "./components/shop/Shop";
 
 function App() {
   return (
@@ -11,9 +12,10 @@ function App() {
       <Nav />
       <NavBar />
       <Header />
-      <Home />
+      {/* <Home /> */}
       {/* <ContactUs /> */}
       {/* <AboutTabs /> */}
+      <Shop />
     </>
   );
 }
