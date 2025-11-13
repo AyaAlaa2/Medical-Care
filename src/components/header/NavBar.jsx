@@ -95,21 +95,6 @@ const NavBar = () => {
             </Typography>
           </Box>
 
-          {/* icons */}
-          {/* {icons.map((icon, i) => (
-            <IconButton key={i} component={Link} to={icon.path}> */}
-          {/* <icon.icon
-                sx={{
-                  fontSize: 28,
-                  color: "black",
-                  transition: "0.2s",
-                  "&:hover": {
-                    transform: "scale(1.2)",
-                    color: "var(--main-color)",
-                  },
-                }}
-              /> */}
-
           <Box sx={{ display: "flex", gap: 1 }}>
             {icons.map((icon, i) => (
               <IconButton

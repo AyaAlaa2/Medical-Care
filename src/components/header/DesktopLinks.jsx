@@ -14,11 +14,9 @@ const DesktopLinks = ({
 }) => {
   useEffect(() => {
     if (!isMobile) {
-      if (anchorEl) {
-        setAnchorEl(null);
-      }
+      setAnchorEl(null);
     }
-  }, [isMobile, anchorEl, setAnchorEl]);
+  }, [isMobile, setAnchorEl]);
   return (
     <div>
       <Button

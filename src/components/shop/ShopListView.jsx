@@ -25,8 +25,8 @@ const ShopListView = ({ selectedListView, setSlectedListView }) => {
             onClick={() => handleClick(item.id)}
             sx={{
               cursor: "pointer",
-              px: 1,
-              py: 0.5,
+              px: 0.5,
+              py: 0.1,
               borderRadius: "4px",
               border: "1px solid",
               borderColor:
