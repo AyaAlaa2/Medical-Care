@@ -5,6 +5,7 @@ import SwiperContainer from "./SwiperContainer";
 import { useGetProductsQuery } from "../store/apiSlice";
 import CategoriesSection from "./Category/CategoriesSection";
 import PopularBrands from "./popular brand/PopularBrand";
+
 const Home = () => {
   const { data, error, isLoading } = useGetProductsQuery();
 
