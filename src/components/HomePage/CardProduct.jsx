@@ -7,13 +7,16 @@ import {
   Button,
   Rating,
   Box,
+  IconButton,
 } from "@mui/material";
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 
 const CardProduct = ({ product }) => {
   return (
     <Card
       sx={{
         borderRadius: 3,
+        position: "relative",
         bgcolor: "transparent",
         boxShadow: "none",
         height: "100%",
@@ -22,8 +25,35 @@ const CardProduct = ({ product }) => {
         justifyContent: "space-between",
         borderRight: "1px solid #dbdbdbff",
         padding: "4px",
+        "&:hover .heart-icon": {
+          opacity: 1,
+          transform: "translateX(0)",
+        },
       }}
     >
+      <IconButton
+        onClick={() => alert("emo")}
+        className="heart-icon"
+        sx={{
+          position: "absolute",
+          top: 9,
+          backgroundColor: "white",
+          right: 9,
+          bgcolor: "white",
+          color: "black",
+          opacity: 0,
+          transform: "translateX(20px)",
+          transition: " transform 0.4s",
+          cursor: "pointer",
+          "&:hover": {
+            backgroundColor: "var(--main-color)",
+            color: "white",
+          },
+          zIndex: 10,
+        }}
+      >
+        <FavoriteBorderIcon sx={{ fontSize: 20 }} />
+      </IconButton >
       <CardMedia
         component="img"
         image={product.image}
