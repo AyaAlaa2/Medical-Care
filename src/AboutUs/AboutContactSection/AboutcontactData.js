@@ -1,4 +1,4 @@
-export const AboutContactSection = {
+export const Aboutcontact = {
   eyebrow: 'Contact us',
   title: 'About us info',
   body:
@@ -8,10 +8,10 @@ export const AboutContactSection = {
 };
 export const AboutcontactData = () => {
   try {
-    if (!AboutContactSection || typeof AboutContactSection !== 'object') {
+    if (!Aboutcontact || typeof Aboutcontact !== 'object') {
       throw new Error('Invalid contact section data');
     }
-    return AboutContactSection;
+    return Aboutcontact;
   } catch (err) {
     return {
       eyebrow: 'N/A',
