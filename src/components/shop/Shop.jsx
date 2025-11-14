@@ -43,7 +43,7 @@ const Shop = () => {
             products={filteredProducts}
           />
           <ShopProducts
-            products={products}
+            products={filteredProducts}
             selectedListView={selectedListView}
           />
         </Grid>
