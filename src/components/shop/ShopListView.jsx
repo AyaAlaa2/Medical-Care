@@ -5,7 +5,7 @@ import ThreeVerLine from "./svg/ThreeVerLine";
 import TwoVerLine from "./svg/TwoVerLine";
 import ThreeHorLine from "./svg/ThreeHorLine";
 
-const ShopListView = ({ selectedListView, setSlectedListView }) => {
+const ShopListView = ({ selectedListView, setSlectedListView, products }) => {
   const handleClick = (item) => {
     setSlectedListView(item);
   };
@@ -53,7 +53,9 @@ const ShopListView = ({ selectedListView, setSlectedListView }) => {
         </Grid>
       ))}
       <Grid item>
-        <Typography variant="body2">There are 24 products.</Typography>
+        <Typography variant="body2">
+          There are {products.length} products.
+        </Typography>
       </Grid>
     </Grid>
   );
