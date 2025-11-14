@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import AboutTabs from "./components/aboutUs/teamStrategy/TeamStrategy";
+import TeamStrategy from "./components/aboutUs/teamStrategy/TeamStrategy";
 import ContactUs from "./components/ContactUs.jsx/ContactUs";
 import Header from "./components/header/Header";
 import Nav from "./components/header/Nav";
@@ -30,7 +30,7 @@ function App() {
 
         {/* Elements */}
         <Route path="/elements/FAQ" element={<h1>f</h1>} />
-        <Route path="/elements/about" element={<AboutTabs />} />
+        <Route path="/elements/about" element={<TeamStrategy />} />
         <Route path="/elements/contact" element={<ContactUs />} />
 
         {/* not found page */}

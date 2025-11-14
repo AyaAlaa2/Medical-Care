@@ -43,7 +43,7 @@ const TeamStrategyDesk = ({ index, onChange, data }) => {
             },
           }}
         >
-          {data.map((s) => (
+          {data?.map((s) => (
             <Tab key={s.id} label={s.label} disableRipple />
           ))}
         </Tabs>
