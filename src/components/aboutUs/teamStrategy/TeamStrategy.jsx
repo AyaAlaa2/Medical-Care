@@ -1,18 +1,73 @@
 import React from "react";
-import { useMediaQuery } from "@mui/material";
+import TeamStrategyDesk from "./TeamStrategyDesk";
 import { useTheme } from "@mui/material/styles";
-import AboutTabsMobile from "./TeamStrategyMobile";
-import AboutTabsDesktop from "./TeamStrategyDesk";
-import data from "./teamData";
+import {
+  Container,
+  Box,
+  Accordion,
+  AccordionSummary,
+  AccordionDetails,
+  Typography,
+  Alert,
+} from "@mui/material";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import useTeamStrategy from "./useTeamStrategy";
 
-export default function AboutTabs() {
+const TeamStrategy = () => {
   const theme = useTheme();
-  const isDesktop = useMediaQuery(theme.breakpoints.up("sm"));
-  const [index, setIndex] = React.useState(0);
-
-  return isDesktop ? (
-    <AboutTabsDesktop index={index} onChange={setIndex} data={data} />
-  ) : (
-    <AboutTabsMobile index={index} onChange={setIndex} data={data} />
+  const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
+  const { sections, error, emptyContent, expandedPanel, setExpandedPanel } =
+    useTeamStrategy("mobile");
+  if (isDesktop) return <TeamStrategyDesk />;
+  if (error) return <Alert severity="error">{error}</Alert>;
+  return (
+    <Container maxWidth="sm">
+      <Box sx={{ border: 1, borderColor: "divider", borderRadius: 1 }}>
+        {sections.map((section, idx) => (
+          <Accordion
+            key={section.id}
+            elevation={0}
+            disableGutters
+            square
+            expanded={expandedPanel === idx}
+            onChange={() => setExpandedPanel(idx)}
+          >
+            <AccordionSummary
+              sx={{
+                px: 2,
+                py: 1.25,
+                fontWeight: 700,
+                fontSize: 18,
+                color: "black",
+              }}
+            >
+              {section.label}
+            </AccordionSummary>
+            <AccordionDetails
+              sx={{
+                pt: 0,
+                px: 2,
+                pb: 2,
+                borderTop: "1px solid",
+                borderColor: "divider",
+              }}
+            >
+              {expandedPanel === idx && emptyContent ? (
+                <Alert severity="error">
+                  Section content is missing or empty.
+                </Alert>
+              ) : (
+                section.body.map((text, tidx) => (
+                  <Typography key={tidx} sx={{ lineHeight: 1.9 }}>
+                    {text}
+                  </Typography>
+                ))
+              )}
+            </AccordionDetails>
+          </Accordion>
+        ))}
+      </Box>
+    </Container>
   );
-}
+};
+export default TeamStrategy;

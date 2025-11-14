@@ -1,8 +1,20 @@
 import React from "react";
-import { Container, Box, Paper, Tabs, Tab, Typography } from "@mui/material";
+import useTeamStrategy from "./useTeamStrategy";
+import {
+  Container,
+  Tabs,
+  Tab,
+  Paper,
+  Box,
+  Typography,
+  Alert,
+} from "@mui/material";
 
-export default function TeamStrategyDesk({ index, onChange, data }) {
-  const body = data[index]?.body ?? "";
+const TeamStrategyDesk = ({ index, onChange, data }) => {
+  const { sections, error, emptyContent, selectedTab, setSelectedTab } =
+    useTeamStrategy("desktop");
+  if (error) return <Alert severity="error">{error}</Alert>;
+  const active = sections[selectedTab];
 
   return (
     <Container maxWidth="lg" sx={{ my: { xs: 3, md: 8 } }}>
@@ -56,4 +68,5 @@ export default function TeamStrategyDesk({ index, onChange, data }) {
       </Paper>
     </Container>
   );
-}
+};
+export default TeamStrategyDesk;

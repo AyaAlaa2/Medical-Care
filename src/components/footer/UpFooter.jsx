@@ -45,9 +45,9 @@ const UpFooter = () => {
         </Typography>
         <StoreButtons />
       </Box>
-      <Grid container spacing={{ xs: 3, sm: 5, md: 15 }} sx={{ flex: 2 }}>
+      <Grid container spacing={{ xs: 3, sm: 5, md: 10 }} sx={{ flex: 2 }}>
         {FooterColumns.map((col, index) => (
-          <Grid item xs={6} sm={3} key={index}>
+          <Grid item size={{ xs: 6, sm: 3 }} key={index}>
             <Item>
               <Typography
                 variant="subtitle1"
