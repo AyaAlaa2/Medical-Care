@@ -3,7 +3,7 @@ import { Box, Grid } from "@mui/material";
 import LeafletMap from "./LeafletMap";
 import ContactForm from "./ContactForm";
 import ContactInfo from "./ContactInfo";
-import ContactHeader from "./ContactHeader";
+import HeaderOfSection from "../customHook/HeaderOfSection";
 
 const ContactUs = () => {
   return (
@@ -14,7 +14,14 @@ const ContactUs = () => {
         position: "relative",
       }}
     >
-      <ContactHeader />
+      <HeaderOfSection
+        title=" Contact Us"
+        breadcrumbs={[
+          { label: "Home", href: "/" },
+          { label: "Element", href: "/" },
+          { label: "Shop" },
+        ]}
+      />
       <Grid container spacing={2}>
         <Grid item size={{ xs: 12, md: 6 }}>
           <LeafletMap />

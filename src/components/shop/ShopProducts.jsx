@@ -23,6 +23,7 @@ const ShopProducts = ({ products, selectedListView }) => {
       spacing={0}
       sx={{
         border: "1px solid #dbdbdbff",
+        marginBottom: 6,
       }}
     >
       {products.map((product, index) => (

@@ -1,13 +1,16 @@
 import React, { useState } from "react";
 import ShopProducts from "./ShopProducts";
 import { useGetProductsQuery } from "../store/apiSlice";
-import ShopHeader from "./ShopHeader";
+import HeaderOfSection from "../customHook/HeaderOfSection";
 import ShopText from "./ShopText";
-import { Grid } from "@mui/material";
+import { Grid, Pagination } from "@mui/material";
 import ShopListView from "./ShopListView";
 import ShopFilter from "./ShopFilter";
+import Loading from "../customHook/Loading";
+import Error from "../customHook/Error";
 
 const Shop = () => {
+  const [page, setPage] = useState(1);
   const { data: products, isLoading, error } = useGetProductsQuery();
   const [selectedListView, setSlectedListView] = useState("fourItem");
   const [priceSelected, setPriceSelected] = useState([5, 1500]);
@@ -19,16 +22,25 @@ const Shop = () => {
   });
 
   if (isLoading) {
-    return <div>Loading...</div>;
+    return <Loading />;
   }
 
   if (error) {
-    return <div>Error fetching products</div>;
+    return <Error />;
   }
+
   return (
     <>
-      <ShopHeader />
-      <Grid container spacing={2}>
+      <HeaderOfSection
+        title="Shop"
+        breadcrumbs={[{ label: "Home", href: "/" }, { label: "Shop" }]}
+      />
+      <Grid
+        container
+        spacing={2}
+        alignItems="flex-start"
+        justifyContent="center"
+      >
         <Grid item size={{ xs: 12, md: 3 }} px={3} pt={2}>
           <ShopFilter
             priceSelected={priceSelected}
@@ -43,8 +55,32 @@ const Shop = () => {
             products={filteredProducts}
           />
           <ShopProducts
-            products={filteredProducts}
+            products={filteredProducts.slice(
+              (page - 1) * 12,
+              (page - 1) * 12 + 12
+            )}
             selectedListView={selectedListView}
+          />
+          <Pagination
+            count={Math.ceil(filteredProducts.length / 12)}
+            page={page}
+            onChange={(e, value) => setPage(value)}
+            sx={{
+              "& .MuiPaginationItem-root": {
+                color: "gray",
+                borderColor: "var(--gray-100)",
+              },
+              "& .MuiPaginationItem-root.Mui-selected": {
+                backgroundColor: "var(--main-color)",
+                color: "#fff",
+                borderColor: "var(--main-color)",
+              },
+              "& .MuiPaginationItem-root:hover": {
+                backgroundColor: "rgba(0, 0, 0, 0.1)",
+              },
+            }}
+            variant="outlined"
+            shape="rounded"
           />
         </Grid>
       </Grid>
