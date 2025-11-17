@@ -10,6 +10,7 @@ import Error from "../customHook/Error";
 
 const ShopInterface = () => {
   const { pageTitle } = useParams();
+  console.log(pageTitle);
   const [page, setPage] = useState(1);
   const [selectedListView, setSlectedListView] = useState("fourItem");
   const [priceSelected, setPriceSelected] = useState([5, 7500]);
@@ -43,6 +44,24 @@ const ShopInterface = () => {
     case "bestsellers":
       filteredPageProducts = filteredProducts.filter(
         (item) => item.customer_reviews.average_rating > 4.5
+      );
+      break;
+
+    case "cosmetics":
+      filteredPageProducts = filteredProducts.filter(
+        (item) => item.product_type === "Cosmetics"
+      );
+      break;
+
+    case "devices":
+      filteredPageProducts = filteredProducts.filter(
+        (item) => item.product_type === "Devices"
+      );
+      break;
+
+    case "medicines":
+      filteredPageProducts = filteredProducts.filter(
+        (item) => item.product_type === "Medicines"
       );
       break;
 
