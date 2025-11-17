@@ -49,7 +49,7 @@ export default function SubscriptionForm() {
             type="submit"
             variant="contained"
             disabled={!isAgreementChecked}   // still controlled by checkbox
-            sx={{ width: "7rem" }}
+            sx={{ width: "7rem" , backgroundColor: "var(--main-color)" }}
           >
             SUBSCRIBE
           </Button>

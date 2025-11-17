@@ -3,6 +3,7 @@ import { Container, Box, Typography } from "@mui/material";
 import { AllimagesData } from "./AllimagesData";
 import { ImgStyle, useImageSectionStyles } from "./useImageSectionStyles";
 
+// Reusable Image component with shared styling and error handling
 const Img = ({ src, alt, ...rest }) => {
   const [hasError, setHasError] = useState(false);
 
@@ -40,17 +41,18 @@ const Img = ({ src, alt, ...rest }) => {
   );
 };
 
-const ImagesSection = () => {
+export default function ImagesSection() {
   const [girl, top, bottomLeft, bottomRight] = AllimagesData;
-  const { mainContainerSx, leftColumnSx, rightColumnSx } =
-    useImageSectionStyles();
+  const { mainContainerSx, leftColumnSx, rightColumnSx } = useImageSectionStyles();
 
+  // Define the structure of the right column images directly with their data and grid area
   const rightColumnImages = [
     { ...top, gridArea: "top" },
     { ...bottomLeft, gridArea: "bottomLeft" },
     { ...bottomRight, gridArea: "bottomRight" },
   ];
 
+  // Component to render a single image wrapper
   const ImageWrapper = ({ gridArea, src, alt, id }) => (
     <Box key={id} sx={{ gridArea, minWidth: 0, minHeight: 0 }}>
       <Img src={src} alt={alt} />
@@ -60,13 +62,16 @@ const ImagesSection = () => {
   return (
     <Container maxWidth={false} sx={{ py: 4 }}>
       <Box sx={mainContainerSx}>
+        {/* LEFT COLUMN: the girl image */}
         <Box sx={leftColumnSx}>
           <Img src={girl.src} alt={girl.alt} />
         </Box>
 
-        <Box sx={rightColumnSx}>{rightColumnImages.map(ImageWrapper)}</Box>
+        {/* RIGHT COLUMN: top full image + two smaller ones below */}
+        <Box sx={rightColumnSx}>
+          {rightColumnImages.map(ImageWrapper)}
+        </Box>
       </Box>
     </Container>
   );
-};
-export default ImagesSection;
+}

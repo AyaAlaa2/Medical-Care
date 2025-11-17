@@ -1,5 +1,4 @@
 import { Routes, Route } from "react-router-dom";
-import TeamStrategy from "./components/aboutUs/teamStrategy/TeamStrategy";
 import ContactUs from "./components/ContactUs.jsx/ContactUs";
 import Header from "./components/header/Header";
 import Nav from "./components/header/Nav";
@@ -7,7 +6,8 @@ import NavBar from "./components/header/NavBar";
 import Home from "./components/HomePage/Home";
 import Shop from "./components/shop/Shop";
 import Footer from "./components/footer/Footer";
-
+import ProductPage from "./components/products/ProductPage";
+import AboutUs from "./components/aboutUs/AboutUs";
 function App() {
   return (
     <>
@@ -22,6 +22,8 @@ function App() {
         <Route path="/shop/new" element={<Shop />} />
         <Route path="/shop/bestsellers" element={<h1>Top Selling</h1>} />
         <Route path="/shop/offers" element={<h1>Discounts</h1>} />
+        {/* product */}
+        <Route path="/product/:id" element={<ProductPage />} />
 
         {/* Categories */}
         <Route path="/categories/devices" element={<h1>Devices</h1>} />
@@ -30,7 +32,7 @@ function App() {
 
         {/* Elements */}
         <Route path="/elements/FAQ" element={<h1>f</h1>} />
-        <Route path="/elements/about" element={<TeamStrategy />} />
+        <Route path="/elements/about" element={<AboutUs />} />
         <Route path="/elements/contact" element={<ContactUs />} />
 
         {/* not found page */}
