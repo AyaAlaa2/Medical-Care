@@ -1,16 +1,18 @@
-// import ContactUs from "./components/ContactUs.jsx/ContactUs";
+// App.jsx
 import Home from "./components/HomePage/Home";
-// import ImagesSection from "./AboutUs/ImagesSection/ImagesSection";
 import TeamStrategy from "./AboutUs/TeamStrategy/TeamStartegy";
 import AboutContactSection from "./AboutUs/AboutContactSection/AboutContactSection";
+import ServiceSection from "./AboutUs/Services/ServiceSection";
+import SubscriptionSection from "./AboutUs/Subscription/SubscriptionSection";
+
 function App() {
   return (
     <>
       <Home />
-      <TeamStrategy/>
-      {/* <ContactUs /> */}
+      <TeamStrategy />
       <AboutContactSection />
- 
+      <ServiceSection />
+      <SubscriptionSection />
     </>
   );
 }
