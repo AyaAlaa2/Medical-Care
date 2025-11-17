@@ -1,45 +1,48 @@
 import React from "react";
 import Hero from "./Hero";
 import Adv from "./AdvSec/Adv";
-import SwiperContainer from "./SwiperContainer";
 import { useGetProductsQuery } from "../store/apiSlice";
 import CategoriesSection from "./Category/CategoriesSection";
-import PopularBrands from "./popular brand/PopularBrand";
+import PopularBrands from "./popularBrand/PopularBrand";
+import FixedSection from "./fixedSection.jsx/FixedSection";
+import LatestProduct from "./latestProducts/LatestProducts";
+import DealOfTheWeek from "./dealOfTheWeek/DealOfTheWeek";
+import FeaturedProduct from "./featuredProduct/FeaturedProduct";
+import FeatureBar from "./featureBar/FeatureBAr";
+import { advs1, advs2 } from "./AdvSec/advData";
+import ReviewsSec from "./review/ReviewsSec";
+import Error from "../customHook/Error";
+import Loading from "../customHook/Loading";
 
 const Home = () => {
-  const { data, error, isLoading } = useGetProductsQuery();
+  const { data: products, isLoading, error } = useGetProductsQuery();
 
   if (isLoading) {
-    return <div>Loading...</div>;
+    return <Loading />;
   }
 
   if (error) {
-    return <div>Error fetching products</div>;
+    return <Error />;
   }
 
-  const latestProduct = data.slice(0, 30);
-  const dealProduct = data.filter((product) => product.discount > 0);
+  const latestProduct = products.slice(0, 30);
+  const dealOfTheWeekProduct = products.filter(
+    (product) => product.discount > 0
+  );
+  const featuredProducts = products.slice(35, 55);
+
   return (
     <div>
       <Hero />
-      <Adv />
+      <Adv advs={advs1} />
       <CategoriesSection />
-      <SwiperContainer
-        headerOfSection="Latest Products"
-        products={latestProduct}
-        xsBreakPoint={1}
-        smBreakPoint={2}
-        mdBreakPoint={2.4}
-        lgBreakPoint={3.4}
-      />
-      <SwiperContainer
-        headerOfSection="Deal Of The Week"
-        products={dealProduct}
-        xsBreakPoint={1}
-        smBreakPoint={1}
-        mdBreakPoint={1}
-        lgBreakPoint={2}
-      />
+      <LatestProduct latestProduct={latestProduct} />
+      <DealOfTheWeek dealOfTheWeekProduct={dealOfTheWeekProduct} />
+      <FixedSection />
+      <Adv advs={advs2} />
+      <FeaturedProduct featuredProducts={featuredProducts} />
+      <FeatureBar />
+      <ReviewsSec />
       <PopularBrands />
     </div>
   );

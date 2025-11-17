@@ -4,20 +4,17 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "concurrently \"vite\" \"json-server --watch data.json --port 8000\"",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "script": "json-server --watch data.json --port 8000",
-    "api": "json-server --watch data.json --port 8000",
-    "dev:all": "npm-run-all --parallel api dev"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
     "@hookform/resolvers": "^5.2.2",
     "@mui/icons-material": "^7.3.5",
-    "@mui/material": "^7.3.5",
+    "@mui/material": "^7.3.4",
     "@react-google-maps/api": "^2.20.7",
     "@reduxjs/toolkit": "^2.9.2",
     "@tanstack/react-query": "^5.90.6",
@@ -43,6 +40,7 @@
     "@types/react": "^19.1.16",
     "@types/react-dom": "^19.1.9",
     "@vitejs/plugin-react": "^5.0.4",
+    "concurrently": "^9.2.1",
     "eslint": "^9.36.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.22",

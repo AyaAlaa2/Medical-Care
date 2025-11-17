@@ -43,7 +43,7 @@ const DealCard = ({ product }) => {
         display: "flex",
         border: "1px solid var(--main-color)",
         borderRadius: 3,
-        p: 2,
+        p: 5,
         alignItems: "center",
         position: "relative",
         flexDirection: { xs: "column", lg: "row" },
@@ -69,7 +69,11 @@ const DealCard = ({ product }) => {
           {product.category}
         </Typography>
 
-        <Typography variant="h6" sx={{ fontWeight: "bold", mb: 1 }}>
+        <Typography
+          variant="h6"
+          sx={{ fontWeight: "bold", mb: 1, width: "80%", overflow: "hidden" }}
+          noWrap
+        >
           {product.name}
         </Typography>
 
@@ -139,7 +143,7 @@ const DealCard = ({ product }) => {
             mt: 1,
             borderRadius: 2,
             backgroundColor: "var(--main-color)",
-            width: "100%",
+            width: "280px",
             textTransform: "capitalize",
             "&:hover": {
               bgcolor: "var( --blue-color)",

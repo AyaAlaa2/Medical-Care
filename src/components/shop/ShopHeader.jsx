@@ -1,13 +1,13 @@
 import React from "react";
 import { Box, Typography, Breadcrumbs, Link } from "@mui/material";
 
-const ContactHeader = () => {
+const ShopHeader = () => {
   return (
     <Box
       sx={{
         mb: 5,
-        py: 4,
-        px: 2,
+        py: 6,
+        px: 4,
         borderRadius: 3,
         display: "flex",
         alignItems: "center",
@@ -16,7 +16,7 @@ const ContactHeader = () => {
       bgcolor="var(--third-color)"
     >
       <Typography variant="h5" fontWeight="bold">
-        Contact Us
+        Shop
       </Typography>
       <Breadcrumbs aria-label="breadcrumb">
         <Link
@@ -27,18 +27,11 @@ const ContactHeader = () => {
         >
           Home
         </Link>
-        <Link
-          underline="hover"
-          color="inherit"
-          href="/"
-          sx={{ "&:hover": { color: "var(--main-color)" } }}
-        >
-          Element
-        </Link>
-        <Typography sx={{ color: "text.primary" }}>Contact Us</Typography>
+
+        <Typography sx={{ color: "text.primary" }}>Shop</Typography>
       </Breadcrumbs>
     </Box>
   );
 };
 
-export default ContactHeader;
+export default ShopHeader;

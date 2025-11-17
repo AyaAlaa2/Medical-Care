@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 import { FaChevronLeft } from "react-icons/fa";
 import { FaChevronRight } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay } from "swiper/modules";
+import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import SwiperSlideHook from "./SwiperSlideHook";
+import CardProduct from "./CardProduct";
 import DealCard from "./DealCard";
 
 const SwiperContainer = ({
@@ -65,12 +65,11 @@ const SwiperContainer = ({
       </IconButton>
 
       <Swiper
-        modules={[Navigation, Autoplay]}
+        modules={[Navigation]}
         navigation={{
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         }}
-        autoplay={{ delay: 3000 }}
         spaceBetween={15}
         breakpoints={{
           320: { slidesPerView: xsBreakPoint },
@@ -90,7 +89,7 @@ const SwiperContainer = ({
             {headerOfSection === "Deal Of The Week" ? (
               <DealCard product={product} />
             ) : (
-              <SwiperSlideHook product={product} />
+              <CardProduct product={product} />
             )}
           </SwiperSlide>
         ))}

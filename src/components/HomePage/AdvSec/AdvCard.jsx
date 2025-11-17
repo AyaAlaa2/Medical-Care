@@ -1,37 +1,44 @@
 import React from "react";
-import { Box, Typography, Button, Container } from "@mui/material";
+import { Box, Typography, Button } from "@mui/material";
 
-const AdvCard = ({ imgSrc, subTitle, title }) => {
+const AdvCard = ({ adv }) => {
   return (
     <Box sx={{ mb: 4, width: { xs: "100%", md: "50%" } }}>
       <Box
         sx={{
-          backgroundImage: `url(${imgSrc})`,
+          backgroundImage: `url(${adv.imgSrc})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           borderRadius: 3,
           display: "flex",
           alignItems: "flex-end",
           justifyContent: "space-between",
-          p: { xs: 2, sm: 3, md: 4 },
+          p: { xs: 2, sm: 3, md: 5 },
           flexDirection: { xs: "column", sm: "row" },
           textAlign: "right",
         }}
       >
-        <Box sx={{ flex: 1 }}>
+        <Box sx={{ width: "55%" }}></Box>
+        <Box sx={{ flex: 1, textAlign: "left" }}>
           <Typography
             variant="subtitle2"
             sx={{ color: "text.secondary", fontWeight: 500 }}
           >
-            {subTitle}
+            {adv.subTitle}
           </Typography>
           <Typography
-            variant="h5"
-            sx={{ fontWeight: 700, mt: 1, mb: 3, color: "#1b1b1b" }}
+            variant="subtitle1"
+            sx={{
+              fontWeight: 600,
+              mt: 1,
+              mb: 3,
+              color: "#1b1b1b",
+              fontSize: "20px",
+            }}
           >
-            {title.slice(0, title.indexOf(" <br>"))}
+            {adv.title.slice(0, adv.title.indexOf(" <br>"))}
             <br />
-            {title.slice(title.indexOf(" <br>") + 6)}
+            {adv.title.slice(adv.title.indexOf(" <br>") + 6)}
           </Typography>
           <Button
             variant="contained"

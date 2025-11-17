@@ -20,7 +20,6 @@ const Hero = () => {
         position: "relative",
         overflow: "hidden",
         px: { xs: 2, sm: 3 },
-        fontFamily: "Macondo, cursive",
       }}
     >
       <Container maxWidth="lg">
