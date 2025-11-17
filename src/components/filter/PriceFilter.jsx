@@ -21,7 +21,7 @@ const PriceFilter = ({ priceSelected, setPriceSelected }) => {
           onChange={filterPrice}
           valueLabelDisplay="auto"
           min={5}
-          max={1500}
+          max={7500}
           sx={{
             color: "var(--main-color)",
           }}

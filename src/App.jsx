@@ -1,27 +1,22 @@
 import { Routes, Route } from "react-router-dom";
 import TeamStrategy from "./components/aboutUs/teamStrategy/TeamStrategy";
 import ContactUs from "./components/ContactUs.jsx/ContactUs";
-import Header from "./components/header/Header";
-import Nav from "./components/header/Nav";
-import NavBar from "./components/header/NavBar";
+
 import Home from "./components/HomePage/Home";
 import Shop from "./components/shop/Shop";
-import Footer from "./components/footer/Footer";
+import UserInterface from "./components/userInterface/UserInterface";
+import ShopInterface from "./components/shop/ShopInterface";
 
 function App() {
   return (
     <>
-      <Nav />
-      <NavBar />
-      <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/products" element={<h1>Products</h1>} />
-
-        {/* Shop */}
-        <Route path="/shop/new" element={<Shop />} />
-        <Route path="/shop/bestsellers" element={<h1>Top Selling</h1>} />
-        <Route path="/shop/offers" element={<h1>Discounts</h1>} />
+        <Route element={<UserInterface />}>
+          <Route index path="/" element={<Home />} />
+          <Route element={<ShopInterface />} path="/shop">
+            <Route index path=":pageTitle" element={<Shop />} />
+          </Route>
+        </Route>
 
         {/* Categories */}
         <Route path="/categories/devices" element={<h1>Devices</h1>} />
@@ -36,7 +31,6 @@ function App() {
         {/* not found page */}
         <Route path="*" element={<h1>Page Not Found</h1>} />
       </Routes>
-      <Footer />
     </>
   );
 }

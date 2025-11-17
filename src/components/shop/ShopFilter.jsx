@@ -2,8 +2,17 @@ import { Box } from "@mui/material";
 import PriceFilter from "../filter/PriceFilter";
 import Divider from "@mui/material/Divider";
 import Typography from "@mui/material/Typography";
+import Ratingfilter from "../filter/Ratingfilter";
+import TypeFilter from "../filter/TypeFilter";
 
-const ShopFilter = ({ priceSelected, setPriceSelected }) => {
+const ShopFilter = ({
+  priceSelected,
+  setPriceSelected,
+  setSelectedRating,
+  selectedRating,
+  type,
+  setType,
+}) => {
   return (
     <Box
       sx={{
@@ -11,7 +20,8 @@ const ShopFilter = ({ priceSelected, setPriceSelected }) => {
         borderColor: "#e0e0e0",
         borderStyle: "solid",
         borderRadius: 1,
-        p: 2,
+        p: 1,
+        paddingBottom: 5,
         width: "100%",
         backgroundColor: "white",
       }}
@@ -22,10 +32,28 @@ const ShopFilter = ({ priceSelected, setPriceSelected }) => {
 
       <Divider sx={{ mb: 2 }} />
 
-      <PriceFilter
-        priceSelected={priceSelected}
-        setPriceSelected={setPriceSelected}
-      />
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: {
+            xs: "column",
+            sm: "row",
+            md: "column",
+            lg: "column",
+          },
+          gap: 3,
+        }}
+      >
+        <PriceFilter
+          priceSelected={priceSelected}
+          setPriceSelected={setPriceSelected}
+        />
+        <Ratingfilter
+          selectedRating={selectedRating}
+          setSelectedRating={setSelectedRating}
+        />
+        <TypeFilter type={type} setType={setType} />
+      </Box>
     </Box>
   );
 };

@@ -5,7 +5,7 @@ import ThreeVerLine from "./svg/ThreeVerLine";
 import TwoVerLine from "./svg/TwoVerLine";
 import ThreeHorLine from "./svg/ThreeHorLine";
 
-const ShopListView = ({ selectedListView, setSlectedListView, products }) => {
+const ShopListView = ({ selectedListView, setSlectedListView , products}) => {
   const handleClick = (item) => {
     setSlectedListView(item);
   };
