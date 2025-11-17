@@ -6,6 +6,7 @@ import Ratingfilter from "../filter/Ratingfilter";
 import TypeFilter from "../filter/TypeFilter";
 
 const ShopFilter = ({
+  pageTitle,
   priceSelected,
   setPriceSelected,
   setSelectedRating,
@@ -52,7 +53,12 @@ const ShopFilter = ({
           selectedRating={selectedRating}
           setSelectedRating={setSelectedRating}
         />
-        <TypeFilter type={type} setType={setType} />
+
+        {pageTitle !== "cosmetics" &&
+          pageTitle !== "devices" &&
+          pageTitle !== "medicines" && (
+            <TypeFilter type={type} setType={setType} />
+          )}
       </Box>
     </Box>
   );

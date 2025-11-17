@@ -10,7 +10,6 @@ import Error from "../customHook/Error";
 
 const ShopInterface = () => {
   const { pageTitle } = useParams();
-  console.log(pageTitle);
   const [page, setPage] = useState(1);
   const [selectedListView, setSlectedListView] = useState("fourItem");
   const [priceSelected, setPriceSelected] = useState([5, 7500]);
@@ -100,6 +99,7 @@ const ShopInterface = () => {
       >
         <Grid item size={{ xs: 12, md: 3 }} px={3} pt={2}>
           <ShopFilter
+            pageTitle={pageTitle}
             priceSelected={priceSelected}
             setPriceSelected={setPriceSelected}
             selectedRating={selectedRating}
