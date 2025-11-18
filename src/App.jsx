@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import TeamStrategy from "./components/aboutUs/teamStrategy/TeamStrategy";
+import AboutUs from "./components/aboutUs/AboutUs";
 import ContactUs from "./components/ContactUs.jsx/ContactUs";
 import Home from "./components/HomePage/Home";
 import Shop from "./components/shop/Shop";
@@ -17,7 +17,7 @@ function App() {
           </Route>
           <Route path="/elements">
             <Route path="fAQ" element={<h1>f</h1>} />
-            <Route path="about" element={<TeamStrategy />} />
+            <Route path="about" element={<AboutUs />} />
             <Route path="contact" element={<ContactUs />} />
           </Route>
           <Route element={<ShopInterface />} path="/categories">
