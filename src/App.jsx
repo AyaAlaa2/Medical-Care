@@ -5,6 +5,7 @@ import Home from "./components/HomePage/Home";
 import Shop from "./components/shop/Shop";
 import UserInterface from "./components/userInterface/UserInterface";
 import ShopInterface from "./components/shop/ShopInterface";
+import ProductPage from "./components/productPage/ProductPage";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route element={<ShopInterface />} path="/shop">
             <Route index path=":pageTitle" element={<Shop />} />
           </Route>
+          <Route path="/product/:id" element={<ProductPage />} />
           <Route path="/elements">
             <Route path="fAQ" element={<h1>f</h1>} />
             <Route path="about" element={<AboutUs />} />

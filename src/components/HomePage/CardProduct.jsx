@@ -7,13 +7,16 @@ import {
   Button,
   Rating,
   Box,
-  IconButton
+  IconButton,
 } from "@mui/material";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+import { Link } from "react-router-dom";
 
 const CardProduct = ({ product }) => {
   return (
     <Card
+      component={Link}
+      to={`/product/${product.id}`}
       sx={{
         borderRadius: 3,
         bgcolor: "transparent",

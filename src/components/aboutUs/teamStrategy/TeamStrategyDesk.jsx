@@ -17,7 +17,7 @@ const TeamStrategyDesk = ({ index, onChange, data }) => {
   const active = sections[selectedTab];
 
   return (
-  <Container maxWidth="lg">
+    <Container maxWidth="lg">
       <Tabs
         value={selectedTab}
         onChange={(e, i) => setSelectedTab(i)}
@@ -44,31 +44,30 @@ const TeamStrategyDesk = ({ index, onChange, data }) => {
                 color: "var(--main-color)",
               },
             }}
-             disableRipple
+            disableRipple
           />
         ))}
       </Tabs>
 
-      <Paper 
-        elevation={0} 
-        sx={{ bgcolor: "transparent" }}
-      >
-        <Box 
-          sx={{ 
-            border: 1, 
-            borderColor: "divider", 
+      <Paper elevation={0} sx={{ bgcolor: "transparent" }}>
+        <Box
+          sx={{
+            border: 1,
+            borderColor: "divider",
             bgcolor: "#fff",
             mt: "-1px",
             p: 2,
-          }}>
-         {emptyContent ? (
+          }}
+        >
+          {emptyContent ? (
             <Alert severity="error">Section content is missing or empty.</Alert>
           ) : (
             active.body.map((text, idx) => (
               <Typography key={idx} sx={{ lineHeight: 1.5, p: 0.5 }}>
                 {text}
               </Typography>
-            )))}
+            ))
+          )}
         </Box>
       </Paper>
     </Container>
