@@ -24,7 +24,6 @@ const SubscriptionForm = () => {
   return (
     <Box component="form" onSubmit={handleValidSubmit}>
       <Stack spacing={1.5} alignItems="center">
-        {/* Simple global alerts */}
         {isSubmitted && hasEmailError && (
           <Alert severity="error">Please enter a valid email.</Alert>
         )}
@@ -32,7 +31,6 @@ const SubscriptionForm = () => {
           <Alert severity="success">Subscribed!</Alert>
         )}
 
-        {/* Email + subscribe button in one row */}
         <Stack
           direction="row"
           spacing={1}
@@ -48,20 +46,19 @@ const SubscriptionForm = () => {
           <Button
             type="submit"
             variant="contained"
-            disabled={!isAgreementChecked} // still controlled by checkbox
-            sx={{ width: "7rem" }}
+            disabled={!isAgreementChecked}
+            sx={{ width: "7rem" , backgroundColor: "var(--main-color)" }}
           >
             SUBSCRIBE
           </Button>
         </Stack>
 
-        {/* Checkbox now uses Controller so reset() can uncheck it */}
         <Controller
           name="agree"
           control={control}
           render={({ field }) => (
             <FormControlLabel
-              control={<Checkbox {...field} checked={field.value} />}
+              control={<Checkbox {...field} checked={field.value} color="var(--main-color)" />}
               label="I agree to the terms and conditions and the privacy policy"
             />
           )}
