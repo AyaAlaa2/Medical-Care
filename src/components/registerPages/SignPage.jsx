@@ -10,7 +10,7 @@ const SignPage = () => {
   return (
     <Box>
       <HeaderOfSection
-        title="Log in to your account"
+      title={tab === "login" ? "Log in to your account" : "Create your account"}
         breadcrumbs={[
           { label: "Home", href: "/" },
           tab === "login" ? { label: "Login" } : { label: "Sign Up" },
