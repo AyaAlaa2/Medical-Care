@@ -12,7 +12,7 @@ import LogoutIcon from "@mui/icons-material/Logout";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import ShoppingBagOutlinedIcon from "@mui/icons-material/ShoppingBagOutlined";
 import Mobilemenu from "./Mobilemenu";
-import SearchBar from "./SearchBar";
+import SearchBar from "../Search/SearchBar";
 import Logo from "./Logo";
 import { Link, useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";

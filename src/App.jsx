@@ -10,6 +10,8 @@ import Signup from "./components/registerPages/Signup";
 import { Toaster } from "react-hot-toast";
 import Login from "./components/registerPages/Login";
 import SignPage from "./components/registerPages/SignPage";
+import SearchResult from "./components/Search/SearchResult";
+
 function App() {
   return (
     <>
@@ -18,10 +20,12 @@ function App() {
       <Routes>
         <Route element={<UserInterface />}>
           <Route index path="/" element={<Home />} />
+          <Route path="Search/:query" element={<SearchResult />} />
           <Route path="/auth" element={<SignPage />} />
           <Route element={<ShopInterface />} path="/shop">
             <Route index path=":pageTitle" element={<Shop />} />
           </Route>
+
           <Route path="/product/:id" element={<ProductPage />} />
           <Route path="/elements">
             <Route path="fAQ" element={<h1>f</h1>} />
