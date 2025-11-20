@@ -6,13 +6,19 @@ import Shop from "./components/shop/Shop";
 import UserInterface from "./components/userInterface/UserInterface";
 import ShopInterface from "./components/shop/ShopInterface";
 import ProductPage from "./components/productPage/ProductPage";
-
+import Signup from "./components/registerPages/Signup";
+import { Toaster } from "react-hot-toast";
+import Login from "./components/registerPages/Login";
+import SignPage from "./components/registerPages/SignPage";
 function App() {
   return (
     <>
+      <Toaster position="top-center" reverseOrder={false} />
+
       <Routes>
         <Route element={<UserInterface />}>
           <Route index path="/" element={<Home />} />
+          <Route path="/auth" element={<SignPage />} />
           <Route element={<ShopInterface />} path="/shop">
             <Route index path=":pageTitle" element={<Shop />} />
           </Route>
