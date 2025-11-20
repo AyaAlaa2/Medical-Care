@@ -14,6 +14,7 @@ const Header = () => {
           position: { xs: "static", md: "sticky" },
           display: { xs: "none", md: "flex" },
           backgroundColor: "white",
+          zIndex: 1000,
           color: "black",
           boxShadow: "0 2px 10px rgba(0,0,0,0.1)",
         }}
