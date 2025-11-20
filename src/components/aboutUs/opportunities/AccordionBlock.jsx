@@ -22,20 +22,19 @@ const AccordionBlock = ({ accordionItems }) => {
       sx={{
         background: "transparent",
         boxShadow: "none",
-        mb: 2,
+        mb: 0,
         borderRadius: "12px",
         "&:before": { display: "none" },
         "& .MuiAccordionSummary-root": {
-          background: "#fff",
+          background: "#f0f0f0ff",
           fontWeight: "bold",
           px: 2,
-          borderRadius: "12px",
         },
         "& .MuiAccordionDetails-root": {
           background: "transparent",
           borderRadius: "0 0 12px 12px",
           px: 3,
-          py: 2,
+          py: 1,
           m: 0,
           boxShadow: "none",
         },

@@ -1,11 +1,12 @@
 import { Routes, Route } from "react-router-dom";
 import AboutUs from "./components/aboutUs/AboutUs";
-import ContactUs from "./components/ContactUs.jsx/ContactUs";
+import ContactUs from "./components/ContactUs/ContactUs";
 import Home from "./components/HomePage/Home";
 import Shop from "./components/shop/Shop";
 import UserInterface from "./components/userInterface/UserInterface";
 import ShopInterface from "./components/shop/ShopInterface";
 import ProductPage from "./components/productPage/ProductPage";
+import FAQ from "./components/faq/FAQ";
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
           </Route>
           <Route path="/product/:id" element={<ProductPage />} />
           <Route path="/elements">
-            <Route path="fAQ" element={<h1>f</h1>} />
+            <Route path="fAQ" element={<FAQ />} />
             <Route path="about" element={<AboutUs />} />
             <Route path="contact" element={<ContactUs />} />
           </Route>

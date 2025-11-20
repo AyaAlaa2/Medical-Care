@@ -9,7 +9,6 @@ const ServiceCard = ({ icon: Icon, title, description }) => (
       borderRadius: 3,
       height: "100%",
       boxShadow: 3,
-      maxWidth: 350,
       width: "100%",
       transition: "transform 0.2s, boxShadow 0.2s",
       "&:hover": { transform: "translateY(-4px)", boxShadow: 4 },
@@ -17,7 +16,7 @@ const ServiceCard = ({ icon: Icon, title, description }) => (
   >
     <Stack spacing={2} alignItems="center">
       <Box>
-        <Icon sx={{ fontSize: 60, color: "var(--second-color)" }} />
+        <Icon sx={{ fontSize: 60, color: "var(--main-color)" }} />
       </Box>
       <Typography variant="h6" sx={{ fontWeight: 600 }}>
         {title}

@@ -14,15 +14,17 @@ const ServiceSection = () => {
   }
 
   return (
-    <Container maxWidth="lg" sx={{ py: 8 }}>
-      <Box display="flex" justifyContent="center">
-        <Grid container spacing={4} justifyContent="center">
+    <Box sx={{ py: 8, px: 5 }}>
+      <Box display="flex" justifyContent="space-between" width="100%">
+        <Grid container spacing={4} justifyContent="space-around">
           {services.map(({ id, icon, title, description }) => (
             <Grid
               item
               key={id}
-              xs={12}
-              sm={3}
+              size={{
+                xs: 12,
+                sm: 4,
+              }}
               display="flex"
               justifyContent="center"
             >
@@ -35,7 +37,7 @@ const ServiceSection = () => {
           ))}
         </Grid>
       </Box>
-    </Container>
+    </Box>
   );
 };
 

@@ -4,7 +4,6 @@ import ImageSection from "./imagesSection/ImagesSection";
 import ServiceSection from "./Services/ServiceSection";
 import OpportunitiesSection from "./opportunities/opportunitiesSection";
 import TeamStrategy from "./teamStrategy/TeamStrategy";
-import SubscriptionSection from "./Subscription/SubscriptionSection";
 import HeaderOfSection from "../customHook/HeaderOfSection";
 function AboutUs() {
   return (
@@ -22,7 +21,6 @@ function AboutUs() {
       <OpportunitiesSection />
       <ServiceSection />
       <AboutContactSection />
-      <SubscriptionSection />
     </Box>
   );
 }

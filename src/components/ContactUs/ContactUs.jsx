@@ -9,8 +9,6 @@ const ContactUs = () => {
   return (
     <Box
       sx={{
-        p: 4,
-        borderRadius: 3,
         position: "relative",
       }}
     >
@@ -22,7 +20,7 @@ const ContactUs = () => {
           { label: "Shop" },
         ]}
       />
-      <Grid container spacing={2}>
+      <Grid container spacing={2} sx={{ px: 3 }}>
         <Grid item size={{ xs: 12, md: 6 }}>
           <LeafletMap />
         </Grid>

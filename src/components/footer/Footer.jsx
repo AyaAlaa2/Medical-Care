@@ -2,6 +2,7 @@ import Box from "@mui/material/Box";
 import Divider from "@mui/material/Divider";
 import UpFooter from "./UpFooter";
 import DownFooter from "./DownFooter";
+import SubscriptionSection from "./subscription/SubscriptionSection";
 
 const Footer = () => {
   return (
@@ -12,6 +13,7 @@ const Footer = () => {
         px: { xs: 2, sm: 4, md: 8 },
       }}
     >
+      <SubscriptionSection />
       <Divider sx={{ my: 4 }} />
 
       <UpFooter />
