@@ -1,8 +1,8 @@
 const uploadImageToCloudinary = async (file) => {
   const data = new FormData();
   data.append("file", file);
-  data.append("upload_preset", "medical care"); // تأكد من أن preset مضبوط
-  data.append("cloud_name", "dx4zjyfvt"); // تأكد من أن cloud name مضبوط
+  data.append("upload_preset", "medical care"); 
+  data.append("cloud_name", "dx4zjyfvt"); 
 
   try {
     const res = await fetch(
@@ -14,7 +14,7 @@ const uploadImageToCloudinary = async (file) => {
     );
 
     if (!res.ok) {
-      const errorText = await res.text(); // هنا بنحصل على التفاصيل الكاملة للخطأ
+      const errorText = await res.text(); 
       console.error("Cloudinary Upload Error:", errorText);
       throw new Error(`Cloudinary upload failed: ${errorText}`);
     }
@@ -29,7 +29,7 @@ const uploadImageToCloudinary = async (file) => {
     }
   } catch (error) {
     console.error("Error uploading image:", error.message);
-    throw error; // نعيد رمي الخطأ علشان نقدر نتعامل معاه في المكان اللي بتستدعي منه
+    throw error; 
   }
 };
 
