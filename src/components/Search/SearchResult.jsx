@@ -7,10 +7,11 @@ import Loading from "../customHook/Loading";
 import Error from "../customHook/Error";
 import ShopProducts from '../shop/ShopProducts';
 import { useState } from 'react';
+import ShopListView from '../shop/ShopListView';
 
 const SearchResult = () => {
-
-       
+ const [selectedListView, setSlectedListView] = useState("fourItem");
+    
  const { data: products, isLoading, error } = useGetProductsQuery();
    const [page, setPage] = useState(1);
       const { query } = useParams();
@@ -50,7 +51,7 @@ const SearchResult = () => {
           { label: " Search results" },
         ]}
       />
-      <Box sx={{ padding:8 ,paddingTop:0}}>
+      <Box sx={{ padding: 8, paddingTop: 0 }}>
         <Typography sx={{ fontSize: "20px", padding: 2 }}>
           Search results for:
           <span style={{ color: "red", fontSize: "20px", fontWeight: "bold" }}>
@@ -58,7 +59,17 @@ const SearchResult = () => {
           </span>
         </Typography>
         {filteredProducts.length > 0 ? (
-          <ShopProducts products={paginated} />
+          <>
+            <ShopListView
+              products={filteredProducts}
+              selectedListView={selectedListView}
+              setSlectedListView={setSlectedListView}
+            />
+            <ShopProducts
+              products={paginated}
+              selectedListView={selectedListView}
+            />
+          </>
         ) : (
           <Typography sx={{ fontSize: "30px", textAlign: "center" }}>
             No matching results found.
