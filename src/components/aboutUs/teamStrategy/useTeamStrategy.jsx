@@ -1,28 +1,33 @@
-import { useState } from "react";
+// useTeamStrategy.jsx
+import { useState, useMemo } from "react";
 import teamData from "./teamData";
 
-const useTeamStrategy = (viewType = "desktop") => {
-  const [selectedTab, setSelectedTab] = useState(0);
-  const [expandedPanel, setExpandedPanel] = useState(0);
+const useTeamStrategy = () => {
+  const [index, setIndex] = useState(0);
+
   const sections = Array.isArray(teamData) ? teamData : [];
-  let error = "";
-  if (sections.length === 0) error = "No team sections available.";
-  function isEmpty(body) {
-    return !Array.isArray(body) || body.every((text) => !text.trim());
-  }
-  let emptyContent = false;
-  if (viewType === "desktop" && sections.length)
-    emptyContent = isEmpty(sections[selectedTab]?.body);
-  if (viewType === "mobile" && sections.length)
-    emptyContent = isEmpty(sections[expandedPanel]?.body);
+  const hasSections = sections.length > 0;
+
+  const error = hasSections ? "" : "No team sections available.";
+
+  const activeSection = hasSections ? sections[index] : null;
+  const body = activeSection?.body || [];
+
+  const emptyContent = useMemo(
+    () =>
+      !Array.isArray(body) ||
+      body.every((text) => !text || !text.trim()),
+    [body]
+  );
+
   return {
     sections,
+    activeSection,
     error,
     emptyContent,
-    selectedTab,
-    setSelectedTab,
-    expandedPanel,
-    setExpandedPanel,
+    index,
+    setIndex,
   };
 };
+
 export default useTeamStrategy;

@@ -1,3 +1,4 @@
+// src/components/products/ProductInfo.jsx
 import { Box } from "@mui/material";
 import ProductTitle from "./ProductTitle";
 import ProductPrice from "./ProductPrice";
@@ -5,14 +6,13 @@ import ProductRating from "./ProductRating";
 import ProductDescription from "./ProductDescription";
 import ProductActions from "./ProductActions";
 import ProductStatus from "./ProductStatus";
-import ProductShare from "./ProductShare";
+
 const ProductInfo = ({ product }) => (
   <Box
     sx={{
-      textAlign: "left",
-      "@media (max-width: 768px)": {
-        textAlign: "center",
-      },
+      width: "100%",
+      maxWidth: 500, // keeps content from stretching too wide
+      textAlign: { xs: "center", md: "left" }, // mobile/tablet center, desktop left
     }}
   >
     <ProductTitle product={product} />
@@ -21,7 +21,6 @@ const ProductInfo = ({ product }) => (
     <ProductDescription product={product} />
     <ProductActions />
     <ProductStatus product={product} />
-    <ProductShare />
   </Box>
 );
 

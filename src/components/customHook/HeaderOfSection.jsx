@@ -1,6 +1,14 @@
 import React from "react";
 import { Box, Typography, Breadcrumbs, Link } from "@mui/material";
 
+     <HeaderOfSection
+        title=" Contact Us"
+        breadcrumbs={[
+          { label: "Home", href: "/" },
+          { label: "Element", href: "/shop" },
+          { label: "Shop" },
+        ]}
+      />
 const HeaderOfSection = ({ title, breadcrumbs = [] }) => {
   return (
     <Box

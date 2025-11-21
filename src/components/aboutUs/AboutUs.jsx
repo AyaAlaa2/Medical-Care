@@ -3,9 +3,9 @@ import AboutContactSection from "./aboutContactSection/AboutContactSection";
 import ImageSection from "./imagesSection/ImagesSection";
 import ServiceSection from "./Services/ServiceSection";
 import OpportunitiesSection from "./opportunities/opportunitiesSection";
-import TeamStrategy from "./teamStrategy/TeamStrategy";
 import SubscriptionSection from "./Subscription/SubscriptionSection";
 import HeaderOfSection from "../customHook/HeaderOfSection";
+import TeamStrategy from './teamStrategy/TeamStrategy';
 function AboutUs() {
   return (
     <Box component="main" sx={{ bgcolor: "#fff" }}>
@@ -17,7 +17,7 @@ function AboutUs() {
         ]}       
         
         />
-      <TeamStrategy />
+        <TeamStrategy />
       <ImageSection />
       <OpportunitiesSection />
       <ServiceSection />

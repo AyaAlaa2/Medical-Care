@@ -1,6 +1,5 @@
 import { Box, Button, TextField, Typography } from "@mui/material";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
-
 const ProductActions = () => (
   <Box
     sx={{

@@ -7,14 +7,19 @@ import {
   Button,
   Rating,
   Box,
-  IconButton
+  IconButton,
 } from "@mui/material";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import { Link } from "react-router-dom";
+import { slugify } from "../products/slug.js"; 
+
 const CardProduct = ({ product }) => {
+  const slug = slugify(product.name); 
+
   return (
     <Card
-    component={Link} to={`/product/${product.id}`}
+      component={Link}
+      to={`/product/${product.id}/${slug}`} 
       sx={{
         borderRadius: 3,
         bgcolor: "transparent",
@@ -40,7 +45,6 @@ const CardProduct = ({ product }) => {
           top: 9,
           backgroundColor: "white",
           right: 9,
-          bgcolor: "white",
           color: "black",
           opacity: 0,
           transform: "translateX(20px)",
@@ -55,6 +59,7 @@ const CardProduct = ({ product }) => {
       >
         <FavoriteBorderIcon sx={{ fontSize: 20 }} />
       </IconButton>
+
       <CardMedia
         component="img"
         image={product.image}
@@ -67,6 +72,7 @@ const CardProduct = ({ product }) => {
           px: 2,
         }}
       />
+
       <CardContent sx={{ textAlign: "left", flexGrow: 1 }}>
         <Typography
           variant="subtitle1"
@@ -83,6 +89,7 @@ const CardProduct = ({ product }) => {
         >
           {product.name}
         </Typography>
+
         <Box display="flex" alignItems="center" mb={1}>
           <Rating
             value={product.customer_reviews.average_rating}
@@ -91,9 +98,11 @@ const CardProduct = ({ product }) => {
             size="small"
           />
         </Box>
+
         <Typography variant="h6" color="var(--main-color)" fontWeight={700}>
           {product.price} $
         </Typography>
+
         <Button
           variant="contained"
           color="gray"
