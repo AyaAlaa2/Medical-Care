@@ -101,6 +101,31 @@ const NavBar = () => {
             </Box>
           </Box>
         </Box>
+        <Box
+          sx={{
+            display: { xs: "none", lg: "flex" },
+            flexDirection: "column",
+            alignItems: "flex-start",
+            ml: 30,
+            minWidth: 180,
+          }}
+        >
+          <Typography
+            variant="subtitle1"
+            sx={{ fontWeight: 500, color: "black" }}
+          >
+            Need Help?
+          </Typography>
+          <Typography
+            variant="subtitle2"
+            sx={{
+              fontWeight: "bold",
+              color: "var(--main-color)",
+            }}
+          >
+            Call Us: +123 456 7890
+          </Typography>
+        </Box>
 
         <Box
           sx={{
@@ -157,7 +182,7 @@ const NavBar = () => {
                     transition: "0.2s",
                     "&:hover": {
                       color: "var(--main-color)",
-                      backgroundColor: "rgba(0,0,0,0.05)", 
+                      backgroundColor: "rgba(0,0,0,0.05)",
                     },
                   }}
                 >
