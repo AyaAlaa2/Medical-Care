@@ -9,8 +9,10 @@ import {
   Chip,
   Rating,
 } from "@mui/material";
+import { useCartAndWishlist } from "../hooks/useCartAndWishlist";
 
 const DealCard = ({ product }) => {
+  const { requireLogin, addProductToCart } = useCartAndWishlist();
   const [timeLeft, setTimeLeft] = useState({
     day: 0,
     hrs: 0,
@@ -139,6 +141,7 @@ const DealCard = ({ product }) => {
 
         <Button
           variant="contained"
+          onClick={() => requireLogin(() => addProductToCart(product))}
           sx={{
             mt: 1,
             borderRadius: 2,

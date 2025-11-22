@@ -7,6 +7,7 @@ const Logo = ({ onClick }) => {
       to="/"
       sx={{ display: "flex", alignItems: "center", textDecoration: "none" }}
       onClick={onClick}
+      minWidth={200}
     >
       <img
         src="/logoo.png"

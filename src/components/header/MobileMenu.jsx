@@ -10,6 +10,7 @@ import Logo from "./Logo";
 const Mobilemenu = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const isDesktop = useMediaQuery("(min-width:900px)");
+  const isTop = window.scrollY === 0;
 
   useEffect(() => {
     if (isDesktop && drawerOpen) {
@@ -66,12 +67,11 @@ const Mobilemenu = () => {
         open={drawerOpen}
         onClose={() => setDrawerOpen(false)}
         BackdropProps={{
-          sx: { mt: "130px" },
+          sx: { top: isTop ? "130px" : "80px" },
         }}
         PaperProps={{
           sx: {
-            mt: "130px",
-
+            top: isTop ? "130px" : "80px",
             borderTopRightRadius: 12,
           },
         }}

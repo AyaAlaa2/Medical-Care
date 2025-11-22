@@ -1,8 +1,10 @@
 import { styled, alpha } from "@mui/material/styles";
 import InputBase from "@mui/material/InputBase";
 import SearchIcon from "@mui/icons-material/Search";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
-const Search = styled("div")(({ theme }) => ({
+const Search = styled("form")(({ theme }) => ({
   position: "relative",
   borderRadius: theme.shape.borderRadius,
   backgroundColor: alpha(theme.palette.common.white, 0.15),
@@ -42,14 +44,25 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 }));
 
 const SearchBar = () => {
+   const [searchQuery, setSearchQuery] = useState("");
+   const navigate = useNavigate();
+   const handleSearch = (e) => {
+     e.preventDefault();
+     const trimmedQuery = searchQuery.trim();
+     if (!trimmedQuery) return;
+     navigate(`/Search/${encodeURIComponent(trimmedQuery)}`);
+     setSearchQuery("");
+   };
   return (
-    <Search>
+    <Search onSubmit={handleSearch}>
       <SearchIconWrapper sx={{ backgroundColor: "var(--main-color)" }}>
         <SearchIcon sx={{ color: "white" }} />
       </SearchIconWrapper>
       <StyledInputBase
         placeholder="Search product here…"
         inputProps={{ "aria-label": "search" }}
+        value={searchQuery}
+        onChange={(e) => setSearchQuery(e.target.value)}
         sx={{
           border: 1,
           borderColor: "var(--main-color)",

@@ -7,13 +7,23 @@ import UserInterface from "./components/userInterface/UserInterface";
 import ShopInterface from "./components/shop/ShopInterface";
 import ProductPage from "./components/productPage/ProductPage";
 import FAQ from "./components/faq/FAQ";
+import { Toaster } from "react-hot-toast";
+import SignPage from "./components/registerPages/SignPage";
+import CartPage from "./components/cart/CartPage";
+import Wishlist from "./components/wishList/Wishlist";
+import SearchResult from "./components/search/SearchResult";
 
-function App() {
+const App = () => {
   return (
     <>
+      <Toaster position="top-center" reverseOrder={false} />
       <Routes>
         <Route element={<UserInterface />}>
           <Route index path="/" element={<Home />} />
+          <Route path="/auth" element={<SignPage />} />
+          <Route path="/cart" element={<CartPage />} />
+          <Route path="/favorites" element={<Wishlist />} />
+          <Route path="Search/:query" element={<SearchResult />} />
           <Route element={<ShopInterface />} path="/shop">
             <Route index path=":pageTitle" element={<Shop />} />
           </Route>
@@ -32,6 +42,6 @@ function App() {
       </Routes>
     </>
   );
-}
+};
 
 export default App;

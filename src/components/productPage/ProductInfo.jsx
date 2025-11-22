@@ -20,7 +20,7 @@ const ProductInfo = ({ product }) => (
     <ProductPrice price={product.price} />
     <ProductRating product={product} />
     <ProductDescription description={product.description} />
-    <ProductActions />
+    <ProductActions product={product} />
     <ProductStatus stock_quantity={product.stock_quantity} />
     <ProductShare />
   </Box>

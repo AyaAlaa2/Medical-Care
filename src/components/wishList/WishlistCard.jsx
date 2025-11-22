@@ -1,4 +1,6 @@
-import React from "react";
+import { AiOutlineDelete } from "react-icons/ai";
+import { Link } from "react-router-dom";
+import { useCartAndWishlist } from "../hooks/useCartAndWishlist";
 import {
   Card,
   CardMedia,
@@ -10,13 +12,10 @@ import {
   IconButton,
   CardActions,
 } from "@mui/material";
-import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
-import { Link } from "react-router-dom";
-import { useCartAndWishlist } from "../hooks/useCartAndWishlist";
 
-const CardProduct = ({ product }) => {
-  const { requireLogin, addProductToCart, addProductToWishlist } =
-    useCartAndWishlist();
+const WishlistCard = ({ product, handleDelete }) => {
+  const { addProductToCart } = useCartAndWishlist();
+
   return (
     <Card
       sx={{
@@ -30,37 +29,34 @@ const CardProduct = ({ product }) => {
         borderRight: "1px solid #dbdbdbff",
         padding: "4px",
         position: "relative",
-        "&:hover .heart-icon": {
+        "&:hover .delete-icon": {
           opacity: 1,
           transform: "translateX(0)",
         },
       }}
     >
       <IconButton
-        onClick={() => {
-          requireLogin(() => addProductToWishlist(product));
-        }}
-        className="heart-icon"
+        onClick={() => handleDelete(product.id)}
+        className="delete-icon"
         sx={{
           position: "absolute",
           top: 9,
-          backgroundColor: "white",
           right: 9,
           bgcolor: "white",
           color: "black",
           opacity: 0,
           transform: "translateX(20px)",
-          transition: " transform 0.4s",
-          cursor: "pointer",
+          transition: "transform 0.4s, opacity 0.4s",
           "&:hover": {
-            backgroundColor: "var(--main-color)",
+            bgcolor: "red",
             color: "white",
           },
           zIndex: 10,
         }}
       >
-        <FavoriteBorderIcon sx={{ fontSize: 20 }} />
+        <AiOutlineDelete size={20} />
       </IconButton>
+
       <Box
         component={Link}
         to={`/product/${product.id}`}
@@ -72,73 +68,68 @@ const CardProduct = ({ product }) => {
           alt={product.name}
           sx={{
             objectFit: "contain",
-            "&:hover ": { scale: "1.05" },
+            "&:hover": { scale: "1.05" },
             transition: "0.5s",
             height: "260px",
             px: 2,
           }}
         />
+
         <CardContent sx={{ textAlign: "left", flexGrow: 1 }}>
           <Typography
             variant="subtitle1"
             fontWeight={600}
             fontSize={15}
+            noWrap
             sx={{
-              "&:hover": { color: "var(--main-color)" },
               cursor: "pointer",
               transition: "0.3s",
               py: "8px",
+              "&:hover": { color: "var(--main-color)" },
             }}
-            gutterBottom
-            noWrap
           >
             {product.name}
           </Typography>
+
           <Box display="flex" alignItems="center" mb={1}>
             <Rating
-              value={product.customer_reviews.average_rating}
+              value={product.customer_reviews?.average_rating || 0}
               precision={0.5}
               readOnly
               size="small"
             />
           </Box>
-          <Typography
-            variant="h6"
-            color="var(--main-color)"
-            fontWeight={700}
-            textDecoration="none"
-          >
+
+          <Typography variant="h6" color="var(--main-color)" fontWeight={700}>
             {product.price} $
           </Typography>
         </CardContent>
       </Box>
+
       <CardActions>
         <Button
           variant="contained"
-          color="gray"
-          onClick={() => {
-            requireLogin(() => addProductToCart(product));
-          }}
+          onClick={() => addProductToCart(product)}
           sx={{
             mt: 0,
             borderRadius: 2,
             width: "100%",
             textTransform: "capitalize",
+            color: "var(--main-color)",
+            transition: "all 0.5s",
+            fontSize: "16px",
             "&:hover": {
               bgcolor: "var(--main-color)",
               color: "white",
             },
-            transition: "all 0.5s",
-            fontSize: "16px",
-            color: "var(--main-color)",
-            textDecoration: "none",
+            bgcolor: "transparent",
           }}
         >
-          Add To Card
+          Add To Cart
         </Button>
       </CardActions>
     </Card>
   );
 };
 
-export default CardProduct;
+export default WishlistCard;
