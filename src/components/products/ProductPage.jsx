@@ -5,17 +5,28 @@ import { useGetProductsQuery } from "../store/apiSlice";
 import ImageGallery from "./ImageGallery";
 import ProductInfo from "./ProductInfo";
 import RelatedProductsSection from "./relatedProducts/RelatedProductsSection";
-import HeaderOfSection from "./../customHook/HeaderOfSection";
+import HeaderOfSection from "../customHook/HeaderOfSection";
 
+// ⭐ NEW — your details section BELOW image+info
+import ProductDetail from "./ProductDetail";
+import ProductDetailSection from "./ProductDetailSection";
 const ProductPage = () => {
-  const { id } = useParams(); // route: /product/:id/:slug → we only need id here
+  const { id } = useParams();
   const { data, isLoading, error } = useGetProductsQuery();
 
-  if (isLoading) return <CircularProgress sx={{ display: "block", m: 4 }} />;
-  if (error) return <Typography sx={{ m: 4 }}>Error loading product</Typography>;
+  if (isLoading) {
+    return <CircularProgress sx={{ display: "block", m: 4 }} />;
+  }
+
+  if (error) {
+    return <Typography sx={{ m: 4 }}>Error loading product</Typography>;
+  }
 
   const product = data?.find((p) => String(p.id) === String(id));
-  if (!product) return <Typography sx={{ m: 4 }}>Product not found</Typography>;
+
+  if (!product) {
+    return <Typography sx={{ m: 4 }}>Product not found</Typography>;
+  }
 
   return (
     <>
@@ -28,7 +39,7 @@ const ProductPage = () => {
         ]}
       />
 
-      {/* Main product section: image + info */}
+      {/* === MAIN PRODUCT SECTION (Image + Info) === */}
       <Box
         sx={{
           display: "flex",
@@ -41,9 +52,9 @@ const ProductPage = () => {
           sx={{
             display: "flex",
             width: "100%",
-            maxWidth: 1100,
+            maxWidth:1100,
             alignItems: "flex-start",
-            justifyContent: "center", // keep both blocks centered inside container
+            justifyContent: "center",
             "@media (max-width: 1024px)": {
               flexDirection: "column",
               alignItems: "center",
@@ -51,20 +62,20 @@ const ProductPage = () => {
             },
           }}
         >
-          {/* Image column */}
+          {/* Image section */}
           <Box
             sx={{
-              mr: { xs: 0, md: 3 }, // small horizontal space between image & info
+              mr: { xs: 0, md: 3 },
               mb: { xs: 2, md: 0 },
             }}
           >
             <ImageGallery product={product} />
           </Box>
 
-          {/* Product info column */}
+          {/* Info section */}
           <Box
             sx={{
-              ml: { xs: 0, md: 3 }, // match spacing on the other side
+              ml: { xs: 0, md: 3 },
             }}
           >
             <ProductInfo product={product} />
@@ -72,7 +83,12 @@ const ProductPage = () => {
         </Box>
       </Box>
 
-      {/* Related products under the page */}
+      {/* ⭐ Product Details Section under image + info */}
+      <Box sx={{ px: 2, pb: 4 }}>
+        <ProductDetailSection product={product} />
+      </Box>
+
+      {/* Related Products */}
       <Box sx={{ px: 2, pb: 4 }}>
         <RelatedProductsSection
           type={product.product_type}

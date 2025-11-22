@@ -43,38 +43,7 @@ const ProductDescription = ({ product }) => {
         </>
       )}
 
-      {/* CARE INSTRUCTIONS */}
-      {product.careInstructions && (
-        <>
-          <Typography
-            variant="subtitle2"
-            sx={{ fontWeight: 600, mb: 0.5, color: "var(--main-color)" }}
-          >
-            Care Instructions
-          </Typography>
-
-          <Typography sx={{ mb: 1, px: 1 }}>
-            {product.careInstructions}
-          </Typography>
-        </>
-      )}
-
-      {/* INGREDIENTS */}
-      {ingredients.length > 0 && (
-        <Box sx={{ mb: 1 }}>
-          <Typography
-            variant="subtitle2"
-            sx={{ fontWeight: 600,color:'gray'   }}
-          >
-            Ingredients
-          </Typography>
-
-          <Typography variant="body2" sx={{p:1}}>
-            {ingredients.join(", ")}
-          </Typography>
-        </Box>
-      )}
-
+ 
       {/* SKIN TYPE */}
       {skinTypes.length > 0 && (
         <Box sx={{ mb: 2 }}>
@@ -91,21 +60,7 @@ const ProductDescription = ({ product }) => {
         </Box>
       )}
 
-      {/* MANUFACTURER — SAME LINE */}
-      {manufacturer && (
-        <Box sx={{ display: "flex", gap: 1, mb: 2 }}>
-          <Typography
-            variant="subtitle2"
-            sx={{ fontWeight: 600 ,color:'gray'}}
-          >
-            Manufacturer:
-          </Typography>
-
-          <Typography variant="body2" sx={{ mt: "1px",px:1 }}>
-            {manufacturer}
-          </Typography>
-        </Box>
-      )}
+    
 
     </Box>
   );
