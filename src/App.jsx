@@ -12,6 +12,7 @@ import SignPage from "./components/registerPages/SignPage";
 import CartPage from "./components/cart/CartPage";
 import Wishlist from "./components/wishList/Wishlist";
 import SearchResult from "./components/search/SearchResult";
+import CheckoutPage from "./components/checkout/CheckoutPage";
 
 const App = () => {
   return (
@@ -27,7 +28,7 @@ const App = () => {
           <Route element={<ShopInterface />} path="/shop">
             <Route index path=":pageTitle" element={<Shop />} />
           </Route>
-          <Route path="/product/:id" element={<ProductPage />} />
+          <Route path="/product/:id/:slug" element={<ProductPage />} />
           <Route path="/elements">
             <Route path="fAQ" element={<FAQ />} />
             <Route path="about" element={<AboutUs />} />
@@ -36,6 +37,7 @@ const App = () => {
           <Route element={<ShopInterface />} path="/categories">
             <Route index path=":pageTitle" element={<Shop />} />
           </Route>
+          <Route element={<CheckoutPage />} path="/checkout" />
         </Route>
 
         <Route path="*" element={<h1>Page Not Found</h1>} />

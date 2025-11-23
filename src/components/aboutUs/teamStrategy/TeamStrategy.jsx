@@ -1,6 +1,4 @@
 import React from "react";
-import TeamStrategyDesk from "./TeamStrategyDesk";
-import { useTheme } from "@mui/material/styles";
 import {
   Container,
   Box,
@@ -9,56 +7,67 @@ import {
   AccordionDetails,
   Typography,
   Alert,
+  useMediaQuery,
+  useTheme,
 } from "@mui/material";
-import useMediaQuery from "@mui/material/useMediaQuery";
+import TeamStrategyDesk from "./TeamStrategyDesk";
 import useTeamStrategy from "./useTeamStrategy";
 
 const TeamStrategy = () => {
   const theme = useTheme();
   const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
-  const { sections, error, emptyContent, expandedPanel, setExpandedPanel } =
-    useTeamStrategy("mobile");
-  if (isDesktop) return <TeamStrategyDesk />;
-  if (error) return <Alert severity="error">{error}</Alert>;
+  const { sections, error, emptyContent, index, setIndex } = useTeamStrategy();
+
+  if (isDesktop) {
+    return (
+      <TeamStrategyDesk
+        sections={sections}
+        error={error}
+        emptyContent={emptyContent}
+        index={index}
+        setIndex={setIndex}
+      />
+    );
+  }
+
+  if (error) {
+    return (
+      <Container maxWidth="sm">
+        <Alert severity="error" sx={{ mt: 2 }}>
+          {error}
+        </Alert>
+      </Container>
+    );
+  }
+
   return (
     <Container maxWidth="sm">
       <Box sx={{ border: 1, borderColor: "divider", borderRadius: 1 }}>
         {sections.map((section, idx) => (
           <Accordion
             key={section.id}
-            elevation={0}
+            expanded={index === i}
+            onChange={() => setIndex(i)}
             disableGutters
-            square
-            expanded={expandedPanel === idx}
-            onChange={() => setExpandedPanel(idx)}
           >
-            <AccordionSummary
-              sx={{
-                px: 2,
-                py: 1.25,
-                fontWeight: 700,
-                fontSize: 18,
-                color: "black",
-              }}
-            >
-              {section.label}
+            <AccordionSummary>
+              <Typography
+                sx={{
+                  fontWeight: 700,
+                  fontSize: 18,
+                }}
+              >
+                {section.label}
+              </Typography>
             </AccordionSummary>
-            <AccordionDetails
-              sx={{
-                pt: 0,
-                px: 2,
-                pb: 2,
-                borderTop: "1px solid",
-                borderColor: "divider",
-              }}
-            >
-              {expandedPanel === idx && emptyContent ? (
-                <Alert severity="error">
+            <AccordionDetails>
+              {index === i && emptyContent ? (
+                <Alert severity="warning">
                   Section content is missing or empty.
                 </Alert>
               ) : (
-                section.body.map((text, tidx) => (
-                  <Typography key={tidx} sx={{ lineHeight: 1.9 }}>
+                section.body.map((text, j) => (
+                  <Typography key={j} sx={{ mb: 1.5, lineHeight: 1.6 }}>
                     {text}
                   </Typography>
                 ))

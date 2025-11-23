@@ -1,6 +1,6 @@
 import { AiOutlineDelete } from "react-icons/ai";
 import { Link } from "react-router-dom";
-import { useCartAndWishlist } from "../hooks/useCartAndWishlist";
+import { useCartAndWishlist } from "../customHook/useCartAndWishlist";
 import {
   Card,
   CardMedia,

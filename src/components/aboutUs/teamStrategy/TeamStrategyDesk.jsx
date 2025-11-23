@@ -10,23 +10,57 @@ import {
   Alert,
 } from "@mui/material";
 
-const TeamStrategyDesk = ({ index, onChange, data }) => {
-  const { sections, error, emptyContent, selectedTab, setSelectedTab } =
-    useTeamStrategy("desktop");
-  if (error) return <Alert severity="error">{error}</Alert>;
-  const active = sections[selectedTab];
+const TeamStrategyDesk = ({
+  sections,
+  error,
+  emptyContent,
+  index,
+  setIndex,
+}) => {
+  if (error) {
+    return (
+      <Container maxWidth="lg">
+        <Alert severity="error" sx={{ mt: 2 }}>
+          {error}
+        </Alert>
+      </Container>
+    );
+  }
+
+  const active = sections[index];
 
   return (
     <Container maxWidth="lg">
       <Tabs
-        value={selectedTab}
-        onChange={(e, i) => setSelectedTab(i)}
+        value={index}
+        onChange={(_, value) => setIndex(value)}
         centered
+        textColor="inherit"
+        TabIndicatorProps={{ style: { display: "none" } }}
         sx={{
-          ".MuiTabs-indicator": { display: "none" },
+          "& .MuiTab-root": {
+            textTransform: "none",
+            fontWeight: 600,
+            minHeight: 0,
+            py: 1.5,
+            px: 4,
+            border: "1px solid transparent",
+            borderBottom: "none",
+            color: "text.primary",
+          },
+          "& .MuiTab-root.Mui-selected": {
+            borderColor: "divider",
+            borderBottomColor: "#ffffff",
+            borderBottomWidth: 1,
+            borderBottomStyle: "solid",
+            backgroundColor: "#ffffff",
+            color: "text.primary",
+            position: "relative",
+            zIndex: 2,
+          },
         }}
       >
-        {sections.map((section, i) => (
+        {sections.map((section) => (
           <Tab
             key={section.id}
             label={section.label}
@@ -49,21 +83,26 @@ const TeamStrategyDesk = ({ index, onChange, data }) => {
         ))}
       </Tabs>
 
-      <Paper elevation={0} sx={{ bgcolor: "transparent" }}>
+      <Paper elevation={0}>
         <Box
           sx={{
             border: 1,
             borderColor: "divider",
-            bgcolor: "#fff",
-            mt: "-1px",
-            p: 2,
+            borderTop: "1px solid",
+            borderTopColor: "divider",
+            mt: -1,
+            p: 3,
+            position: "relative",
+            zIndex: 1,
           }}
         >
           {emptyContent ? (
-            <Alert severity="error">Section content is missing or empty.</Alert>
+            <Alert severity="warning">
+              Section content is missing or empty.
+            </Alert>
           ) : (
             active.body.map((text, idx) => (
-              <Typography key={idx} sx={{ lineHeight: 1.5, p: 0.5 }}>
+              <Typography key={idx} sx={{ mb: 1.5, lineHeight: 1.6 }}>
                 {text}
               </Typography>
             ))

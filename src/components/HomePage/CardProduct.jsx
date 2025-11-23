@@ -12,9 +12,11 @@ import {
 } from "@mui/material";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import { Link } from "react-router-dom";
-import { useCartAndWishlist } from "../hooks/useCartAndWishlist";
+import { useCartAndWishlist } from "../customHook/useCartAndWishlist";
+import { slugify } from "../productPage/slug";
 
 const CardProduct = ({ product }) => {
+  const slug = slugify(product.name);
   const { requireLogin, addProductToCart, addProductToWishlist } =
     useCartAndWishlist();
   return (
@@ -63,7 +65,7 @@ const CardProduct = ({ product }) => {
       </IconButton>
       <Box
         component={Link}
-        to={`/product/${product.id}`}
+        to={`/product/${product.id}/${slug}`}
         sx={{ textDecoration: "none" }}
       >
         <CardMedia
@@ -82,9 +84,10 @@ const CardProduct = ({ product }) => {
           <Typography
             variant="subtitle1"
             fontWeight={600}
-            fontSize={15}
+            fontSize={17}
             sx={{
-              "&:hover": { color: "var(--main-color)" },
+              color: "black",
+              "&:hover": { color: "var(--blue-color)" },
               cursor: "pointer",
               transition: "0.3s",
               py: "8px",

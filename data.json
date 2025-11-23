@@ -10,7 +10,11 @@
       "category": "Cleansers",
       "type": "Hydrating Cleanser",
       "product_type": "Cosmetics",
-      "skin_type": ["Normal", "Dry", "Sensitive"],
+      "skin_type": [
+        "Normal",
+        "Dry",
+        "Sensitive"
+      ],
       "benefits": [
         "Removes dirt and makeup",
         "Hydrates the skin",
@@ -30,11 +34,11 @@
         "average_rating": 4.5,
         "total_reviews": 500,
         "ratings_distribution": {
-          "5": 300,
-          "4": 125,
-          "3": 50,
+          "1": 10,
           "2": 15,
-          "1": 10
+          "3": 50,
+          "4": 125,
+          "5": 300
         },
         "top_positive_review": "Leaves skin soft and hydrated!",
         "top_negative_review": "A bit heavy for oily skin."
@@ -69,11 +73,11 @@
         "average_rating": 4.3,
         "total_reviews": 250,
         "ratings_distribution": {
-          "5": 145,
-          "4": 57,
-          "3": 23,
+          "1": 9,
           "2": 16,
-          "1": 9
+          "3": 23,
+          "4": 57,
+          "5": 145
         }
       },
       "manufacturer_name": "Sanofi/Bristol-Myers Squibb",
@@ -97,11 +101,11 @@
         "average_rating": 3.7,
         "total_reviews": 10,
         "ratings_distribution": {
-          "5": 4,
-          "4": 3,
-          "3": 1,
+          "1": 2,
           "2": 0,
-          "1": 2
+          "3": 1,
+          "4": 3,
+          "5": 4
         }
       },
       "careInstructions": "Follow manufacturer guidelines, clean with approved products, and contact technical service when needed.",
@@ -117,25 +121,33 @@
       "category": "Serums",
       "type": "Anti-Blemish Serum",
       "product_type": "Cosmetics",
-      "skin_type": ["Oily", "Combination"],
+      "skin_type": [
+        "Oily",
+        "Combination"
+      ],
       "benefits": [
         "Reduces blemishes",
         "Balances sebum",
         "Lightweight formula"
       ],
       "how_to_use": "Apply a few drops morning and evening before creams.",
-      "ingredients_list": ["Niacinamide", "Zinc PCA", "Water", "Glycerin"],
+      "ingredients_list": [
+        "Niacinamide",
+        "Zinc PCA",
+        "Water",
+        "Glycerin"
+      ],
       "inWishlist": false,
       "inCard": false,
       "customer_reviews": {
         "average_rating": 4.6,
         "total_reviews": 550,
         "ratings_distribution": {
-          "5": 330,
-          "4": 137,
-          "3": 55,
+          "1": 11,
           "2": 16,
-          "1": 11
+          "3": 55,
+          "4": 137,
+          "5": 330
         },
         "top_positive_review": "Leaves skin soft and hydrated!",
         "top_negative_review": "A bit heavy for oily skin."
@@ -143,7 +155,10 @@
       "careInstructions": "Avoid contact with eyes.",
       "image": "https://m.media-amazon.com/images/I/31NQ28l5e4L._SX342_SY445_QL70_FMwebp_.jpg",
       "made_in": "Canada",
-      "certifications": ["Vegan", "Cruelty-Free"],
+      "certifications": [
+        "Vegan",
+        "Cruelty-Free"
+      ],
       "stock_quantity": 200,
       "shipping_info": "Ships within 3-5 business days"
     },
@@ -164,11 +179,11 @@
         "average_rating": 4.2,
         "total_reviews": 203,
         "ratings_distribution": {
-          "5": 97,
-          "4": 67,
-          "3": 28,
+          "1": 5,
           "2": 6,
-          "1": 5
+          "3": 28,
+          "4": 67,
+          "5": 97
         }
       },
       "manufacturer_name": "Sanofi-Aventis",
@@ -189,14 +204,14 @@
       "inWishlist": false,
       "inCard": false,
       "customer_reviews": {
-        "average_rating": 4.0,
+        "average_rating": 4,
         "total_reviews": 25,
         "ratings_distribution": {
-          "5": 11,
-          "4": 8,
-          "3": 3,
+          "1": 2,
           "2": 1,
-          "1": 2
+          "3": 3,
+          "4": 8,
+          "5": 11
         }
       },
       "careInstructions": "Avoid water exposure, check batteries regularly, and have calibration verified by professionals.",
@@ -212,21 +227,31 @@
       "category": "Sunscreens",
       "type": "SPF 60 Broad Spectrum",
       "product_type": "Cosmetics",
-      "skin_type": ["All Skin Types"],
-      "benefits": ["High UVA/UVB protection", "Lightweight", "Fast absorbing"],
+      "skin_type": [
+        "All Skin Types"
+      ],
+      "benefits": [
+        "High UVA/UVB protection",
+        "Lightweight",
+        "Fast absorbing"
+      ],
       "how_to_use": "Apply before sun exposure, reapply every 2 hours.",
-      "ingredients_list": ["Avobenzone", "Homosalate", "Octocrylene"],
+      "ingredients_list": [
+        "Avobenzone",
+        "Homosalate",
+        "Octocrylene"
+      ],
       "inWishlist": false,
       "inCard": false,
       "customer_reviews": {
         "average_rating": 4.7,
         "total_reviews": 600,
         "ratings_distribution": {
-          "5": 360,
-          "4": 150,
-          "3": 60,
+          "1": 12,
           "2": 18,
-          "1": 12
+          "3": 60,
+          "4": 150,
+          "5": 360
         },
         "top_positive_review": "Leaves skin soft and hydrated!",
         "top_negative_review": "A bit heavy for oily skin."
@@ -234,7 +259,10 @@
       "careInstructions": "Keep out of eyes.",
       "image": "https://m.media-amazon.com/images/I/61i8dborPbL._AC_SY300_SX300_QL70_FMwebp_.jpg",
       "made_in": "France",
-      "certifications": ["Dermatologist Tested", "Fragrance-Free"],
+      "certifications": [
+        "Dermatologist Tested",
+        "Fragrance-Free"
+      ],
       "stock_quantity": 150,
       "shipping_info": "Free shipping for orders over $75"
     },
@@ -255,11 +283,11 @@
         "average_rating": 4.2,
         "total_reviews": 80,
         "ratings_distribution": {
-          "5": 40,
-          "4": 26,
-          "3": 10,
+          "1": 2,
           "2": 2,
-          "1": 2
+          "3": 10,
+          "4": 26,
+          "5": 40
         }
       },
       "manufacturer_name": "Generic (Various)",
@@ -283,11 +311,11 @@
         "average_rating": 3.95,
         "total_reviews": 40,
         "ratings_distribution": {
-          "5": 18,
-          "4": 12,
-          "3": 4,
+          "1": 4,
           "2": 2,
-          "1": 4
+          "3": 4,
+          "4": 12,
+          "5": 18
         }
       },
       "careInstructions": "Ensure regular maintenance, clean filters, and provide operator training.",
@@ -312,11 +340,11 @@
         "average_rating": 4.3,
         "total_reviews": 229,
         "ratings_distribution": {
-          "5": 130,
-          "4": 68,
-          "3": 17,
+          "1": 7,
           "2": 7,
-          "1": 7
+          "3": 17,
+          "4": 68,
+          "5": 130
         }
       },
       "manufacturer_name": "GlaxoSmithKline",
@@ -334,8 +362,14 @@
       "category": "Serums",
       "type": "Hydrating Serum",
       "product_type": "Cosmetics",
-      "skin_type": ["All Skin Types"],
-      "benefits": ["Hydrates deeply", "Plumps skin", "Soothes dryness"],
+      "skin_type": [
+        "All Skin Types"
+      ],
+      "benefits": [
+        "Hydrates deeply",
+        "Plumps skin",
+        "Soothes dryness"
+      ],
       "how_to_use": "Apply a few drops to face morning and night before moisturizer.",
       "ingredients_list": [
         "Hyaluronic Acid",
@@ -349,11 +383,11 @@
         "average_rating": 4.8,
         "total_reviews": 350,
         "ratings_distribution": {
-          "5": 220,
-          "4": 100,
-          "3": 20,
+          "1": 5,
           "2": 5,
-          "1": 5
+          "3": 20,
+          "4": 100,
+          "5": 220
         },
         "top_positive_review": "Leaves skin plump and smooth!",
         "top_negative_review": "Texture is slightly sticky."
@@ -361,7 +395,10 @@
       "careInstructions": "Use morning and night.",
       "image": "https://m.media-amazon.com/images/I/61eH32lVpdL._AC_UL320_.jpg",
       "made_in": "Canada",
-      "certifications": ["Vegan", "Cruelty-Free"],
+      "certifications": [
+        "Vegan",
+        "Cruelty-Free"
+      ],
       "stock_quantity": 150,
       "shipping_info": "Ships within 3-5 business days"
     },
@@ -382,11 +419,11 @@
         "average_rating": 4.02,
         "total_reviews": 55,
         "ratings_distribution": {
-          "5": 25,
-          "4": 17,
-          "3": 6,
+          "1": 4,
           "2": 3,
-          "1": 4
+          "3": 6,
+          "4": 17,
+          "5": 25
         }
       },
       "careInstructions": "Verify electrode placement and disinfect contact areas after each use.",
@@ -409,11 +446,11 @@
         "average_rating": 4.2,
         "total_reviews": 168,
         "ratings_distribution": {
-          "5": 82,
-          "4": 48,
-          "3": 24,
+          "1": 2,
           "2": 12,
-          "1": 2
+          "3": 24,
+          "4": 48,
+          "5": 82
         }
       },
       "manufacturer_name": "Generic (Various)",
@@ -439,11 +476,11 @@
         "average_rating": 4.2,
         "total_reviews": 344,
         "ratings_distribution": {
-          "5": 164,
-          "4": 110,
-          "3": 44,
+          "1": 9,
           "2": 17,
-          "1": 9
+          "3": 44,
+          "4": 110,
+          "5": 164
         }
       },
       "manufacturer_name": "Novartis",
@@ -467,11 +504,11 @@
         "average_rating": 4.1,
         "total_reviews": 50,
         "ratings_distribution": {
-          "5": 23,
-          "4": 16,
-          "3": 6,
+          "1": 2,
           "2": 3,
-          "1": 2
+          "3": 6,
+          "4": 16,
+          "5": 23
         }
       },
       "careInstructions": "Clean sensor with alcohol between uses and ensure battery functionality.",
@@ -488,8 +525,14 @@
       "category": "Serums",
       "type": "Hydrating Serum",
       "product_type": "Cosmetics",
-      "skin_type": ["All Skin Types"],
-      "benefits": ["Hydrates", "Plumps skin", "Smooths texture"],
+      "skin_type": [
+        "All Skin Types"
+      ],
+      "benefits": [
+        "Hydrates",
+        "Plumps skin",
+        "Smooths texture"
+      ],
       "how_to_use": "Apply 1-2 drops to face morning and night before moisturizer.",
       "ingredients_list": [
         "Hyaluronic Acid",
@@ -503,11 +546,11 @@
         "average_rating": 4.6,
         "total_reviews": 1200,
         "ratings_distribution": {
-          "5": 800,
-          "4": 300,
-          "3": 70,
+          "1": 10,
           "2": 20,
-          "1": 10
+          "3": 70,
+          "4": 300,
+          "5": 800
         },
         "top_positive_review": "Hydrates skin beautifully.",
         "top_negative_review": "May feel sticky initially."
@@ -515,7 +558,10 @@
       "careInstructions": "Use morning and night.",
       "image": "https://m.media-amazon.com/images/I/5166GsaOFcL._AC_UL320_.jpg",
       "made_in": "UK",
-      "certifications": ["Vegan", "Cruelty-Free"],
+      "certifications": [
+        "Vegan",
+        "Cruelty-Free"
+      ],
       "stock_quantity": 180,
       "shipping_info": "Ships within 3-5 business days"
     },
@@ -536,11 +582,11 @@
         "average_rating": 4.3,
         "total_reviews": 113,
         "ratings_distribution": {
-          "5": 65,
-          "4": 27,
-          "3": 11,
+          "1": 4,
           "2": 6,
-          "1": 4
+          "3": 11,
+          "4": 27,
+          "5": 65
         }
       },
       "manufacturer_name": "Eli Lilly",
@@ -564,11 +610,11 @@
         "average_rating": 3.97,
         "total_reviews": 65,
         "ratings_distribution": {
-          "5": 29,
-          "4": 20,
-          "3": 7,
+          "1": 6,
           "2": 3,
-          "1": 6
+          "3": 7,
+          "4": 20,
+          "5": 29
         }
       },
       "careInstructions": "Use only compatible infusion sets and program the pump accurately.",
@@ -585,7 +631,10 @@
       "category": "Moisturizers",
       "type": "Daily Moisturizer",
       "product_type": "Cosmetics",
-      "skin_type": ["Dry", "Sensitive"],
+      "skin_type": [
+        "Dry",
+        "Sensitive"
+      ],
       "benefits": [
         "Moisturizes deeply",
         "Smooths skin texture",
@@ -604,11 +653,11 @@
         "average_rating": 4.6,
         "total_reviews": 400,
         "ratings_distribution": {
-          "5": 250,
-          "4": 100,
-          "3": 30,
+          "1": 5,
           "2": 15,
-          "1": 5
+          "3": 30,
+          "4": 100,
+          "5": 250
         },
         "top_positive_review": "Leaves skin soft and glowing!",
         "top_negative_review": "A bit heavy for oily skin."
@@ -616,7 +665,10 @@
       "careInstructions": "Use morning and night as needed.",
       "image": "https://m.media-amazon.com/images/I/61+lUCM6GJL._SX425_.jpg",
       "made_in": "USA",
-      "certifications": ["Dermatologist Tested", "Non-Comedogenic"],
+      "certifications": [
+        "Dermatologist Tested",
+        "Non-Comedogenic"
+      ],
       "stock_quantity": 180,
       "shipping_info": "Free shipping for orders over $50"
     },
@@ -637,11 +689,11 @@
         "average_rating": 4.4,
         "total_reviews": 324,
         "ratings_distribution": {
-          "5": 190,
-          "4": 94,
-          "3": 21,
+          "1": 10,
           "2": 9,
-          "1": 10
+          "3": 21,
+          "4": 94,
+          "5": 190
         }
       },
       "manufacturer_name": "Bayer",
@@ -665,11 +717,11 @@
         "average_rating": 4.01,
         "total_reviews": 80,
         "ratings_distribution": {
-          "5": 36,
-          "4": 25,
-          "3": 9,
+          "1": 6,
           "2": 4,
-          "1": 6
+          "3": 9,
+          "4": 25,
+          "5": 36
         }
       },
       "careInstructions": "Replace test strips regularly and store the meter in a dry environment.",
@@ -686,25 +738,32 @@
       "category": "Toners",
       "type": "Balancing Toner",
       "product_type": "Cosmetics",
-      "skin_type": ["Oily", "Combination"],
+      "skin_type": [
+        "Oily",
+        "Combination"
+      ],
       "benefits": [
         "Balances skin tone",
         "Reduces oiliness",
         "Soothes irritation"
       ],
       "how_to_use": "Apply as directed on clean skin.",
-      "ingredients_list": ["Water", "Glycerin", "Botanical Extracts"],
+      "ingredients_list": [
+        "Water",
+        "Glycerin",
+        "Botanical Extracts"
+      ],
       "inWishlist": false,
       "inCard": false,
       "customer_reviews": {
         "average_rating": 4.4,
         "total_reviews": 220,
         "ratings_distribution": {
-          "5": 130,
-          "4": 60,
-          "3": 20,
+          "1": 5,
           "2": 5,
-          "1": 5
+          "3": 20,
+          "4": 60,
+          "5": 130
         },
         "top_positive_review": "Leaves skin soft and glowing!",
         "top_negative_review": "A bit heavy for oily skin."
@@ -712,7 +771,9 @@
       "careInstructions": "Use morning and night as needed.",
       "image": "https://m.media-amazon.com/images/I/61V1nmkg2eL._SX425_.jpg",
       "made_in": "Germany",
-      "certifications": ["Dermatologist Tested"],
+      "certifications": [
+        "Dermatologist Tested"
+      ],
       "stock_quantity": 140,
       "shipping_info": "Ships within 3-5 business days"
     },
@@ -735,11 +796,11 @@
         "average_rating": 4.2,
         "total_reviews": 152,
         "ratings_distribution": {
-          "5": 74,
-          "4": 50,
-          "3": 19,
+          "1": 1,
           "2": 8,
-          "1": 1
+          "3": 19,
+          "4": 50,
+          "5": 74
         }
       },
       "manufacturer_name": "Pfizer",
@@ -763,11 +824,11 @@
         "average_rating": 4.04,
         "total_reviews": 95,
         "ratings_distribution": {
-          "5": 43,
-          "4": 30,
-          "3": 11,
+          "1": 6,
           "2": 5,
-          "1": 6
+          "3": 11,
+          "4": 30,
+          "5": 43
         }
       },
       "careInstructions": "Keep away from moisture, and update software when available.",
@@ -792,11 +853,11 @@
         "average_rating": 4.4,
         "total_reviews": 473,
         "ratings_distribution": {
-          "5": 272,
-          "4": 150,
-          "3": 29,
+          "1": 10,
           "2": 12,
-          "1": 10
+          "3": 29,
+          "4": 150,
+          "5": 272
         }
       },
       "manufacturer_name": "AstraZeneca",
@@ -814,21 +875,32 @@
       "category": "Face Masks",
       "type": "Detox Mask",
       "product_type": "Cosmetics",
-      "skin_type": ["All Skin Types"],
-      "benefits": ["Detoxifies", "Removes impurities", "Brightens complexion"],
+      "skin_type": [
+        "All Skin Types"
+      ],
+      "benefits": [
+        "Detoxifies",
+        "Removes impurities",
+        "Brightens complexion"
+      ],
       "how_to_use": "Apply as directed on clean skin.",
-      "ingredients_list": ["Kaolin", "Charcoal", "Water", "Glycerin"],
+      "ingredients_list": [
+        "Kaolin",
+        "Charcoal",
+        "Water",
+        "Glycerin"
+      ],
       "inWishlist": false,
       "inCard": false,
       "customer_reviews": {
         "average_rating": 4.7,
         "total_reviews": 300,
         "ratings_distribution": {
-          "5": 180,
-          "4": 90,
-          "3": 20,
+          "1": 5,
           "2": 5,
-          "1": 5
+          "3": 20,
+          "4": 90,
+          "5": 180
         },
         "top_positive_review": "Leaves skin soft and glowing!",
         "top_negative_review": "A bit strong for sensitive skin."
@@ -836,7 +908,10 @@
       "careInstructions": "Use 2-3 times per week.",
       "image": "https://m.media-amazon.com/images/I/41I90W9bHuL._SX342_SY445_QL70_FMwebp_.jpg",
       "made_in": "France",
-      "certifications": ["Dermatologist Tested", "Non-Comedogenic"],
+      "certifications": [
+        "Dermatologist Tested",
+        "Non-Comedogenic"
+      ],
       "stock_quantity": 130,
       "shipping_info": "Free shipping for orders over $50"
     },
@@ -857,11 +932,11 @@
         "average_rating": 4.03,
         "total_reviews": 90,
         "ratings_distribution": {
-          "5": 41,
-          "4": 28,
-          "3": 10,
+          "1": 6,
           "2": 5,
-          "1": 6
+          "3": 10,
+          "4": 28,
+          "5": 41
         }
       },
       "careInstructions": "Ensure radiation shielding and operator safety training before use.",
@@ -884,11 +959,11 @@
         "average_rating": 4.4,
         "total_reviews": 98,
         "ratings_distribution": {
-          "5": 56,
-          "4": 30,
-          "3": 7,
+          "1": 1,
           "2": 4,
-          "1": 1
+          "3": 7,
+          "4": 30,
+          "5": 56
         }
       },
       "manufacturer_name": "Pfizer",
@@ -906,21 +981,33 @@
       "category": "Serums",
       "type": "Anti-Aging Serum",
       "product_type": "Cosmetics",
-      "skin_type": ["Dry", "Sensitive"],
-      "benefits": ["Reduces wrinkles", "Boosts collagen", "Smooths texture"],
+      "skin_type": [
+        "Dry",
+        "Sensitive"
+      ],
+      "benefits": [
+        "Reduces wrinkles",
+        "Boosts collagen",
+        "Smooths texture"
+      ],
       "how_to_use": "Apply as directed on clean skin.",
-      "ingredients_list": ["Retinol", "Peptides", "Water", "Glycerin"],
+      "ingredients_list": [
+        "Retinol",
+        "Peptides",
+        "Water",
+        "Glycerin"
+      ],
       "inWishlist": false,
       "inCard": false,
       "customer_reviews": {
         "average_rating": 4.8,
         "total_reviews": 450,
         "ratings_distribution": {
-          "5": 300,
-          "4": 120,
-          "3": 20,
+          "1": 5,
           "2": 5,
-          "1": 5
+          "3": 20,
+          "4": 120,
+          "5": 300
         },
         "top_positive_review": "Leaves skin soft and glowing!",
         "top_negative_review": "Too strong for sensitive skin at first."
@@ -928,7 +1015,10 @@
       "careInstructions": "Use at night only.",
       "image": "https://m.media-amazon.com/images/I/61sdQicm++L._SX522_.jpg",
       "made_in": "USA",
-      "certifications": ["Vegan", "Cruelty-Free"],
+      "certifications": [
+        "Vegan",
+        "Cruelty-Free"
+      ],
       "stock_quantity": 110,
       "shipping_info": "Ships within 3-5 business days"
     },
@@ -949,11 +1039,11 @@
         "average_rating": 4.06,
         "total_reviews": 105,
         "ratings_distribution": {
-          "5": 48,
-          "4": 33,
-          "3": 12,
+          "1": 6,
           "2": 6,
-          "1": 6
+          "3": 12,
+          "4": 33,
+          "5": 48
         }
       },
       "careInstructions": "Perform calibration checks regularly and handle samples per lab safety protocols.",
@@ -978,11 +1068,11 @@
         "average_rating": 4.2,
         "total_reviews": 454,
         "ratings_distribution": {
-          "5": 213,
-          "4": 169,
-          "3": 50,
+          "1": 7,
           "2": 15,
-          "1": 7
+          "3": 50,
+          "4": 169,
+          "5": 213
         }
       },
       "manufacturer_name": "Merck",
@@ -1000,7 +1090,10 @@
       "category": "Toners",
       "type": "Hydrating Toner",
       "product_type": "Cosmetics",
-      "skin_type": ["Normal", "Dry"],
+      "skin_type": [
+        "Normal",
+        "Dry"
+      ],
       "benefits": [
         "Balances skin tone",
         "Soothes irritation",
@@ -1019,11 +1112,11 @@
         "average_rating": 4.6,
         "total_reviews": 250,
         "ratings_distribution": {
-          "5": 150,
-          "4": 70,
-          "3": 20,
+          "1": 5,
           "2": 5,
-          "1": 5
+          "3": 20,
+          "4": 70,
+          "5": 150
         },
         "top_positive_review": "Leaves skin soft and glowing!",
         "top_negative_review": "A bit heavy for oily skin."
@@ -1031,7 +1124,10 @@
       "careInstructions": "Use morning and night as needed.",
       "image": "https://m.media-amazon.com/images/I/51D9UzBWcqL._SX522_.jpg",
       "made_in": "France",
-      "certifications": ["Dermatologist Tested", "Non-Comedogenic"],
+      "certifications": [
+        "Dermatologist Tested",
+        "Non-Comedogenic"
+      ],
       "stock_quantity": 140,
       "shipping_info": "Free shipping for orders over $50"
     },
@@ -1052,11 +1148,11 @@
         "average_rating": 4.08,
         "total_reviews": 120,
         "ratings_distribution": {
-          "5": 55,
-          "4": 38,
-          "3": 14,
+          "1": 6,
           "2": 7,
-          "1": 6
+          "3": 14,
+          "4": 38,
+          "5": 55
         }
       },
       "careInstructions": "Clean lenses carefully and avoid excessive bending of the flexible tube.",
@@ -1073,21 +1169,33 @@
       "category": "Cleansers",
       "type": "Brightening Cleanser",
       "product_type": "Cosmetics",
-      "skin_type": ["Normal", "Combination"],
-      "benefits": ["Brightens complexion", "Cleans deeply", "Hydrates"],
+      "skin_type": [
+        "Normal",
+        "Combination"
+      ],
+      "benefits": [
+        "Brightens complexion",
+        "Cleans deeply",
+        "Hydrates"
+      ],
       "how_to_use": "Apply as directed on clean skin.",
-      "ingredients_list": ["Water", "Glycerin", "Vitamin C", "Emollients"],
+      "ingredients_list": [
+        "Water",
+        "Glycerin",
+        "Vitamin C",
+        "Emollients"
+      ],
       "inWishlist": false,
       "inCard": false,
       "customer_reviews": {
         "average_rating": 4.5,
         "total_reviews": 300,
         "ratings_distribution": {
-          "5": 180,
-          "4": 90,
-          "3": 20,
+          "1": 5,
           "2": 5,
-          "1": 5
+          "3": 20,
+          "4": 90,
+          "5": 180
         },
         "top_positive_review": "Leaves skin soft and glowing!",
         "top_negative_review": "A bit strong for sensitive skin."
@@ -1095,7 +1203,10 @@
       "careInstructions": "Use morning and night as needed.",
       "image": "https://m.media-amazon.com/images/I/61QEs13s9-L._SX425_.jpg",
       "made_in": "USA",
-      "certifications": ["Dermatologist Tested", "Non-Comedogenic"],
+      "certifications": [
+        "Dermatologist Tested",
+        "Non-Comedogenic"
+      ],
       "stock_quantity": 150,
       "shipping_info": "Ships within 3-5 business days"
     },
@@ -1118,11 +1229,11 @@
         "average_rating": 4.3,
         "total_reviews": 425,
         "ratings_distribution": {
-          "5": 241,
-          "4": 112,
-          "3": 45,
+          "1": 5,
           "2": 22,
-          "1": 5
+          "3": 45,
+          "4": 112,
+          "5": 241
         }
       },
       "manufacturer_name": "GlaxoSmithKline",
@@ -1146,11 +1257,11 @@
         "average_rating": 4.09,
         "total_reviews": 135,
         "ratings_distribution": {
-          "5": 62,
-          "4": 43,
-          "3": 16,
+          "1": 6,
           "2": 8,
-          "1": 6
+          "3": 16,
+          "4": 43,
+          "5": 62
         }
       },
       "careInstructions": "Charge battery regularly and inspect safety straps before each use.",
@@ -1173,11 +1284,11 @@
         "average_rating": 4.3,
         "total_reviews": 465,
         "ratings_distribution": {
-          "5": 262,
-          "4": 119,
-          "3": 45,
+          "1": 17,
           "2": 22,
-          "1": 17
+          "3": 45,
+          "4": 119,
+          "5": 262
         }
       },
       "manufacturer_name": "UCB",
@@ -1195,8 +1306,15 @@
       "category": "Moisturizers",
       "type": "Moisturizing Cream",
       "product_type": "Cosmetics",
-      "skin_type": ["Dry", "Sensitive"],
-      "benefits": ["Deep hydration", "Restores skin barrier", "Non-greasy"],
+      "skin_type": [
+        "Dry",
+        "Sensitive"
+      ],
+      "benefits": [
+        "Deep hydration",
+        "Restores skin barrier",
+        "Non-greasy"
+      ],
       "how_to_use": "Apply as directed on clean skin.",
       "ingredients_list": [
         "Water",
@@ -1210,11 +1328,11 @@
         "average_rating": 4.8,
         "total_reviews": 400,
         "ratings_distribution": {
-          "5": 250,
-          "4": 100,
-          "3": 30,
+          "1": 5,
           "2": 15,
-          "1": 5
+          "3": 30,
+          "4": 100,
+          "5": 250
         },
         "top_positive_review": "Leaves skin soft and glowing!",
         "top_negative_review": "Slightly thick for oily skin."
@@ -1222,7 +1340,10 @@
       "careInstructions": "Use morning and night as needed.",
       "image": "https://m.media-amazon.com/images/I/61pIL2maVKL._SX425_.jpg",
       "made_in": "USA",
-      "certifications": ["Dermatologist Tested", "Fragrance-Free"],
+      "certifications": [
+        "Dermatologist Tested",
+        "Fragrance-Free"
+      ],
       "stock_quantity": 180,
       "shipping_info": "Free shipping for orders over $50"
     },
@@ -1243,11 +1364,11 @@
         "average_rating": 4.05,
         "total_reviews": 130,
         "ratings_distribution": {
-          "5": 59,
-          "4": 41,
-          "3": 15,
+          "1": 8,
           "2": 7,
-          "1": 8
+          "3": 15,
+          "4": 41,
+          "5": 59
         }
       },
       "careInstructions": "Ensure proper electrode contact and avoid metal interference during testing.",
@@ -1270,11 +1391,11 @@
         "average_rating": 4.3,
         "total_reviews": 399,
         "ratings_distribution": {
-          "5": 230,
-          "4": 118,
-          "3": 25,
+          "1": 14,
           "2": 12,
-          "1": 14
+          "3": 25,
+          "4": 118,
+          "5": 230
         }
       },
       "manufacturer_name": "Sanofi-Aventis",
@@ -1292,21 +1413,34 @@
       "category": "Serums",
       "type": "Vitamin C Serum",
       "product_type": "Cosmetics",
-      "skin_type": ["Normal", "Dry", "Combination"],
-      "benefits": ["Brightens skin", "Hydrates", "Reduces dark spots"],
+      "skin_type": [
+        "Normal",
+        "Dry",
+        "Combination"
+      ],
+      "benefits": [
+        "Brightens skin",
+        "Hydrates",
+        "Reduces dark spots"
+      ],
       "how_to_use": "Apply a few drops morning and evening before creams.",
-      "ingredients_list": ["Vitamin C", "Hyaluronic Acid", "Water", "Glycerin"],
+      "ingredients_list": [
+        "Vitamin C",
+        "Hyaluronic Acid",
+        "Water",
+        "Glycerin"
+      ],
       "inWishlist": false,
       "inCard": false,
       "customer_reviews": {
         "average_rating": 4.7,
         "total_reviews": 350,
         "ratings_distribution": {
-          "5": 200,
-          "4": 100,
-          "3": 30,
+          "1": 5,
           "2": 15,
-          "1": 5
+          "3": 30,
+          "4": 100,
+          "5": 200
         },
         "top_positive_review": "Leaves skin soft and glowing!",
         "top_negative_review": "A bit sticky at first."
@@ -1314,7 +1448,10 @@
       "careInstructions": "Use morning and night as needed.",
       "image": "https://m.media-amazon.com/images/I/61CoGM8m3NL._SX522_.jpg",
       "made_in": "Canada",
-      "certifications": ["Vegan", "Cruelty-Free"],
+      "certifications": [
+        "Vegan",
+        "Cruelty-Free"
+      ],
       "stock_quantity": 150,
       "shipping_info": "Ships within 3-5 business days"
     },
@@ -1335,11 +1472,11 @@
         "average_rating": 4.06,
         "total_reviews": 145,
         "ratings_distribution": {
-          "5": 66,
-          "4": 46,
-          "3": 17,
+          "1": 8,
           "2": 8,
-          "1": 8
+          "3": 17,
+          "4": 46,
+          "5": 66
         }
       },
       "careInstructions": "Operate within safe speed limits and follow lab safety procedures.",
@@ -1362,11 +1499,11 @@
         "average_rating": 4.2,
         "total_reviews": 286,
         "ratings_distribution": {
-          "5": 153,
-          "4": 78,
-          "3": 33,
+          "1": 9,
           "2": 13,
-          "1": 9
+          "3": 33,
+          "4": 78,
+          "5": 153
         }
       },
       "manufacturer_name": "Generic (Various)",
@@ -1384,21 +1521,33 @@
       "category": "Cleansers",
       "type": "Effaclar Cleanser",
       "product_type": "Cosmetics",
-      "skin_type": ["Oily", "Combination"],
-      "benefits": ["Removes impurities", "Reduces blemishes", "Balances oil"],
+      "skin_type": [
+        "Oily",
+        "Combination"
+      ],
+      "benefits": [
+        "Removes impurities",
+        "Reduces blemishes",
+        "Balances oil"
+      ],
       "how_to_use": "Apply as directed on wet skin.",
-      "ingredients_list": ["Salicylic Acid", "Zinc PCA", "Water", "Glycerin"],
+      "ingredients_list": [
+        "Salicylic Acid",
+        "Zinc PCA",
+        "Water",
+        "Glycerin"
+      ],
       "inWishlist": false,
       "inCard": false,
       "customer_reviews": {
         "average_rating": 4.6,
         "total_reviews": 280,
         "ratings_distribution": {
-          "5": 160,
-          "4": 80,
-          "3": 20,
+          "1": 10,
           "2": 10,
-          "1": 10
+          "3": 20,
+          "4": 80,
+          "5": 160
         },
         "top_positive_review": "Leaves skin soft and glowing!",
         "top_negative_review": "A bit drying for sensitive skin."
@@ -1406,7 +1555,10 @@
       "careInstructions": "Use morning and night as needed.",
       "image": "https://m.media-amazon.com/images/I/71JWbDFDOyL._SX522_.jpg",
       "made_in": "France",
-      "certifications": ["Dermatologist Tested", "Non-Comedogenic"],
+      "certifications": [
+        "Dermatologist Tested",
+        "Non-Comedogenic"
+      ],
       "stock_quantity": 140,
       "shipping_info": "Free shipping for orders over $50"
     },
@@ -1427,11 +1579,11 @@
         "average_rating": 4.08,
         "total_reviews": 160,
         "ratings_distribution": {
-          "5": 73,
-          "4": 51,
-          "3": 19,
+          "1": 8,
           "2": 9,
-          "1": 8
+          "3": 19,
+          "4": 51,
+          "5": 73
         }
       },
       "careInstructions": "Monitor temperature and pressure regularly and perform scheduled maintenance.",
@@ -1454,11 +1606,11 @@
         "average_rating": 4.5,
         "total_reviews": 170,
         "ratings_distribution": {
-          "5": 114,
-          "4": 36,
-          "3": 11,
+          "1": 4,
           "2": 5,
-          "1": 4
+          "3": 11,
+          "4": 36,
+          "5": 114
         }
       },
       "manufacturer_name": "Bayer",
@@ -1476,25 +1628,33 @@
       "category": "Moisturizers",
       "type": "Oil-Free Moisturizer",
       "product_type": "Cosmetics",
-      "skin_type": ["Oily", "Combination"],
+      "skin_type": [
+        "Oily",
+        "Combination"
+      ],
       "benefits": [
         "Hydrates without grease",
         "Smooths skin",
         "Non-comedogenic"
       ],
       "how_to_use": "Apply as directed on clean skin.",
-      "ingredients_list": ["Glycerin", "Dimethicone", "Water", "Emollients"],
+      "ingredients_list": [
+        "Glycerin",
+        "Dimethicone",
+        "Water",
+        "Emollients"
+      ],
       "inWishlist": false,
       "inCard": false,
       "customer_reviews": {
         "average_rating": 4.5,
         "total_reviews": 300,
         "ratings_distribution": {
-          "5": 180,
-          "4": 80,
-          "3": 25,
+          "1": 5,
           "2": 10,
-          "1": 5
+          "3": 25,
+          "4": 80,
+          "5": 180
         },
         "top_positive_review": "Leaves skin soft and glowing!",
         "top_negative_review": "Feels light, may need layering."
@@ -1502,7 +1662,10 @@
       "careInstructions": "Use morning and night as needed.",
       "image": "https://m.media-amazon.com/images/I/6139DKhA2iL._SX425_.jpg",
       "made_in": "USA",
-      "certifications": ["Dermatologist Tested", "Non-Comedogenic"],
+      "certifications": [
+        "Dermatologist Tested",
+        "Non-Comedogenic"
+      ],
       "stock_quantity": 160,
       "shipping_info": "Ships within 3-5 business days"
     },
@@ -1523,11 +1686,11 @@
         "average_rating": 4.09,
         "total_reviews": 175,
         "ratings_distribution": {
-          "5": 80,
-          "4": 56,
-          "3": 21,
+          "1": 8,
           "2": 10,
-          "1": 8
+          "3": 21,
+          "4": 56,
+          "5": 80
         }
       },
       "careInstructions": "Wear eye protection and follow safe laser operation guidelines.",
@@ -1550,11 +1713,11 @@
         "average_rating": 4.4,
         "total_reviews": 366,
         "ratings_distribution": {
-          "5": 203,
-          "4": 121,
-          "3": 21,
+          "1": 5,
           "2": 16,
-          "1": 5
+          "3": 21,
+          "4": 121,
+          "5": 203
         }
       },
       "manufacturer_name": "Roche",
@@ -1578,11 +1741,11 @@
         "average_rating": 4.4,
         "total_reviews": 290,
         "ratings_distribution": {
-          "5": 168,
-          "4": 80,
-          "3": 31,
+          "1": 5,
           "2": 6,
-          "1": 5
+          "3": 31,
+          "4": 80,
+          "5": 168
         }
       },
       "manufacturer_name": "Generic (Various)",
@@ -1606,11 +1769,11 @@
         "average_rating": 4.08,
         "total_reviews": 170,
         "ratings_distribution": {
-          "5": 78,
-          "4": 54,
-          "3": 20,
+          "1": 8,
           "2": 10,
-          "1": 8
+          "3": 20,
+          "4": 54,
+          "5": 78
         }
       },
       "careInstructions": "Calibrate periodically and interpret results with specialist assistance.",
@@ -1627,21 +1790,33 @@
       "category": "Moisturizers",
       "type": "Daily Hydrating Lotion",
       "product_type": "Cosmetics",
-      "skin_type": ["Dry", "Sensitive"],
-      "benefits": ["Moisturizes deeply", "Restores skin barrier", "Non-greasy"],
+      "skin_type": [
+        "Dry",
+        "Sensitive"
+      ],
+      "benefits": [
+        "Moisturizes deeply",
+        "Restores skin barrier",
+        "Non-greasy"
+      ],
       "how_to_use": "Apply as directed on clean skin.",
-      "ingredients_list": ["Water", "Glycerin", "Panthenol", "Emollients"],
+      "ingredients_list": [
+        "Water",
+        "Glycerin",
+        "Panthenol",
+        "Emollients"
+      ],
       "inWishlist": false,
       "inCard": false,
       "customer_reviews": {
         "average_rating": 4.6,
         "total_reviews": 200,
         "ratings_distribution": {
-          "5": 120,
-          "4": 50,
-          "3": 20,
+          "1": 5,
           "2": 5,
-          "1": 5
+          "3": 20,
+          "4": 50,
+          "5": 120
         },
         "top_positive_review": "Leaves skin soft and glowing!",
         "top_negative_review": "Slightly thick for oily skin."
@@ -1649,7 +1824,10 @@
       "careInstructions": "Use morning and night as needed.",
       "image": "https://m.media-amazon.com/images/I/41YBqmOqSCL._SX425_.jpg",
       "made_in": "Germany",
-      "certifications": ["Dermatologist Tested", "Fragrance-Free"],
+      "certifications": [
+        "Dermatologist Tested",
+        "Fragrance-Free"
+      ],
       "stock_quantity": 130,
       "shipping_info": "Free shipping for orders over $50"
     },
@@ -1664,7 +1842,9 @@
       "category": "Sunscreens",
       "type": "Mineral Sunscreen SPF50",
       "product_type": "Cosmetics",
-      "skin_type": ["All Skin Types"],
+      "skin_type": [
+        "All Skin Types"
+      ],
       "benefits": [
         "Protects from UVA/UVB",
         "Non-greasy",
@@ -1683,11 +1863,11 @@
         "average_rating": 4.7,
         "total_reviews": 320,
         "ratings_distribution": {
-          "5": 200,
-          "4": 90,
-          "3": 20,
+          "1": 5,
           "2": 5,
-          "1": 5
+          "3": 20,
+          "4": 90,
+          "5": 200
         },
         "top_positive_review": "Leaves skin soft and glowing!",
         "top_negative_review": "May leave white cast."
@@ -1695,7 +1875,10 @@
       "careInstructions": "Reapply every 2 hours.",
       "image": "https://m.media-amazon.com/images/I/71QouitPbdL._SX425_.jpg",
       "made_in": "France",
-      "certifications": ["Dermatologist Tested", "Fragrance-Free"],
+      "certifications": [
+        "Dermatologist Tested",
+        "Fragrance-Free"
+      ],
       "stock_quantity": 140,
       "shipping_info": "Free shipping for orders over $75"
     },
@@ -1716,11 +1899,11 @@
         "average_rating": 4.09,
         "total_reviews": 185,
         "ratings_distribution": {
-          "5": 85,
-          "4": 59,
-          "3": 22,
+          "1": 8,
           "2": 11,
-          "1": 8
+          "3": 22,
+          "4": 59,
+          "5": 85
         }
       },
       "careInstructions": "Train staff for emergency procedures and check battery and electrode conditions.",
@@ -1743,11 +1926,11 @@
         "average_rating": 4.4,
         "total_reviews": 275,
         "ratings_distribution": {
-          "5": 154,
-          "4": 89,
-          "3": 25,
+          "1": 2,
           "2": 5,
-          "1": 2
+          "3": 25,
+          "4": 89,
+          "5": 154
         }
       },
       "manufacturer_name": "Generic (Various)",
@@ -1765,21 +1948,33 @@
       "category": "Toners",
       "type": "Pore-Reducing Toner",
       "product_type": "Cosmetics",
-      "skin_type": ["Oily", "Combination"],
-      "benefits": ["Reduces pore size", "Balances oil", "Soothes skin"],
+      "skin_type": [
+        "Oily",
+        "Combination"
+      ],
+      "benefits": [
+        "Reduces pore size",
+        "Balances oil",
+        "Soothes skin"
+      ],
       "how_to_use": "Apply with cotton pad morning and night.",
-      "ingredients_list": ["Niacinamide", "Witch Hazel", "Water", "Glycerin"],
+      "ingredients_list": [
+        "Niacinamide",
+        "Witch Hazel",
+        "Water",
+        "Glycerin"
+      ],
       "inWishlist": false,
       "inCard": false,
       "customer_reviews": {
         "average_rating": 4.5,
         "total_reviews": 250,
         "ratings_distribution": {
-          "5": 150,
-          "4": 70,
-          "3": 20,
+          "1": 5,
           "2": 5,
-          "1": 5
+          "3": 20,
+          "4": 70,
+          "5": 150
         },
         "top_positive_review": "Leaves skin soft and glowing!",
         "top_negative_review": "A bit strong for sensitive skin."
@@ -1787,7 +1982,10 @@
       "careInstructions": "Use morning and night as needed.",
       "image": "https://m.media-amazon.com/images/I/619wBopsFLL._SX522_.jpg",
       "made_in": "USA",
-      "certifications": ["Vegan", "Cruelty-Free"],
+      "certifications": [
+        "Vegan",
+        "Cruelty-Free"
+      ],
       "stock_quantity": 120,
       "shipping_info": "Ships within 3-5 business days"
     },
@@ -1808,11 +2006,11 @@
         "average_rating": 4.1,
         "total_reviews": 200,
         "ratings_distribution": {
-          "5": 92,
-          "4": 64,
-          "3": 24,
+          "1": 8,
           "2": 12,
-          "1": 8
+          "3": 24,
+          "4": 64,
+          "5": 92
         }
       },
       "careInstructions": "Clean regularly and dispose of waste safely as per lab policy.",
@@ -1835,11 +2033,11 @@
         "average_rating": 4.3,
         "total_reviews": 452,
         "ratings_distribution": {
-          "5": 254,
-          "4": 124,
-          "3": 41,
+          "1": 11,
           "2": 22,
-          "1": 11
+          "3": 41,
+          "4": 124,
+          "5": 254
         }
       },
       "manufacturer_name": "Generic (Various)",
@@ -1857,25 +2055,33 @@
       "category": "Face Masks",
       "type": "Sebium Mask",
       "product_type": "Cosmetics",
-      "skin_type": ["Oily", "Combination"],
+      "skin_type": [
+        "Oily",
+        "Combination"
+      ],
       "benefits": [
         "Reduces oiliness",
         "Detoxifies skin",
         "Brightens complexion"
       ],
       "how_to_use": "Apply 1-2 times per week on clean skin.",
-      "ingredients_list": ["Kaolin", "Salicylic Acid", "Water", "Glycerin"],
+      "ingredients_list": [
+        "Kaolin",
+        "Salicylic Acid",
+        "Water",
+        "Glycerin"
+      ],
       "inWishlist": false,
       "inCard": false,
       "customer_reviews": {
         "average_rating": 4.6,
         "total_reviews": 280,
         "ratings_distribution": {
-          "5": 160,
-          "4": 80,
-          "3": 25,
+          "1": 5,
           "2": 10,
-          "1": 5
+          "3": 25,
+          "4": 80,
+          "5": 160
         },
         "top_positive_review": "Leaves skin soft and glowing!",
         "top_negative_review": "A bit drying if overused."
@@ -1883,7 +2089,10 @@
       "careInstructions": "Use 1-2 times per week.",
       "image": "https://m.media-amazon.com/images/I/31ufRI+IJDL._SX342_SY445_QL70_FMwebp_.jpg",
       "made_in": "France",
-      "certifications": ["Dermatologist Tested", "Non-Comedogenic"],
+      "certifications": [
+        "Dermatologist Tested",
+        "Non-Comedogenic"
+      ],
       "stock_quantity": 130,
       "shipping_info": "Free shipping for orders over $50"
     },
@@ -1904,11 +2113,11 @@
         "average_rating": 4.06,
         "total_reviews": 215,
         "ratings_distribution": {
-          "5": 98,
-          "4": 68,
-          "3": 25,
+          "1": 12,
           "2": 12,
-          "1": 12
+          "3": 25,
+          "4": 68,
+          "5": 98
         }
       },
       "careInstructions": "Disinfect between patients and inspect electrical connections.",
@@ -1925,21 +2134,33 @@
       "category": "Serums",
       "type": "Retinol Serum",
       "product_type": "Cosmetics",
-      "skin_type": ["Dry", "Sensitive"],
-      "benefits": ["Reduces fine lines", "Smooths skin", "Boosts collagen"],
+      "skin_type": [
+        "Dry",
+        "Sensitive"
+      ],
+      "benefits": [
+        "Reduces fine lines",
+        "Smooths skin",
+        "Boosts collagen"
+      ],
       "how_to_use": "Apply a few drops at night before moisturizer.",
-      "ingredients_list": ["Retinol", "Glycerin", "Water", "Emollients"],
+      "ingredients_list": [
+        "Retinol",
+        "Glycerin",
+        "Water",
+        "Emollients"
+      ],
       "inWishlist": false,
       "inCard": false,
       "customer_reviews": {
         "average_rating": 4.8,
         "total_reviews": 350,
         "ratings_distribution": {
-          "5": 200,
-          "4": 100,
-          "3": 30,
+          "1": 5,
           "2": 15,
-          "1": 5
+          "3": 30,
+          "4": 100,
+          "5": 200
         },
         "top_positive_review": "Leaves skin soft and glowing!",
         "top_negative_review": "Can cause mild irritation at first."
@@ -1947,7 +2168,10 @@
       "careInstructions": "Use at night only.",
       "image": "https://m.media-amazon.com/images/I/41pe2sy2JqL._SX522_.jpg",
       "made_in": "Canada",
-      "certifications": ["Vegan", "Cruelty-Free"],
+      "certifications": [
+        "Vegan",
+        "Cruelty-Free"
+      ],
       "stock_quantity": 150,
       "shipping_info": "Ships within 3-5 business days"
     },
@@ -1968,11 +2192,11 @@
         "average_rating": 4.4,
         "total_reviews": 62,
         "ratings_distribution": {
-          "5": 34,
-          "4": 21,
-          "3": 5,
+          "1": 1,
           "2": 1,
-          "1": 1
+          "3": 5,
+          "4": 21,
+          "5": 34
         }
       },
       "manufacturer_name": "Sanofi/Eli Lilly",
@@ -1996,11 +2220,11 @@
         "average_rating": 4.08,
         "total_reviews": 210,
         "ratings_distribution": {
-          "5": 96,
-          "4": 67,
-          "3": 25,
+          "1": 10,
           "2": 12,
-          "1": 10
+          "3": 25,
+          "4": 67,
+          "5": 96
         }
       },
       "careInstructions": "Clean lenses and calibrate routinely under technician supervision.",
@@ -2023,11 +2247,11 @@
         "average_rating": 4.4,
         "total_reviews": 401,
         "ratings_distribution": {
-          "5": 222,
-          "4": 140,
-          "3": 21,
+          "1": 6,
           "2": 12,
-          "1": 6
+          "3": 21,
+          "4": 140,
+          "5": 222
         }
       },
       "manufacturer_name": "Sanofi-Aventis",
@@ -2045,21 +2269,33 @@
       "category": "Moisturizers",
       "type": "Toleriane Moisturizer",
       "product_type": "Cosmetics",
-      "skin_type": ["Sensitive", "Dry"],
-      "benefits": ["Hydrates deeply", "Soothes skin", "Non-comedogenic"],
+      "skin_type": [
+        "Sensitive",
+        "Dry"
+      ],
+      "benefits": [
+        "Hydrates deeply",
+        "Soothes skin",
+        "Non-comedogenic"
+      ],
       "how_to_use": "Apply morning and night after cleansing.",
-      "ingredients_list": ["Water", "Ceramides", "Niacinamide", "Emollients"],
+      "ingredients_list": [
+        "Water",
+        "Ceramides",
+        "Niacinamide",
+        "Emollients"
+      ],
       "inWishlist": false,
       "inCard": false,
       "customer_reviews": {
         "average_rating": 4.7,
         "total_reviews": 420,
         "ratings_distribution": {
-          "5": 250,
-          "4": 120,
-          "3": 30,
+          "1": 10,
           "2": 10,
-          "1": 10
+          "3": 30,
+          "4": 120,
+          "5": 250
         },
         "top_positive_review": "Leaves skin soft and glowing!",
         "top_negative_review": "Slightly thick for oily skin."
@@ -2067,7 +2303,10 @@
       "careInstructions": "Use morning and night.",
       "image": "https://m.media-amazon.com/images/I/51x78epntaL._SX522_.jpg",
       "made_in": "France",
-      "certifications": ["Dermatologist Tested", "Fragrance-Free"],
+      "certifications": [
+        "Dermatologist Tested",
+        "Fragrance-Free"
+      ],
       "stock_quantity": 160,
       "shipping_info": "Free shipping for orders over $75"
     },
@@ -2088,11 +2327,11 @@
         "average_rating": 4.09,
         "total_reviews": 225,
         "ratings_distribution": {
-          "5": 103,
-          "4": 72,
-          "3": 27,
+          "1": 10,
           "2": 13,
-          "1": 10
+          "3": 27,
+          "4": 72,
+          "5": 103
         }
       },
       "careInstructions": "Monitor incubator settings daily and maintain proper humidity and temperature.",
@@ -2115,11 +2354,11 @@
         "average_rating": 4.3,
         "total_reviews": 123,
         "ratings_distribution": {
-          "5": 72,
-          "4": 31,
-          "3": 14,
+          "1": 3,
           "2": 3,
-          "1": 3
+          "3": 14,
+          "4": 31,
+          "5": 72
         }
       },
       "manufacturer_name": "Boehringer Ingelheim/Eli Lilly",
@@ -2137,21 +2376,32 @@
       "category": "Face Masks",
       "type": "Bright Boost Mask",
       "product_type": "Cosmetics",
-      "skin_type": ["All Skin Types"],
-      "benefits": ["Brightens skin", "Removes impurities", "Hydrates"],
+      "skin_type": [
+        "All Skin Types"
+      ],
+      "benefits": [
+        "Brightens skin",
+        "Removes impurities",
+        "Hydrates"
+      ],
       "how_to_use": "Apply 1-2 times per week on clean skin.",
-      "ingredients_list": ["Vitamin C", "Glycerin", "Water", "Kaolin"],
+      "ingredients_list": [
+        "Vitamin C",
+        "Glycerin",
+        "Water",
+        "Kaolin"
+      ],
       "inWishlist": false,
       "inCard": false,
       "customer_reviews": {
         "average_rating": 4.6,
         "total_reviews": 300,
         "ratings_distribution": {
-          "5": 180,
-          "4": 90,
-          "3": 20,
+          "1": 5,
           "2": 5,
-          "1": 5
+          "3": 20,
+          "4": 90,
+          "5": 180
         },
         "top_positive_review": "Leaves skin soft and glowing!",
         "top_negative_review": "May feel slightly sticky."
@@ -2159,7 +2409,10 @@
       "careInstructions": "Use 1-2 times per week.",
       "image": "https://m.media-amazon.com/images/I/31hIDU3Xq0L._SY300_SX300_QL70_FMwebp_.jpg",
       "made_in": "USA",
-      "certifications": ["Dermatologist Tested", "Non-Comedogenic"],
+      "certifications": [
+        "Dermatologist Tested",
+        "Non-Comedogenic"
+      ],
       "stock_quantity": 140,
       "shipping_info": "Ships within 3-5 business days"
     },
@@ -2180,11 +2433,11 @@
         "average_rating": 4.08,
         "total_reviews": 240,
         "ratings_distribution": {
-          "5": 110,
-          "4": 76,
-          "3": 28,
+          "1": 12,
           "2": 14,
-          "1": 12
+          "3": 28,
+          "4": 76,
+          "5": 110
         }
       },
       "careInstructions": "Sterilize tubing and inspect suction power before each surgery.",
@@ -2207,11 +2460,11 @@
         "average_rating": 4.1,
         "total_reviews": 458,
         "ratings_distribution": {
-          "5": 219,
-          "4": 125,
-          "3": 71,
+          "1": 21,
           "2": 22,
-          "1": 21
+          "3": 71,
+          "4": 125,
+          "5": 219
         }
       },
       "manufacturer_name": "Generic (Various)",
@@ -2229,7 +2482,10 @@
       "category": "Moisturizers",
       "type": "PM Facial Moisturizer",
       "product_type": "Cosmetics",
-      "skin_type": ["Normal", "Dry"],
+      "skin_type": [
+        "Normal",
+        "Dry"
+      ],
       "benefits": [
         "Hydrates overnight",
         "Restores skin barrier",
@@ -2248,11 +2504,11 @@
         "average_rating": 4.7,
         "total_reviews": 350,
         "ratings_distribution": {
-          "5": 210,
-          "4": 100,
-          "3": 25,
+          "1": 5,
           "2": 10,
-          "1": 5
+          "3": 25,
+          "4": 100,
+          "5": 210
         },
         "top_positive_review": "Leaves skin soft and glowing!",
         "top_negative_review": "Might feel heavy on oily skin."
@@ -2260,7 +2516,10 @@
       "careInstructions": "Use nightly.",
       "image": "https://m.media-amazon.com/images/I/41XoPQ-0JPL._SY300_SX300_QL70_FMwebp_.jpg",
       "made_in": "USA",
-      "certifications": ["Dermatologist Tested", "Non-Comedogenic"],
+      "certifications": [
+        "Dermatologist Tested",
+        "Non-Comedogenic"
+      ],
       "stock_quantity": 160,
       "shipping_info": "Free shipping for orders over $50"
     },
@@ -2281,11 +2540,11 @@
         "average_rating": 4.08,
         "total_reviews": 255,
         "ratings_distribution": {
-          "5": 117,
-          "4": 81,
-          "3": 30,
+          "1": 12,
           "2": 15,
-          "1": 12
+          "3": 30,
+          "4": 81,
+          "5": 117
         }
       },
       "careInstructions": "Test airflow regularly and follow respiratory testing standards.",
@@ -2308,11 +2567,11 @@
         "average_rating": 4.3,
         "total_reviews": 132,
         "ratings_distribution": {
-          "5": 64,
-          "4": 52,
-          "3": 10,
+          "1": 3,
           "2": 3,
-          "1": 3
+          "3": 10,
+          "4": 52,
+          "5": 64
         }
       },
       "manufacturer_name": "Pfizer",
@@ -2330,21 +2589,32 @@
       "category": "Serums",
       "type": "Peptide Serum",
       "product_type": "Cosmetics",
-      "skin_type": ["All Skin Types"],
-      "benefits": ["Reduces wrinkles", "Improves elasticity", "Hydrates skin"],
+      "skin_type": [
+        "All Skin Types"
+      ],
+      "benefits": [
+        "Reduces wrinkles",
+        "Improves elasticity",
+        "Hydrates skin"
+      ],
       "how_to_use": "Apply morning and night before moisturizer.",
-      "ingredients_list": ["Peptides", "Amino Acids", "Water", "Glycerin"],
+      "ingredients_list": [
+        "Peptides",
+        "Amino Acids",
+        "Water",
+        "Glycerin"
+      ],
       "inWishlist": false,
       "inCard": false,
       "customer_reviews": {
         "average_rating": 4.8,
         "total_reviews": 400,
         "ratings_distribution": {
-          "5": 250,
-          "4": 120,
-          "3": 20,
+          "1": 5,
           "2": 5,
-          "1": 5
+          "3": 20,
+          "4": 120,
+          "5": 250
         },
         "top_positive_review": "Leaves skin soft and glowing!",
         "top_negative_review": "Light texture may feel watery."
@@ -2352,7 +2622,10 @@
       "careInstructions": "Use morning and night.",
       "image": "https://m.media-amazon.com/images/I/31NQ28l5e4L._SX342_SY445_QL70_FMwebp_.jpg",
       "made_in": "Canada",
-      "certifications": ["Vegan", "Cruelty-Free"],
+      "certifications": [
+        "Vegan",
+        "Cruelty-Free"
+      ],
       "stock_quantity": 140,
       "shipping_info": "Ships within 3-5 business days"
     },
@@ -2373,11 +2646,11 @@
         "average_rating": 4.1,
         "total_reviews": 250,
         "ratings_distribution": {
-          "5": 115,
-          "4": 80,
-          "3": 30,
+          "1": 10,
           "2": 15,
-          "1": 10
+          "3": 30,
+          "4": 80,
+          "5": 115
         }
       },
       "careInstructions": "Handle sensors carefully and ensure accurate reading calibration.",
@@ -2400,11 +2673,11 @@
         "average_rating": 4.3,
         "total_reviews": 496,
         "ratings_distribution": {
-          "5": 269,
-          "4": 165,
-          "3": 36,
+          "1": 8,
           "2": 18,
-          "1": 8
+          "3": 36,
+          "4": 165,
+          "5": 269
         }
       },
       "manufacturer_name": "Janssen",
@@ -2422,8 +2695,15 @@
       "category": "Face Masks",
       "type": "Hydrating Mask",
       "product_type": "Cosmetics",
-      "skin_type": ["Normal", "Dry"],
-      "benefits": ["Hydrates deeply", "Softens skin", "Soothes irritation"],
+      "skin_type": [
+        "Normal",
+        "Dry"
+      ],
+      "benefits": [
+        "Hydrates deeply",
+        "Softens skin",
+        "Soothes irritation"
+      ],
       "how_to_use": "Apply 1-2 times per week on clean skin.",
       "ingredients_list": [
         "Hyaluronic Acid",
@@ -2437,11 +2717,11 @@
         "average_rating": 4.7,
         "total_reviews": 300,
         "ratings_distribution": {
-          "5": 180,
-          "4": 90,
-          "3": 20,
+          "1": 5,
           "2": 5,
-          "1": 5
+          "3": 20,
+          "4": 90,
+          "5": 180
         },
         "top_positive_review": "Leaves skin soft and glowing!",
         "top_negative_review": "Mask may feel sticky for some."
@@ -2449,7 +2729,10 @@
       "careInstructions": "Use 1-2 times per week.",
       "image": "https://m.media-amazon.com/images/I/41SGvSrWdeL._SY300_SX300_QL70_FMwebp_.jpg",
       "made_in": "France",
-      "certifications": ["Dermatologist Tested", "Fragrance-Free"],
+      "certifications": [
+        "Dermatologist Tested",
+        "Fragrance-Free"
+      ],
       "stock_quantity": 150,
       "shipping_info": "Free shipping for orders over $50"
     },
@@ -2470,11 +2753,11 @@
         "average_rating": 4.07,
         "total_reviews": 265,
         "ratings_distribution": {
-          "5": 121,
-          "4": 84,
-          "3": 31,
+          "1": 14,
           "2": 15,
-          "1": 14
+          "3": 31,
+          "4": 84,
+          "5": 121
         }
       },
       "careInstructions": "Ensure magnetic safety protocols and remove metallic items before use.",
@@ -2497,11 +2780,11 @@
         "average_rating": 4.2,
         "total_reviews": 464,
         "ratings_distribution": {
-          "5": 218,
-          "4": 160,
-          "3": 60,
+          "1": 12,
           "2": 14,
-          "1": 12
+          "3": 60,
+          "4": 160,
+          "5": 218
         }
       },
       "manufacturer_name": "Novo Nordisk",
@@ -2525,11 +2808,11 @@
         "average_rating": 4.1,
         "total_reviews": 364,
         "ratings_distribution": {
-          "5": 167,
-          "4": 118,
-          "3": 30,
+          "1": 17,
           "2": 32,
-          "1": 17
+          "3": 30,
+          "4": 118,
+          "5": 167
         }
       },
       "manufacturer_name": "Generic (Various)",
@@ -2553,11 +2836,11 @@
         "average_rating": 4.08,
         "total_reviews": 280,
         "ratings_distribution": {
-          "5": 128,
-          "4": 89,
-          "3": 33,
+          "1": 14,
           "2": 16,
-          "1": 14
+          "3": 33,
+          "4": 89,
+          "5": 128
         }
       },
       "careInstructions": "Follow radiation protection measures and ensure regular maintenance checks.",
@@ -2574,25 +2857,33 @@
       "category": "Toners",
       "type": "Rapid Clear Toner",
       "product_type": "Cosmetics",
-      "skin_type": ["Oily", "Combination"],
+      "skin_type": [
+        "Oily",
+        "Combination"
+      ],
       "benefits": [
         "Reduces blemishes",
         "Removes excess oil",
         "Prevents breakouts"
       ],
       "how_to_use": "Apply with cotton pad morning and night.",
-      "ingredients_list": ["Salicylic Acid", "Water", "Glycerin", "Emollients"],
+      "ingredients_list": [
+        "Salicylic Acid",
+        "Water",
+        "Glycerin",
+        "Emollients"
+      ],
       "inWishlist": false,
       "inCard": false,
       "customer_reviews": {
         "average_rating": 4.6,
         "total_reviews": 250,
         "ratings_distribution": {
-          "5": 150,
-          "4": 70,
-          "3": 20,
+          "1": 5,
           "2": 5,
-          "1": 5
+          "3": 20,
+          "4": 70,
+          "5": 150
         },
         "top_positive_review": "Leaves skin soft and glowing!",
         "top_negative_review": "A bit strong for sensitive skin."
@@ -2600,7 +2891,10 @@
       "careInstructions": "Use morning and night.",
       "image": "https://m.media-amazon.com/images/I/81-jecTRd-L._SX425_.jpg",
       "made_in": "USA",
-      "certifications": ["Dermatologist Tested", "Non-Comedogenic"],
+      "certifications": [
+        "Dermatologist Tested",
+        "Non-Comedogenic"
+      ],
       "stock_quantity": 140,
       "shipping_info": "Ships within 3-5 business days"
     },
@@ -2615,8 +2909,14 @@
       "category": "Serums",
       "type": "Hydrating Serum",
       "product_type": "Cosmetics",
-      "skin_type": ["All Skin Types"],
-      "benefits": ["Hydrates", "Plumps skin", "Smooths texture"],
+      "skin_type": [
+        "All Skin Types"
+      ],
+      "benefits": [
+        "Hydrates",
+        "Plumps skin",
+        "Smooths texture"
+      ],
       "how_to_use": "Apply a few drops morning and night.",
       "ingredients_list": [
         "Hyaluronic Acid",
@@ -2630,11 +2930,11 @@
         "average_rating": 4.8,
         "total_reviews": 350,
         "ratings_distribution": {
-          "5": 220,
-          "4": 100,
-          "3": 20,
+          "1": 5,
           "2": 5,
-          "1": 5
+          "3": 20,
+          "4": 100,
+          "5": 220
         },
         "top_positive_review": "Leaves skin soft and glowing!",
         "top_negative_review": "Light texture may feel watery."
@@ -2642,7 +2942,10 @@
       "careInstructions": "Use morning and night.",
       "image": "https://m.media-amazon.com/images/I/61eH32lVpdL._SX522_.jpg",
       "made_in": "Canada",
-      "certifications": ["Vegan", "Cruelty-Free"],
+      "certifications": [
+        "Vegan",
+        "Cruelty-Free"
+      ],
       "stock_quantity": 150,
       "shipping_info": "Ships within 3-5 business days"
     },
@@ -2663,11 +2966,11 @@
         "average_rating": 4.08,
         "total_reviews": 295,
         "ratings_distribution": {
-          "5": 135,
-          "4": 94,
-          "3": 35,
+          "1": 14,
           "2": 17,
-          "1": 14
+          "3": 35,
+          "4": 94,
+          "5": 135
         }
       },
       "careInstructions": "Use certified reagents and perform quality control daily.",
@@ -2690,11 +2993,11 @@
         "average_rating": 4.2,
         "total_reviews": 473,
         "ratings_distribution": {
-          "5": 246,
-          "4": 147,
-          "3": 26,
+          "1": 21,
           "2": 33,
-          "1": 21
+          "3": 26,
+          "4": 147,
+          "5": 246
         }
       },
       "manufacturer_name": "Generic (Various)",
@@ -2712,21 +3015,32 @@
       "category": "Sunscreens",
       "type": "SPF 50+ Sunscreen",
       "product_type": "Cosmetics",
-      "skin_type": ["All Skin Types"],
-      "benefits": ["Protects from UVA/UVB", "Non-greasy", "Fast absorbing"],
+      "skin_type": [
+        "All Skin Types"
+      ],
+      "benefits": [
+        "Protects from UVA/UVB",
+        "Non-greasy",
+        "Fast absorbing"
+      ],
       "how_to_use": "Apply generously before sun exposure.",
-      "ingredients_list": ["Avobenzone", "Homosalate", "Octocrylene", "Water"],
+      "ingredients_list": [
+        "Avobenzone",
+        "Homosalate",
+        "Octocrylene",
+        "Water"
+      ],
       "inWishlist": false,
       "inCard": false,
       "customer_reviews": {
         "average_rating": 4.8,
         "total_reviews": 500,
         "ratings_distribution": {
-          "5": 300,
-          "4": 120,
-          "3": 50,
+          "1": 10,
           "2": 20,
-          "1": 10
+          "3": 50,
+          "4": 120,
+          "5": 300
         },
         "top_positive_review": "Leaves skin soft and glowing!",
         "top_negative_review": "May leave white cast."
@@ -2734,7 +3048,10 @@
       "careInstructions": "Reapply every 2 hours.",
       "image": "https://m.media-amazon.com/images/I/31y80GgNDPL._SX342_SY445_QL70_FMwebp_.jpg",
       "made_in": "France",
-      "certifications": ["Dermatologist Tested", "Fragrance-Free"],
+      "certifications": [
+        "Dermatologist Tested",
+        "Fragrance-Free"
+      ],
       "stock_quantity": 150,
       "shipping_info": "Free shipping for orders over $75"
     },
@@ -2755,11 +3072,11 @@
         "average_rating": 4.08,
         "total_reviews": 290,
         "ratings_distribution": {
-          "5": 133,
-          "4": 92,
-          "3": 34,
+          "1": 14,
           "2": 17,
-          "1": 14
+          "3": 34,
+          "4": 92,
+          "5": 133
         }
       },
       "careInstructions": "Use proper eye protection and follow exact laser energy protocols.",
@@ -2776,8 +3093,14 @@
       "category": "Moisturizers",
       "type": "Water Gel",
       "product_type": "Cosmetics",
-      "skin_type": ["All Skin Types"],
-      "benefits": ["Hydrates deeply", "Lightweight", "Non-greasy"],
+      "skin_type": [
+        "All Skin Types"
+      ],
+      "benefits": [
+        "Hydrates deeply",
+        "Lightweight",
+        "Non-greasy"
+      ],
       "how_to_use": "Apply as directed on clean skin.",
       "ingredients_list": [
         "Hyaluronic Acid",
@@ -2791,11 +3114,11 @@
         "average_rating": 4.7,
         "total_reviews": 400,
         "ratings_distribution": {
-          "5": 250,
-          "4": 120,
-          "3": 20,
+          "1": 5,
           "2": 5,
-          "1": 5
+          "3": 20,
+          "4": 120,
+          "5": 250
         },
         "top_positive_review": "Leaves skin soft and glowing!",
         "top_negative_review": "Light texture may need layering for very dry skin."
@@ -2803,7 +3126,10 @@
       "careInstructions": "Use morning and night.",
       "image": "https://m.media-amazon.com/images/I/5122I9WgBkL._SY300_SX300_QL70_FMwebp_.jpg",
       "made_in": "USA",
-      "certifications": ["Dermatologist Tested", "Non-Comedogenic"],
+      "certifications": [
+        "Dermatologist Tested",
+        "Non-Comedogenic"
+      ],
       "stock_quantity": 160,
       "shipping_info": "Free shipping for orders over $50"
     },
@@ -2818,8 +3144,15 @@
       "category": "Moisturizers",
       "type": "Soothing Cream",
       "product_type": "Cosmetics",
-      "skin_type": ["Sensitive", "Dry"],
-      "benefits": ["Reduces redness", "Calms irritation", "Hydrates skin"],
+      "skin_type": [
+        "Sensitive",
+        "Dry"
+      ],
+      "benefits": [
+        "Reduces redness",
+        "Calms irritation",
+        "Hydrates skin"
+      ],
       "how_to_use": "Apply morning and night on clean skin.",
       "ingredients_list": [
         "Licorice Root Extract",
@@ -2833,11 +3166,11 @@
         "average_rating": 4.6,
         "total_reviews": 280,
         "ratings_distribution": {
-          "5": 160,
-          "4": 80,
-          "3": 25,
+          "1": 5,
           "2": 10,
-          "1": 5
+          "3": 25,
+          "4": 80,
+          "5": 160
         },
         "top_positive_review": "Leaves skin soft and glowing!",
         "top_negative_review": "May feel slightly thick for oily skin."
@@ -2845,7 +3178,10 @@
       "careInstructions": "Use morning and night.",
       "image": "https://m.media-amazon.com/images/I/41MW5HnBCJL._SX425_.jpg",
       "made_in": "Germany",
-      "certifications": ["Dermatologist Tested", "Fragrance-Free"],
+      "certifications": [
+        "Dermatologist Tested",
+        "Fragrance-Free"
+      ],
       "stock_quantity": 140,
       "shipping_info": "Ships within 3-5 business days"
     },
@@ -2866,11 +3202,11 @@
         "average_rating": 4.09,
         "total_reviews": 305,
         "ratings_distribution": {
-          "5": 140,
-          "4": 97,
-          "3": 36,
+          "1": 14,
           "2": 18,
-          "1": 14
+          "3": 36,
+          "4": 97,
+          "5": 140
         }
       },
       "careInstructions": "Clean and recalibrate the device between sessions and store properly.",
@@ -2893,11 +3229,11 @@
         "average_rating": 4.3,
         "total_reviews": 442,
         "ratings_distribution": {
-          "5": 237,
-          "4": 110,
-          "3": 72,
+          "1": 5,
           "2": 18,
-          "1": 5
+          "3": 72,
+          "4": 110,
+          "5": 237
         }
       },
       "manufacturer_name": "GlaxoSmithKline",
@@ -2915,8 +3251,15 @@
       "category": "Moisturizers",
       "type": "Blemish Corrector",
       "product_type": "Cosmetics",
-      "skin_type": ["Oily", "Acne-Prone"],
-      "benefits": ["Reduces blemishes", "Unclogs pores", "Matte finish"],
+      "skin_type": [
+        "Oily",
+        "Acne-Prone"
+      ],
+      "benefits": [
+        "Reduces blemishes",
+        "Unclogs pores",
+        "Matte finish"
+      ],
       "how_to_use": "Apply morning and night after cleansing.",
       "ingredients_list": [
         "Niacinamide",
@@ -2930,11 +3273,11 @@
         "average_rating": 4.7,
         "total_reviews": 420,
         "ratings_distribution": {
-          "5": 250,
-          "4": 120,
-          "3": 30,
+          "1": 10,
           "2": 10,
-          "1": 10
+          "3": 30,
+          "4": 120,
+          "5": 250
         },
         "top_positive_review": "Effective on blemishes quickly!",
         "top_negative_review": "Slightly heavy on oily skin."
@@ -2942,7 +3285,10 @@
       "careInstructions": "Use morning and night.",
       "image": "https://m.media-amazon.com/images/I/71fpmD3g+IL._SX522_.jpg",
       "made_in": "France",
-      "certifications": ["Dermatologist Tested", "Non-Comedogenic"],
+      "certifications": [
+        "Dermatologist Tested",
+        "Non-Comedogenic"
+      ],
       "stock_quantity": 160,
       "shipping_info": "Free shipping for orders over $50"
     },
@@ -2963,11 +3309,11 @@
         "average_rating": 4.12,
         "total_reviews": 320,
         "ratings_distribution": {
-          "5": 147,
-          "4": 102,
-          "3": 38,
+          "1": 14,
           "2": 19,
-          "1": 14
+          "3": 38,
+          "4": 102,
+          "5": 147
         }
       },
       "careInstructions": "Disinfect sensor thoroughly after each use and avoid dropping.",
@@ -2990,11 +3336,11 @@
         "average_rating": 4.3,
         "total_reviews": 134,
         "ratings_distribution": {
-          "5": 75,
-          "4": 38,
-          "3": 12,
+          "1": 4,
           "2": 5,
-          "1": 4
+          "3": 12,
+          "4": 38,
+          "5": 75
         }
       },
       "manufacturer_name": "AstraZeneca",
@@ -3018,11 +3364,11 @@
         "average_rating": 4.2,
         "total_reviews": 350,
         "ratings_distribution": {
-          "5": 182,
-          "4": 104,
-          "3": 24,
+          "1": 10,
           "2": 30,
-          "1": 10
+          "3": 24,
+          "4": 104,
+          "5": 182
         }
       },
       "manufacturer_name": "Takeda",
@@ -3046,11 +3392,11 @@
         "average_rating": 4.1,
         "total_reviews": 335,
         "ratings_distribution": {
-          "5": 154,
-          "4": 107,
-          "3": 40,
+          "1": 14,
           "2": 20,
-          "1": 14
+          "3": 40,
+          "4": 107,
+          "5": 154
         }
       },
       "careInstructions": "Sterilize instruments rigorously and check for wear before use.",
@@ -3067,21 +3413,33 @@
       "category": "Cleansers",
       "type": "Deep Clean Cleanser",
       "product_type": "Cosmetics",
-      "skin_type": ["Oily", "Combination"],
-      "benefits": ["Removes excess oil", "Prevents breakouts", "Cleans deeply"],
+      "skin_type": [
+        "Oily",
+        "Combination"
+      ],
+      "benefits": [
+        "Removes excess oil",
+        "Prevents breakouts",
+        "Cleans deeply"
+      ],
       "how_to_use": "Apply to wet skin, massage, rinse thoroughly.",
-      "ingredients_list": ["Salicylic Acid", "Water", "Glycerin", "Emollients"],
+      "ingredients_list": [
+        "Salicylic Acid",
+        "Water",
+        "Glycerin",
+        "Emollients"
+      ],
       "inWishlist": false,
       "inCard": false,
       "customer_reviews": {
         "average_rating": 4.5,
         "total_reviews": 300,
         "ratings_distribution": {
-          "5": 180,
-          "4": 90,
-          "3": 20,
+          "1": 5,
           "2": 5,
-          "1": 5
+          "3": 20,
+          "4": 90,
+          "5": 180
         },
         "top_positive_review": "Leaves skin soft and glowing!",
         "top_negative_review": "Can be slightly drying for sensitive skin."
@@ -3089,7 +3447,10 @@
       "careInstructions": "Use morning and night.",
       "image": "https://m.media-amazon.com/images/I/31A3MbAiuCL._SY300_SX300_QL70_FMwebp_.jpg",
       "made_in": "USA",
-      "certifications": ["Dermatologist Tested", "Non-Comedogenic"],
+      "certifications": [
+        "Dermatologist Tested",
+        "Non-Comedogenic"
+      ],
       "stock_quantity": 150,
       "shipping_info": "Ships within 3-5 business days"
     },
@@ -3104,25 +3465,33 @@
       "category": "Moisturizers",
       "type": "Moisturizing Cream",
       "product_type": "Cosmetics",
-      "skin_type": ["Dry", "Very Dry"],
+      "skin_type": [
+        "Dry",
+        "Very Dry"
+      ],
       "benefits": [
         "Deep hydration",
         "Restores skin barrier",
         "Soothes irritation"
       ],
       "how_to_use": "Apply morning and night on clean skin.",
-      "ingredients_list": ["Water", "Glycerin", "Niacinamide", "Emollients"],
+      "ingredients_list": [
+        "Water",
+        "Glycerin",
+        "Niacinamide",
+        "Emollients"
+      ],
       "inWishlist": false,
       "inCard": false,
       "customer_reviews": {
         "average_rating": 4.7,
         "total_reviews": 320,
         "ratings_distribution": {
-          "5": 200,
-          "4": 90,
-          "3": 20,
+          "1": 5,
           "2": 5,
-          "1": 5
+          "3": 20,
+          "4": 90,
+          "5": 200
         },
         "top_positive_review": "Leaves skin soft and glowing!",
         "top_negative_review": "Can feel slightly thick on oily skin."
@@ -3130,7 +3499,10 @@
       "careInstructions": "Use morning and night.",
       "image": "https://m.media-amazon.com/images/I/31rpzUi7PLL._SX342_SY445_QL70_FMwebp_.jpg",
       "made_in": "France",
-      "certifications": ["Dermatologist Tested", "Fragrance-Free"],
+      "certifications": [
+        "Dermatologist Tested",
+        "Fragrance-Free"
+      ],
       "stock_quantity": 140,
       "shipping_info": "Free shipping for orders over $50"
     },
@@ -3151,11 +3523,11 @@
         "average_rating": 4.11,
         "total_reviews": 350,
         "ratings_distribution": {
-          "5": 161,
-          "4": 112,
-          "3": 42,
+          "1": 14,
           "2": 21,
-          "1": 14
+          "3": 42,
+          "4": 112,
+          "5": 161
         }
       },
       "careInstructions": "Regularly check sensor connection points and calibrate vital sign modules.",
@@ -3178,11 +3550,11 @@
         "average_rating": 4.2,
         "total_reviews": 403,
         "ratings_distribution": {
-          "5": 189,
-          "4": 135,
-          "3": 52,
+          "1": 9,
           "2": 18,
-          "1": 9
+          "3": 52,
+          "4": 135,
+          "5": 189
         }
       },
       "manufacturer_name": "Johnson & Johnson",
@@ -3206,11 +3578,11 @@
         "average_rating": 4.4,
         "total_reviews": 174,
         "ratings_distribution": {
-          "5": 101,
-          "4": 50,
-          "3": 14,
+          "1": 4,
           "2": 5,
-          "1": 4
+          "3": 14,
+          "4": 50,
+          "5": 101
         }
       },
       "manufacturer_name": "Generic (Various)",
@@ -3234,11 +3606,11 @@
         "average_rating": 4.1,
         "total_reviews": 365,
         "ratings_distribution": {
-          "5": 168,
-          "4": 117,
-          "3": 43,
+          "1": 15,
           "2": 22,
-          "1": 15
+          "3": 43,
+          "4": 117,
+          "5": 168
         }
       },
       "careInstructions": "Maintain reagent inventory and perform scheduled fluidics system cleaning.",
@@ -3261,11 +3633,11 @@
         "average_rating": 4.5,
         "total_reviews": 83,
         "ratings_distribution": {
-          "5": 57,
-          "4": 16,
-          "3": 6,
+          "1": 2,
           "2": 2,
-          "1": 2
+          "3": 6,
+          "4": 16,
+          "5": 57
         }
       },
       "manufacturer_name": "Shire/Takeda",
@@ -3283,8 +3655,15 @@
       "category": "Moisturizers",
       "type": "Day Cream SPF 30",
       "product_type": "Cosmetics",
-      "skin_type": ["Normal", "Dry"],
-      "benefits": ["Fills wrinkles", "Hydrates skin", "Protects from sun"],
+      "skin_type": [
+        "Normal",
+        "Dry"
+      ],
+      "benefits": [
+        "Fills wrinkles",
+        "Hydrates skin",
+        "Protects from sun"
+      ],
       "how_to_use": "Apply morning on clean skin.",
       "ingredients_list": [
         "Hyaluronic Acid",
@@ -3298,11 +3677,11 @@
         "average_rating": 4.6,
         "total_reviews": 280,
         "ratings_distribution": {
-          "5": 160,
-          "4": 80,
-          "3": 25,
+          "1": 5,
           "2": 10,
-          "1": 5
+          "3": 25,
+          "4": 80,
+          "5": 160
         },
         "top_positive_review": "Leaves skin soft and glowing!",
         "top_negative_review": "May feel slightly thick for oily skin."
@@ -3310,7 +3689,10 @@
       "careInstructions": "Use morning.",
       "image": "https://m.media-amazon.com/images/I/31h2CRj5tiL._SY300_SX300_QL70_FMwebp_.jpg",
       "made_in": "Germany",
-      "certifications": ["Dermatologist Tested", "Fragrance-Free"],
+      "certifications": [
+        "Dermatologist Tested",
+        "Fragrance-Free"
+      ],
       "stock_quantity": 130,
       "shipping_info": "Ships within 3-5 business days"
     },
@@ -3331,11 +3713,11 @@
         "average_rating": 4.13,
         "total_reviews": 380,
         "ratings_distribution": {
-          "5": 175,
-          "4": 122,
-          "3": 45,
+          "1": 15,
           "2": 23,
-          "1": 15
+          "3": 45,
+          "4": 122,
+          "5": 175
         }
       },
       "careInstructions": "Check tire pressure and inspect frame welds periodically.",
@@ -3352,7 +3734,10 @@
       "category": "Moisturizers",
       "type": "Oil-Free Moisturizer",
       "product_type": "Cosmetics",
-      "skin_type": ["Oily", "Acne-Prone"],
+      "skin_type": [
+        "Oily",
+        "Acne-Prone"
+      ],
       "benefits": [
         "Hydrates without grease",
         "Reduces breakouts",
@@ -3371,11 +3756,11 @@
         "average_rating": 4.5,
         "total_reviews": 320,
         "ratings_distribution": {
-          "5": 180,
-          "4": 100,
-          "3": 25,
+          "1": 5,
           "2": 10,
-          "1": 5
+          "3": 25,
+          "4": 100,
+          "5": 180
         },
         "top_positive_review": "Leaves skin soft and glowing!",
         "top_negative_review": "Light moisturizer, may need layering."
@@ -3383,7 +3768,10 @@
       "careInstructions": "Use morning and night.",
       "image": "https://m.media-amazon.com/images/I/71KCKFNdTNL._SX425_.jpg",
       "made_in": "USA",
-      "certifications": ["Dermatologist Tested", "Non-Comedogenic"],
+      "certifications": [
+        "Dermatologist Tested",
+        "Non-Comedogenic"
+      ],
       "stock_quantity": 140,
       "shipping_info": "Ships within 3-5 business days"
     },
@@ -3404,11 +3792,11 @@
         "average_rating": 4.3,
         "total_reviews": 358,
         "ratings_distribution": {
-          "5": 206,
-          "4": 80,
-          "3": 45,
+          "1": 10,
           "2": 17,
-          "1": 10
+          "3": 45,
+          "4": 80,
+          "5": 206
         }
       },
       "manufacturer_name": "GlaxoSmithKline",
@@ -3432,11 +3820,11 @@
         "average_rating": 4.12,
         "total_reviews": 395,
         "ratings_distribution": {
-          "5": 182,
-          "4": 127,
-          "3": 47,
+          "1": 15,
           "2": 24,
-          "1": 15
+          "3": 47,
+          "4": 127,
+          "5": 182
         }
       },
       "careInstructions": "Keep optics dust-free and align light source accurately.",
@@ -3453,21 +3841,33 @@
       "category": "Moisturizers",
       "type": "Repairing Balm",
       "product_type": "Cosmetics",
-      "skin_type": ["Sensitive", "Dry"],
-      "benefits": ["Soothes irritation", "Repairs skin barrier", "Hydrates"],
+      "skin_type": [
+        "Sensitive",
+        "Dry"
+      ],
+      "benefits": [
+        "Soothes irritation",
+        "Repairs skin barrier",
+        "Hydrates"
+      ],
       "how_to_use": "Apply as needed on affected areas.",
-      "ingredients_list": ["Panthenol", "Madecassoside", "Water", "Emollients"],
+      "ingredients_list": [
+        "Panthenol",
+        "Madecassoside",
+        "Water",
+        "Emollients"
+      ],
       "inWishlist": false,
       "inCard": false,
       "customer_reviews": {
         "average_rating": 4.8,
         "total_reviews": 400,
         "ratings_distribution": {
-          "5": 250,
-          "4": 120,
-          "3": 20,
+          "1": 5,
           "2": 5,
-          "1": 5
+          "3": 20,
+          "4": 120,
+          "5": 250
         },
         "top_positive_review": "Leaves skin soft and glowing!",
         "top_negative_review": "Slightly thick for daytime use."
@@ -3475,7 +3875,10 @@
       "careInstructions": "Use as needed.",
       "image": "https://m.media-amazon.com/images/I/41i9mCUHHEL._SX342_SY445_QL70_FMwebp_.jpg",
       "made_in": "France",
-      "certifications": ["Dermatologist Tested", "Fragrance-Free"],
+      "certifications": [
+        "Dermatologist Tested",
+        "Fragrance-Free"
+      ],
       "stock_quantity": 160,
       "shipping_info": "Free shipping for orders over $50"
     },
@@ -3496,11 +3899,11 @@
         "average_rating": 4.3,
         "total_reviews": 190,
         "ratings_distribution": {
-          "5": 111,
-          "4": 52,
-          "3": 13,
+          "1": 5,
           "2": 9,
-          "1": 5
+          "3": 13,
+          "4": 52,
+          "5": 111
         }
       },
       "manufacturer_name": "Johnson & Johnson",
@@ -3524,11 +3927,11 @@
         "average_rating": 4.14,
         "total_reviews": 410,
         "ratings_distribution": {
-          "5": 189,
-          "4": 132,
-          "3": 49,
+          "1": 15,
           "2": 25,
-          "1": 15
+          "3": 49,
+          "4": 132,
+          "5": 189
         }
       },
       "careInstructions": "Charge battery fully before use and check fiber optic cable for damage.",
@@ -3545,21 +3948,33 @@
       "category": "Moisturizers",
       "type": "Soothing Cream",
       "product_type": "Cosmetics",
-      "skin_type": ["Sensitive", "Redness-Prone"],
-      "benefits": ["Calms irritation", "Hydrates deeply", "Restores barrier"],
+      "skin_type": [
+        "Sensitive",
+        "Redness-Prone"
+      ],
+      "benefits": [
+        "Calms irritation",
+        "Hydrates deeply",
+        "Restores barrier"
+      ],
       "how_to_use": "Apply morning and night on clean skin.",
-      "ingredients_list": ["Glycerin", "Dexpanthenol", "Water", "Emollients"],
+      "ingredients_list": [
+        "Glycerin",
+        "Dexpanthenol",
+        "Water",
+        "Emollients"
+      ],
       "inWishlist": false,
       "inCard": false,
       "customer_reviews": {
         "average_rating": 4.6,
         "total_reviews": 300,
         "ratings_distribution": {
-          "5": 180,
-          "4": 90,
-          "3": 20,
+          "1": 5,
           "2": 5,
-          "1": 5
+          "3": 20,
+          "4": 90,
+          "5": 180
         },
         "top_positive_review": "Leaves skin soft and glowing!",
         "top_negative_review": "May feel thick for oily skin."
@@ -3567,7 +3982,10 @@
       "careInstructions": "Use morning and night.",
       "image": "https://m.media-amazon.com/images/I/21ybnFvNETL._SY300_SX300_QL70_FMwebp_.jpg",
       "made_in": "Germany",
-      "certifications": ["Dermatologist Tested", "Fragrance-Free"],
+      "certifications": [
+        "Dermatologist Tested",
+        "Fragrance-Free"
+      ],
       "stock_quantity": 150,
       "shipping_info": "Free shipping for orders over $50"
     },
@@ -3588,11 +4006,11 @@
         "average_rating": 4.4,
         "total_reviews": 399,
         "ratings_distribution": {
-          "5": 261,
-          "4": 75,
-          "3": 35,
+          "1": 16,
           "2": 12,
-          "1": 16
+          "3": 35,
+          "4": 75,
+          "5": 261
         }
       },
       "manufacturer_name": "Sanofi",
@@ -3616,11 +4034,11 @@
         "average_rating": 4.13,
         "total_reviews": 425,
         "ratings_distribution": {
-          "5": 196,
-          "4": 137,
-          "3": 50,
+          "1": 16,
           "2": 26,
-          "1": 16
+          "3": 50,
+          "4": 137,
+          "5": 196
         }
       },
       "careInstructions": "Clean or replace air intake filters regularly and monitor oxygen output purity.",
@@ -3637,8 +4055,14 @@
       "category": "Serums",
       "type": "Brightening Serum",
       "product_type": "Cosmetics",
-      "skin_type": ["All Skin Types"],
-      "benefits": ["Reduces dark spots", "Brightens skin", "Hydrates"],
+      "skin_type": [
+        "All Skin Types"
+      ],
+      "benefits": [
+        "Reduces dark spots",
+        "Brightens skin",
+        "Hydrates"
+      ],
       "how_to_use": "Apply a few drops morning and night before moisturizer.",
       "ingredients_list": [
         "Alpha Arbutin",
@@ -3652,11 +4076,11 @@
         "average_rating": 4.7,
         "total_reviews": 350,
         "ratings_distribution": {
-          "5": 210,
-          "4": 100,
-          "3": 25,
+          "1": 5,
           "2": 10,
-          "1": 5
+          "3": 25,
+          "4": 100,
+          "5": 210
         },
         "top_positive_review": "Brightens skin quickly!",
         "top_negative_review": "Light texture may feel sticky at first."
@@ -3664,7 +4088,10 @@
       "careInstructions": "Use morning and night.",
       "image": "https://m.media-amazon.com/images/I/31vgJCvDbGL._SX342_SY445_QL70_FMwebp_.jpg",
       "made_in": "Canada",
-      "certifications": ["Vegan", "Cruelty-Free"],
+      "certifications": [
+        "Vegan",
+        "Cruelty-Free"
+      ],
       "stock_quantity": 150,
       "shipping_info": "Ships within 3-5 business days"
     },
@@ -3685,11 +4112,11 @@
         "average_rating": 4.1,
         "total_reviews": 273,
         "ratings_distribution": {
-          "5": 124,
-          "4": 101,
-          "3": 19,
+          "1": 9,
           "2": 20,
-          "1": 9
+          "3": 19,
+          "4": 101,
+          "5": 124
         }
       },
       "manufacturer_name": "Novartis",
@@ -3713,11 +4140,11 @@
         "average_rating": 4.15,
         "total_reviews": 440,
         "ratings_distribution": {
-          "5": 203,
-          "4": 142,
-          "3": 52,
+          "1": 16,
           "2": 27,
-          "1": 16
+          "3": 52,
+          "4": 142,
+          "5": 203
         }
       },
       "careInstructions": "Calibrate transducers periodically and ensure proper placement on the abdomen.",
@@ -3740,11 +4167,11 @@
         "average_rating": 4.14,
         "total_reviews": 455,
         "ratings_distribution": {
-          "5": 210,
-          "4": 147,
-          "3": 54,
+          "1": 16,
           "2": 28,
-          "1": 16
+          "3": 54,
+          "4": 147,
+          "5": 210
         }
       },
       "careInstructions": "Inspect return electrode pad site and verify power settings before activation.",
@@ -3767,11 +4194,11 @@
         "average_rating": 4.2,
         "total_reviews": 480,
         "ratings_distribution": {
-          "5": 249,
-          "4": 144,
-          "3": 56,
+          "1": 15,
           "2": 16,
-          "1": 15
+          "3": 56,
+          "4": 144,
+          "5": 249
         }
       },
       "manufacturer_name": "Pfizer",
@@ -3789,8 +4216,14 @@
       "category": "Serums",
       "type": "Anti-Aging Serum",
       "product_type": "Cosmetics",
-      "skin_type": ["All Skin Types"],
-      "benefits": ["Reduces fine lines", "Improves skin texture", "Hydrates"],
+      "skin_type": [
+        "All Skin Types"
+      ],
+      "benefits": [
+        "Reduces fine lines",
+        "Improves skin texture",
+        "Hydrates"
+      ],
       "how_to_use": "Apply a small amount at night before oils or heavier creams.",
       "ingredients_list": [
         "Retinol",
@@ -3803,11 +4236,11 @@
         "average_rating": 4.6,
         "total_reviews": 410,
         "ratings_distribution": {
-          "5": 250,
-          "4": 120,
-          "3": 30,
+          "1": 5,
           "2": 5,
-          "1": 5
+          "3": 30,
+          "4": 120,
+          "5": 250
         },
         "top_positive_review": "Effective anti-aging serum!",
         "top_negative_review": "Can be slightly irritating for sensitive skin."
@@ -3815,7 +4248,10 @@
       "careInstructions": "Use nightly.",
       "image": "https://m.media-amazon.com/images/I/51T1f7+ls6L._AC_UL320_.jpg",
       "made_in": "Canada",
-      "certifications": ["Vegan", "Cruelty-Free"],
+      "certifications": [
+        "Vegan",
+        "Cruelty-Free"
+      ],
       "stock_quantity": 130,
       "shipping_info": "Ships within 3-5 business days"
     },
@@ -3836,11 +4272,11 @@
         "average_rating": 4.15,
         "total_reviews": 470,
         "ratings_distribution": {
-          "5": 217,
-          "4": 152,
-          "3": 56,
+          "1": 16,
           "2": 29,
-          "1": 16
+          "3": 56,
+          "4": 152,
+          "5": 217
         }
       },
       "careInstructions": "Drain water lines and sterilize handpieces after every use.",
@@ -3863,11 +4299,11 @@
         "average_rating": 4.2,
         "total_reviews": 435,
         "ratings_distribution": {
-          "5": 228,
-          "4": 128,
-          "3": 50,
+          "1": 12,
           "2": 17,
-          "1": 12
+          "3": 50,
+          "4": 128,
+          "5": 228
         }
       },
       "manufacturer_name": "Generic (Various)",
@@ -3885,8 +4321,14 @@
       "category": "Sunscreens",
       "type": "Broad Spectrum SPF 60",
       "product_type": "Cosmetics",
-      "skin_type": ["All Skin Types"],
-      "benefits": ["UVA/UVB protection", "Non-greasy", "Fast absorbing"],
+      "skin_type": [
+        "All Skin Types"
+      ],
+      "benefits": [
+        "UVA/UVB protection",
+        "Non-greasy",
+        "Fast absorbing"
+      ],
       "how_to_use": "Apply 15 minutes before sun exposure. Reapply every 2 hours.",
       "ingredients_list": [
         "Avobenzone",
@@ -3901,11 +4343,11 @@
         "average_rating": 4.8,
         "total_reviews": 890,
         "ratings_distribution": {
-          "5": 600,
-          "4": 200,
-          "3": 60,
+          "1": 10,
           "2": 20,
-          "1": 10
+          "3": 60,
+          "4": 200,
+          "5": 600
         },
         "top_positive_review": "Excellent sun protection, non-greasy.",
         "top_negative_review": "Leaves a slight white cast."
@@ -3913,7 +4355,10 @@
       "careInstructions": "Reapply every 2 hours during sun exposure.",
       "image": "https://m.media-amazon.com/images/I/613HS7eEFTL._AC_UL320_.jpg",
       "made_in": "France",
-      "certifications": ["Dermatologist Tested", "Fragrance-Free"],
+      "certifications": [
+        "Dermatologist Tested",
+        "Fragrance-Free"
+      ],
       "stock_quantity": 150,
       "shipping_info": "Free shipping for orders over $75"
     },
@@ -3934,11 +4379,11 @@
         "average_rating": 4.16,
         "total_reviews": 485,
         "ratings_distribution": {
-          "5": 224,
-          "4": 157,
-          "3": 58,
+          "1": 16,
           "2": 30,
-          "1": 16
+          "3": 58,
+          "4": 157,
+          "5": 224
         }
       },
       "careInstructions": "Run daily quality control checks and maintain waste container levels.",
@@ -3950,13 +4395,19 @@
       "brand": "Paula’s Choice",
       "active_ingredient": "Salicylic Acid",
       "description": "A gentle, leave-on exfoliant with 2% BHA that unclogs pores, smooths wrinkles, and brightens skin tone.",
-      "price": 33.0,
+      "price": 33,
       "currency": "USD",
       "category": "Exfoliants",
       "type": "BHA Liquid Exfoliant",
       "product_type": "Cosmetics",
-      "skin_type": ["All Skin Types"],
-      "benefits": ["Unclogs pores", "Smooths skin", "Brightens complexion"],
+      "skin_type": [
+        "All Skin Types"
+      ],
+      "benefits": [
+        "Unclogs pores",
+        "Smooths skin",
+        "Brightens complexion"
+      ],
       "how_to_use": "Apply once or twice daily after cleansing and toning.",
       "ingredients_list": [
         "Salicylic Acid",
@@ -3970,11 +4421,11 @@
         "average_rating": 4.9,
         "total_reviews": 1250,
         "ratings_distribution": {
-          "5": 1000,
-          "4": 180,
-          "3": 50,
+          "1": 10,
           "2": 10,
-          "1": 10
+          "3": 50,
+          "4": 180,
+          "5": 1000
         },
         "top_positive_review": "Amazing exfoliant, skin feels smooth!",
         "top_negative_review": "May sting sensitive areas."
@@ -3982,7 +4433,10 @@
       "careInstructions": "Apply after cleansing, morning or night.",
       "image": "https://m.media-amazon.com/images/I/61RHq4MT34L._AC_UL320_.jpg",
       "made_in": "USA",
-      "certifications": ["Vegan", "Cruelty-Free"],
+      "certifications": [
+        "Vegan",
+        "Cruelty-Free"
+      ],
       "stock_quantity": 200,
       "shipping_info": "Ships within 3-5 business days"
     },
@@ -4003,11 +4457,11 @@
         "average_rating": 4.3,
         "total_reviews": 76,
         "ratings_distribution": {
-          "5": 42,
-          "4": 23,
-          "3": 7,
+          "1": 2,
           "2": 2,
-          "1": 2
+          "3": 7,
+          "4": 23,
+          "5": 42
         }
       },
       "manufacturer_name": "Eli Lilly",
@@ -4031,11 +4485,11 @@
         "average_rating": 4.15,
         "total_reviews": 500,
         "ratings_distribution": {
-          "5": 231,
-          "4": 162,
-          "3": 60,
+          "1": 16,
           "2": 31,
-          "1": 16
+          "3": 60,
+          "4": 162,
+          "5": 231
         }
       },
       "careInstructions": "Maintain a safe distance from skin during use and inspect bulb integrity.",
@@ -4052,8 +4506,15 @@
       "category": "Moisturizers",
       "type": "Anti-Wrinkle Cream",
       "product_type": "Cosmetics",
-      "skin_type": ["Normal", "Dry"],
-      "benefits": ["Reduces fine lines", "Firms skin", "Hydrates deeply"],
+      "skin_type": [
+        "Normal",
+        "Dry"
+      ],
+      "benefits": [
+        "Reduces fine lines",
+        "Firms skin",
+        "Hydrates deeply"
+      ],
       "how_to_use": "Apply to clean face and neck morning and night.",
       "ingredients_list": [
         "Coenzyme Q10",
@@ -4068,11 +4529,11 @@
         "average_rating": 4.5,
         "total_reviews": 640,
         "ratings_distribution": {
-          "5": 370,
-          "4": 190,
-          "3": 50,
+          "1": 10,
           "2": 20,
-          "1": 10
+          "3": 50,
+          "4": 190,
+          "5": 370
         },
         "top_positive_review": "Skin feels smoother and firmer!",
         "top_negative_review": "Slightly heavy for oily skin."
@@ -4080,7 +4541,10 @@
       "careInstructions": "Use morning and night on clean skin.",
       "image": "https://m.media-amazon.com/images/I/41Qvnw5dHNL._SY300_SX300_QL70_FMwebp_.jpg",
       "made_in": "Germany",
-      "certifications": ["Dermatologist Tested", "Fragrance-Free"],
+      "certifications": [
+        "Dermatologist Tested",
+        "Fragrance-Free"
+      ],
       "stock_quantity": 160,
       "shipping_info": "Ships within 3-5 business days"
     },
@@ -4101,11 +4565,11 @@
         "average_rating": 4.1,
         "total_reviews": 154,
         "ratings_distribution": {
-          "5": 71,
-          "4": 51,
-          "3": 19,
+          "1": 7,
           "2": 6,
-          "1": 7
+          "3": 19,
+          "4": 51,
+          "5": 71
         }
       },
       "manufacturer_name": "GlaxoSmithKline",
@@ -4129,11 +4593,11 @@
         "average_rating": 4.17,
         "total_reviews": 515,
         "ratings_distribution": {
-          "5": 238,
-          "4": 167,
-          "3": 62,
+          "1": 16,
           "2": 32,
-          "1": 16
+          "3": 62,
+          "4": 167,
+          "5": 238
         }
       },
       "careInstructions": "Check sling security before use and inspect battery charge status.",
@@ -4150,7 +4614,9 @@
       "category": "Serums",
       "type": "Hydrating Serum",
       "product_type": "Cosmetics",
-      "skin_type": ["All Skin Types"],
+      "skin_type": [
+        "All Skin Types"
+      ],
       "benefits": [
         "Strengthens skin barrier",
         "Hydrates deeply",
@@ -4169,11 +4635,11 @@
         "average_rating": 4.8,
         "total_reviews": 980,
         "ratings_distribution": {
-          "5": 720,
-          "4": 200,
-          "3": 40,
+          "1": 10,
           "2": 10,
-          "1": 10
+          "3": 40,
+          "4": 200,
+          "5": 720
         },
         "top_positive_review": "Hydrates and strengthens skin beautifully!",
         "top_negative_review": "Texture feels sticky for some."
@@ -4181,7 +4647,10 @@
       "careInstructions": "Apply morning and night before moisturizer.",
       "image": "https://m.media-amazon.com/images/I/81M+3fT9DDL._AC_UL320_.jpg",
       "made_in": "France",
-      "certifications": ["Dermatologist Tested", "Vegan"],
+      "certifications": [
+        "Dermatologist Tested",
+        "Vegan"
+      ],
       "stock_quantity": 150,
       "shipping_info": "Ships within 3-5 business days"
     },
@@ -4196,21 +4665,33 @@
       "category": "Cleansers",
       "type": "Micellar Water Cleanser",
       "product_type": "Cosmetics",
-      "skin_type": ["Sensitive", "All Skin Types"],
-      "benefits": ["Removes makeup", "Soothes skin", "Hydrates"],
+      "skin_type": [
+        "Sensitive",
+        "All Skin Types"
+      ],
+      "benefits": [
+        "Removes makeup",
+        "Soothes skin",
+        "Hydrates"
+      ],
       "how_to_use": "Soak a cotton pad and gently cleanse face and eyes. No rinse required.",
-      "ingredients_list": ["Micelles", "Cucumber Extract", "Water", "Glycerin"],
+      "ingredients_list": [
+        "Micelles",
+        "Cucumber Extract",
+        "Water",
+        "Glycerin"
+      ],
       "inWishlist": false,
       "inCard": false,
       "customer_reviews": {
         "average_rating": 4.9,
         "total_reviews": 1800,
         "ratings_distribution": {
-          "5": 1500,
-          "4": 220,
-          "3": 50,
+          "1": 10,
           "2": 20,
-          "1": 10
+          "3": 50,
+          "4": 220,
+          "5": 1500
         },
         "top_positive_review": "Gentle and effective cleanser!",
         "top_negative_review": "Bottle is small for daily use."
@@ -4218,7 +4699,10 @@
       "careInstructions": "Use morning and evening.",
       "image": "https://m.media-amazon.com/images/I/51D9UzBWcqL._AC_UL320_.jpg",
       "made_in": "France",
-      "certifications": ["Dermatologist Tested", "Non-Comedogenic"],
+      "certifications": [
+        "Dermatologist Tested",
+        "Non-Comedogenic"
+      ],
       "stock_quantity": 200,
       "shipping_info": "Ships within 3-5 business days"
     },
@@ -4239,11 +4723,11 @@
         "average_rating": 4.18,
         "total_reviews": 530,
         "ratings_distribution": {
-          "5": 245,
-          "4": 172,
-          "3": 64,
+          "1": 16,
           "2": 33,
-          "1": 16
+          "3": 64,
+          "4": 172,
+          "5": 245
         }
       },
       "careInstructions": "Clean specula and lenses with appropriate solutions and store in case.",
@@ -4260,8 +4744,15 @@
       "category": "Moisturizers",
       "type": "Anti-Aging Cream",
       "product_type": "Cosmetics",
-      "skin_type": ["Normal", "Dry"],
-      "benefits": ["Firms skin", "Reduces fine lines", "Hydrates deeply"],
+      "skin_type": [
+        "Normal",
+        "Dry"
+      ],
+      "benefits": [
+        "Firms skin",
+        "Reduces fine lines",
+        "Hydrates deeply"
+      ],
       "how_to_use": "Use daily after cleansing, morning and night.",
       "ingredients_list": [
         "Niacinamide",
@@ -4275,11 +4766,11 @@
         "average_rating": 4.6,
         "total_reviews": 1300,
         "ratings_distribution": {
-          "5": 900,
-          "4": 270,
-          "3": 90,
+          "1": 15,
           "2": 25,
-          "1": 15
+          "3": 90,
+          "4": 270,
+          "5": 900
         },
         "top_positive_review": "Noticeable improvement in skin firmness.",
         "top_negative_review": "Slightly heavy for oily skin."
@@ -4287,7 +4778,10 @@
       "careInstructions": "Apply morning and night on clean skin.",
       "image": "https://m.media-amazon.com/images/I/71t1deHMkBL._AC_UL320_.jpg",
       "made_in": "USA",
-      "certifications": ["Dermatologist Tested", "Non-Comedogenic"],
+      "certifications": [
+        "Dermatologist Tested",
+        "Non-Comedogenic"
+      ],
       "stock_quantity": 150,
       "shipping_info": "Ships within 3-5 business days"
     },
@@ -4302,21 +4796,33 @@
       "category": "Toners",
       "type": "Soothing Toner",
       "product_type": "Cosmetics",
-      "skin_type": ["All Skin Types", "Sensitive"],
-      "benefits": ["Balances pH", "Soothes skin", "Refreshes complexion"],
+      "skin_type": [
+        "All Skin Types",
+        "Sensitive"
+      ],
+      "benefits": [
+        "Balances pH",
+        "Soothes skin",
+        "Refreshes complexion"
+      ],
       "how_to_use": "Apply with cotton pad after cleansing, before moisturizer.",
-      "ingredients_list": ["Witch Hazel", "Chamomile", "Allantoin", "Water"],
+      "ingredients_list": [
+        "Witch Hazel",
+        "Chamomile",
+        "Allantoin",
+        "Water"
+      ],
       "inWishlist": false,
       "inCard": false,
       "customer_reviews": {
         "average_rating": 4.5,
         "total_reviews": 780,
         "ratings_distribution": {
-          "5": 480,
-          "4": 200,
-          "3": 70,
+          "1": 10,
           "2": 20,
-          "1": 10
+          "3": 70,
+          "4": 200,
+          "5": 480
         },
         "top_positive_review": "Soothes skin without irritation.",
         "top_negative_review": "Mild scent not for everyone."
@@ -4324,7 +4830,10 @@
       "careInstructions": "Use morning and night after cleansing.",
       "image": "https://m.media-amazon.com/images/I/51QIwxrBB1L._AC_SY300_SX300_QL70_FMwebp_.jpg",
       "made_in": "UK",
-      "certifications": ["Dermatologist Tested", "Alcohol-Free"],
+      "certifications": [
+        "Dermatologist Tested",
+        "Alcohol-Free"
+      ],
       "stock_quantity": 170,
       "shipping_info": "Ships within 3-5 business days"
     },
@@ -4339,21 +4848,33 @@
       "category": "Cleansers",
       "type": "Micellar Water",
       "product_type": "Cosmetics",
-      "skin_type": ["All Skin Types", "Sensitive"],
-      "benefits": ["Removes makeup", "Hydrates", "Soothes skin"],
+      "skin_type": [
+        "All Skin Types",
+        "Sensitive"
+      ],
+      "benefits": [
+        "Removes makeup",
+        "Hydrates",
+        "Soothes skin"
+      ],
       "how_to_use": "Apply with cotton pad to face and eyes, no rinse required.",
-      "ingredients_list": ["Micelles", "Glycerin", "Water", "Cucumber Extract"],
+      "ingredients_list": [
+        "Micelles",
+        "Glycerin",
+        "Water",
+        "Cucumber Extract"
+      ],
       "inWishlist": false,
       "inCard": false,
       "customer_reviews": {
         "average_rating": 4.6,
         "total_reviews": 1200,
         "ratings_distribution": {
-          "5": 800,
-          "4": 300,
-          "3": 70,
+          "1": 10,
           "2": 20,
-          "1": 10
+          "3": 70,
+          "4": 300,
+          "5": 800
         },
         "top_positive_review": "Gently removes all makeup!",
         "top_negative_review": "Small bottle for daily use."
@@ -4361,7 +4882,10 @@
       "careInstructions": "Use morning and night after cleansing.",
       "image": "https://m.media-amazon.com/images/I/410aYbZluvL._SY300_SX300_QL70_FMwebp_.jpg",
       "made_in": "France",
-      "certifications": ["Dermatologist Tested", "Vegan"],
+      "certifications": [
+        "Dermatologist Tested",
+        "Vegan"
+      ],
       "stock_quantity": 200,
       "shipping_info": "Ships within 3-5 business days"
     },
@@ -4382,11 +4906,11 @@
         "average_rating": 4.17,
         "total_reviews": 545,
         "ratings_distribution": {
-          "5": 252,
-          "4": 177,
-          "3": 66,
+          "1": 16,
           "2": 34,
-          "1": 16
+          "3": 66,
+          "4": 177,
+          "5": 252
         }
       },
       "careInstructions": "Lubricate moving parts regularly and disinfect all surfaces between cases.",
@@ -4403,21 +4927,33 @@
       "category": "Moisturizers",
       "type": "Face Moisturizer",
       "product_type": "Cosmetics",
-      "skin_type": ["All Skin Types", "Sensitive"],
-      "benefits": ["Restores barrier", "Hydrates", "Soothes skin"],
+      "skin_type": [
+        "All Skin Types",
+        "Sensitive"
+      ],
+      "benefits": [
+        "Restores barrier",
+        "Hydrates",
+        "Soothes skin"
+      ],
       "how_to_use": "Apply evenly to face and neck morning and night.",
-      "ingredients_list": ["Ceramides", "Niacinamide", "Glycerin", "Water"],
+      "ingredients_list": [
+        "Ceramides",
+        "Niacinamide",
+        "Glycerin",
+        "Water"
+      ],
       "inWishlist": false,
       "inCard": false,
       "customer_reviews": {
         "average_rating": 4.8,
         "total_reviews": 950,
         "ratings_distribution": {
-          "5": 700,
-          "4": 200,
-          "3": 30,
+          "1": 10,
           "2": 10,
-          "1": 10
+          "3": 30,
+          "4": 200,
+          "5": 700
         },
         "top_positive_review": "Hydrates perfectly without irritation.",
         "top_negative_review": "Texture is a bit thick for oily skin."
@@ -4425,7 +4961,10 @@
       "careInstructions": "Use morning and night.",
       "image": "https://m.media-amazon.com/images/I/51x78epntaL._AC_UL320_.jpg",
       "made_in": "France",
-      "certifications": ["Dermatologist Tested", "Non-Comedogenic"],
+      "certifications": [
+        "Dermatologist Tested",
+        "Non-Comedogenic"
+      ],
       "stock_quantity": 180,
       "shipping_info": "Ships within 3-5 business days"
     },
@@ -4446,11 +4985,11 @@
         "average_rating": 4.3,
         "total_reviews": 200,
         "ratings_distribution": {
-          "5": 109,
-          "4": 59,
-          "3": 21,
+          "1": 6,
           "2": 5,
-          "1": 6
+          "3": 21,
+          "4": 59,
+          "5": 109
         }
       },
       "manufacturer_name": "Pfizer",
@@ -4474,11 +5013,11 @@
         "average_rating": 4.18,
         "total_reviews": 560,
         "ratings_distribution": {
-          "5": 259,
-          "4": 182,
-          "3": 68,
+          "1": 16,
           "2": 35,
-          "1": 16
+          "3": 68,
+          "4": 182,
+          "5": 259
         }
       },
       "careInstructions": "Sterilize drill bits and handpieces according to high-level disinfection protocols.",
@@ -4501,11 +5040,11 @@
         "average_rating": 4.1,
         "total_reviews": 484,
         "ratings_distribution": {
-          "5": 215,
-          "4": 173,
-          "3": 54,
+          "1": 7,
           "2": 35,
-          "1": 7
+          "3": 54,
+          "4": 173,
+          "5": 215
         }
       },
       "manufacturer_name": "Generic (Various)",
@@ -4523,25 +5062,32 @@
       "category": "Moisturizers",
       "type": "Night Cream",
       "product_type": "Cosmetics",
-      "skin_type": ["All Skin Types"],
+      "skin_type": [
+        "All Skin Types"
+      ],
       "benefits": [
         "Reduces wrinkles",
         "Improves texture",
         "Hydrates skin overnight"
       ],
       "how_to_use": "Apply each night on clean face and neck.",
-      "ingredients_list": ["Retinol", "Niacinamide", "Glycerin", "Water"],
+      "ingredients_list": [
+        "Retinol",
+        "Niacinamide",
+        "Glycerin",
+        "Water"
+      ],
       "inWishlist": false,
       "inCard": false,
       "customer_reviews": {
         "average_rating": 4.6,
         "total_reviews": 1450,
         "ratings_distribution": {
-          "5": 950,
-          "4": 350,
-          "3": 100,
+          "1": 20,
           "2": 30,
-          "1": 20
+          "3": 100,
+          "4": 350,
+          "5": 950
         },
         "top_positive_review": "Noticeable difference in fine lines.",
         "top_negative_review": "May cause slight redness at first use."
@@ -4549,7 +5095,10 @@
       "careInstructions": "Use nightly on clean skin.",
       "image": "https://m.media-amazon.com/images/I/71O7OnBQPwL._SX425_.jpg",
       "made_in": "USA",
-      "certifications": ["Dermatologist Tested", "Non-Comedogenic"],
+      "certifications": [
+        "Dermatologist Tested",
+        "Non-Comedogenic"
+      ],
       "stock_quantity": 170,
       "shipping_info": "Ships within 3-5 business days"
     },
@@ -4570,11 +5119,11 @@
         "average_rating": 4.19,
         "total_reviews": 575,
         "ratings_distribution": {
-          "5": 266,
-          "4": 187,
-          "3": 70,
+          "1": 16,
           "2": 36,
-          "1": 16
+          "3": 70,
+          "4": 187,
+          "5": 266
         }
       },
       "careInstructions": "Calibrate temperature sensor and clean surfaces with non-abrasive disinfectant.",
@@ -4591,8 +5140,14 @@
       "category": "Serums",
       "type": "Anti-Wrinkle Oil",
       "product_type": "Cosmetics",
-      "skin_type": ["All Skin Types"],
-      "benefits": ["Reduces wrinkles", "Smooths skin", "Hydrates"],
+      "skin_type": [
+        "All Skin Types"
+      ],
+      "benefits": [
+        "Reduces wrinkles",
+        "Smooths skin",
+        "Hydrates"
+      ],
       "how_to_use": "Apply 2-3 drops nightly to face and neck.",
       "ingredients_list": [
         "Retinol",
@@ -4606,11 +5161,11 @@
         "average_rating": 4.7,
         "total_reviews": 980,
         "ratings_distribution": {
-          "5": 650,
-          "4": 250,
-          "3": 50,
+          "1": 10,
           "2": 20,
-          "1": 10
+          "3": 50,
+          "4": 250,
+          "5": 650
         },
         "top_positive_review": "Skin feels smoother and plumper.",
         "top_negative_review": "May feel oily for some skin types."
@@ -4618,7 +5173,10 @@
       "careInstructions": "Use nightly on clean skin.",
       "image": "https://m.media-amazon.com/images/I/71yEYNwAOjL._AC_UL320_.jpg",
       "made_in": "USA",
-      "certifications": ["Dermatologist Tested", "Non-Comedogenic"],
+      "certifications": [
+        "Dermatologist Tested",
+        "Non-Comedogenic"
+      ],
       "stock_quantity": 160,
       "shipping_info": "Ships within 3-5 business days"
     },
@@ -4639,11 +5197,11 @@
         "average_rating": 4.2,
         "total_reviews": 326,
         "ratings_distribution": {
-          "5": 182,
-          "4": 87,
-          "3": 21,
+          "1": 13,
           "2": 23,
-          "1": 13
+          "3": 21,
+          "4": 87,
+          "5": 182
         }
       },
       "manufacturer_name": "GlaxoSmithKline",
@@ -4667,11 +5225,11 @@
         "average_rating": 4.18,
         "total_reviews": 590,
         "ratings_distribution": {
-          "5": 273,
-          "4": 192,
-          "3": 72,
+          "1": 16,
           "2": 37,
-          "1": 16
+          "3": 72,
+          "4": 192,
+          "5": 273
         }
       },
       "careInstructions": "Perform leak tests before each case and monitor gas scavenging system function.",
@@ -4688,8 +5246,16 @@
       "category": "Treatments",
       "type": "Acne Treatment",
       "product_type": "Cosmetics",
-      "skin_type": ["Oily", "Combination", "Acne-Prone"],
-      "benefits": ["Reduces blemishes", "Prevents breakouts", "Soothes skin"],
+      "skin_type": [
+        "Oily",
+        "Combination",
+        "Acne-Prone"
+      ],
+      "benefits": [
+        "Reduces blemishes",
+        "Prevents breakouts",
+        "Soothes skin"
+      ],
       "how_to_use": "Apply a thin layer to affected areas once or twice daily.",
       "ingredients_list": [
         "Benzoyl Peroxide",
@@ -4703,11 +5269,11 @@
         "average_rating": 4.7,
         "total_reviews": 1100,
         "ratings_distribution": {
-          "5": 750,
-          "4": 250,
-          "3": 70,
+          "1": 10,
           "2": 20,
-          "1": 10
+          "3": 70,
+          "4": 250,
+          "5": 750
         },
         "top_positive_review": "Clears blemishes quickly.",
         "top_negative_review": "Can cause dryness at first."
@@ -4715,7 +5281,10 @@
       "careInstructions": "Apply once or twice daily on clean skin.",
       "image": "https://m.media-amazon.com/images/I/31h13vveueL._SX342_SY445_QL70_FMwebp_.jpg",
       "made_in": "France",
-      "certifications": ["Dermatologist Tested", "Non-Comedogenic"],
+      "certifications": [
+        "Dermatologist Tested",
+        "Non-Comedogenic"
+      ],
       "stock_quantity": 180,
       "shipping_info": "Ships within 3-5 business days"
     },
@@ -4730,8 +5299,14 @@
       "category": "Exfoliants",
       "type": "Toning Solution",
       "product_type": "Cosmetics",
-      "skin_type": ["All Skin Types"],
-      "benefits": ["Exfoliates", "Brightens skin", "Improves texture"],
+      "skin_type": [
+        "All Skin Types"
+      ],
+      "benefits": [
+        "Exfoliates",
+        "Brightens skin",
+        "Improves texture"
+      ],
       "how_to_use": "Apply with cotton pad once daily, evening only.",
       "ingredients_list": [
         "Glycolic Acid",
@@ -4746,11 +5321,11 @@
         "average_rating": 4.6,
         "total_reviews": 950,
         "ratings_distribution": {
-          "5": 600,
-          "4": 250,
-          "3": 70,
+          "1": 10,
           "2": 20,
-          "1": 10
+          "3": 70,
+          "4": 250,
+          "5": 600
         },
         "top_positive_review": "Skin looks brighter and smoother.",
         "top_negative_review": "May sting sensitive skin."
@@ -4758,7 +5333,10 @@
       "careInstructions": "Use in the evening only after cleansing.",
       "image": "https://m.media-amazon.com/images/I/51W+NlvbH2L._AC_UL320_.jpg",
       "made_in": "Canada",
-      "certifications": ["Vegan", "Cruelty-Free"],
+      "certifications": [
+        "Vegan",
+        "Cruelty-Free"
+      ],
       "stock_quantity": 160,
       "shipping_info": "Ships within 3-5 business days"
     },
@@ -4779,11 +5357,11 @@
         "average_rating": 4.19,
         "total_reviews": 605,
         "ratings_distribution": {
-          "5": 280,
-          "4": 197,
-          "3": 74,
+          "1": 16,
           "2": 38,
-          "1": 16
+          "3": 74,
+          "4": 197,
+          "5": 280
         }
       },
       "careInstructions": "Calibrate ion-selective electrodes daily and handle samples carefully to prevent bubbles.",
@@ -4806,11 +5384,11 @@
         "average_rating": 4.2,
         "total_reviews": 476,
         "ratings_distribution": {
-          "5": 221,
-          "4": 175,
-          "3": 44,
+          "1": 14,
           "2": 22,
-          "1": 14
+          "3": 44,
+          "4": 175,
+          "5": 221
         }
       },
       "manufacturer_name": "Generic (Various)",
@@ -4834,11 +5412,11 @@
         "average_rating": 4.4,
         "total_reviews": 188,
         "ratings_distribution": {
-          "5": 114,
-          "4": 50,
-          "3": 12,
+          "1": 6,
           "2": 6,
-          "1": 6
+          "3": 12,
+          "4": 50,
+          "5": 114
         }
       },
       "manufacturer_name": "Pfizer (Upjohn)",
@@ -4862,11 +5440,11 @@
         "average_rating": 4.21,
         "total_reviews": 650,
         "ratings_distribution": {
-          "5": 301,
-          "4": 212,
-          "3": 80,
+          "1": 16,
           "2": 41,
-          "1": 16
+          "3": 80,
+          "4": 212,
+          "5": 301
         }
       },
       "careInstructions": "Ensure patient positioning is accurate and update imaging software.",
@@ -4883,21 +5461,33 @@
       "category": "Body Care",
       "type": "Repair Lotion",
       "product_type": "Cosmetics",
-      "skin_type": ["Dry", "Sensitive"],
-      "benefits": ["Repairs dry skin", "Hydrates", "Soothes skin"],
+      "skin_type": [
+        "Dry",
+        "Sensitive"
+      ],
+      "benefits": [
+        "Repairs dry skin",
+        "Hydrates",
+        "Soothes skin"
+      ],
       "how_to_use": "Apply generously to body as needed.",
-      "ingredients_list": ["Urea", "Ceramides", "Glycerin", "Water"],
+      "ingredients_list": [
+        "Urea",
+        "Ceramides",
+        "Glycerin",
+        "Water"
+      ],
       "inWishlist": false,
       "inCard": false,
       "customer_reviews": {
         "average_rating": 4.8,
         "total_reviews": 800,
         "ratings_distribution": {
-          "5": 600,
-          "4": 150,
-          "3": 40,
+          "1": 5,
           "2": 5,
-          "1": 5
+          "3": 40,
+          "4": 150,
+          "5": 600
         },
         "top_positive_review": "Extremely effective for very dry skin.",
         "top_negative_review": "Texture a bit thick for some users."
@@ -4905,7 +5495,10 @@
       "careInstructions": "Use daily on dry areas.",
       "image": "https://m.media-amazon.com/images/I/61iSRF5mHfL._AC_UL320_.jpg",
       "made_in": "Germany",
-      "certifications": ["Dermatologist Tested", "Fragrance-Free"],
+      "certifications": [
+        "Dermatologist Tested",
+        "Fragrance-Free"
+      ],
       "stock_quantity": 180,
       "shipping_info": "Ships within 3-5 business days"
     },
@@ -4926,11 +5519,11 @@
         "average_rating": 4.3,
         "total_reviews": 231,
         "ratings_distribution": {
-          "5": 126,
-          "4": 68,
-          "3": 22,
+          "1": 5,
           "2": 10,
-          "1": 5
+          "3": 22,
+          "4": 68,
+          "5": 126
         }
       },
       "manufacturer_name": "Pfizer",
@@ -4943,26 +5536,39 @@
       "brand": "Paula’s Choice",
       "active_ingredient": "Niacinamide, Peptides",
       "description": "Lightweight moisturizer that hydrates, reduces fine lines, and improves skin texture.",
-      "price": 30.0,
+      "price": 30,
       "currency": "USD",
       "category": "Moisturizers",
       "type": "Anti-Aging Hydrator",
       "product_type": "Cosmetics",
-      "skin_type": ["Normal", "Oily", "Combination"],
-      "benefits": ["Hydrates", "Reduces fine lines", "Improves texture"],
+      "skin_type": [
+        "Normal",
+        "Oily",
+        "Combination"
+      ],
+      "benefits": [
+        "Hydrates",
+        "Reduces fine lines",
+        "Improves texture"
+      ],
       "how_to_use": "Apply morning and night after cleansing and treatment.",
-      "ingredients_list": ["Niacinamide", "Peptides", "Glycerin", "Water"],
+      "ingredients_list": [
+        "Niacinamide",
+        "Peptides",
+        "Glycerin",
+        "Water"
+      ],
       "inWishlist": false,
       "inCard": false,
       "customer_reviews": {
         "average_rating": 4.7,
         "total_reviews": 900,
         "ratings_distribution": {
-          "5": 650,
-          "4": 200,
-          "3": 35,
+          "1": 5,
           "2": 10,
-          "1": 5
+          "3": 35,
+          "4": 200,
+          "5": 650
         },
         "top_positive_review": "Great for improving skin texture.",
         "top_negative_review": "Slightly pricey."
@@ -4970,9 +5576,31 @@
       "careInstructions": "Use morning and night.",
       "image": "https://m.media-amazon.com/images/I/61iuDP6qqEL._AC_UL320_.jpg",
       "made_in": "USA",
-      "certifications": ["Vegan", "Cruelty-Free"],
+      "certifications": [
+        "Vegan",
+        "Cruelty-Free"
+      ],
       "stock_quantity": 150,
       "shipping_info": "Ships within 3-5 business days"
+    }
+  ],
+  "order": [
+    {
+      "id": "08b1",
+      "order": {
+        "id": "1763895343426",
+        "firstName": "aya",
+        "lastName": "alaa",
+        "email": "a@a.com",
+        "phone": "0595846388",
+        "country": "Algeria",
+        "state": "Aïn Defla",
+        "city": "Khemis Miliana",
+        "shoppingMethod": "pickup",
+        "total": 57.81,
+        "status": "Processing",
+        "createdAt": "2025-11-23T10:55:43.426Z"
+      }
     }
   ]
 }

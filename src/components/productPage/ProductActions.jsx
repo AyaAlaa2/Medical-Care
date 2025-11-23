@@ -1,6 +1,6 @@
 import { Box, Button, Typography } from "@mui/material";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
-import { useCartAndWishlist } from "../hooks/useCartAndWishlist";
+import { useCartAndWishlist } from "../customHook/useCartAndWishlist";
 
 const ProductActions = ({ product }) => {
   const { requireLogin, addProductToCart, addProductToWishlist } =

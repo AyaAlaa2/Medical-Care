@@ -9,7 +9,7 @@ import {
   Chip,
   Rating,
 } from "@mui/material";
-import { useCartAndWishlist } from "../hooks/useCartAndWishlist";
+import { useCartAndWishlist } from "../customHook/useCartAndWishlist";
 
 const DealCard = ({ product }) => {
   const { requireLogin, addProductToCart } = useCartAndWishlist();
