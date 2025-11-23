@@ -3,7 +3,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { useState, useEffect } from "react";
 import { IconButton, Drawer, Box, List } from "@mui/material";
 import { useMediaQuery } from "@mui/material";
-import HeaderLinks from "./HeaderLinks";
+import HeaderLinks from "./headerLinks";
 import Links from "./Links";
 import Logo from "./Logo";
 
