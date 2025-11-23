@@ -7,7 +7,7 @@ import HeaderLinks from "./HeaderLinks";
 import Links from "./Links";
 import Logo from "./Logo";
 
-const Mobilemenu = () => {
+const MobileMenu = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const isDesktop = useMediaQuery("(min-width:900px)");
   const isTop = window.scrollY === 0;
@@ -81,4 +81,4 @@ const Mobilemenu = () => {
     </div>
   );
 };
-export default Mobilemenu;
+export default MobileMenu;

@@ -11,7 +11,7 @@ import LogoutIcon from "@mui/icons-material/Logout";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import ShoppingBagOutlinedIcon from "@mui/icons-material/ShoppingBagOutlined";
-import Mobilemenu from "./Mobilemenu";
+import MobileMenu from "./MobileMenu";
 import SearchBar from "../search/SearchBar";
 import Logo from "./Logo";
 import { Link, useNavigate } from "react-router-dom";
@@ -76,7 +76,7 @@ const NavBar = () => {
         }}
       >
         <Box sx={{ display: "flex", alignItems: "center" }}>
-          <Mobilemenu />
+          <MobileMenu />
           <Box
             sx={{
               display: "flex",
