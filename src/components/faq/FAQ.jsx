@@ -1,7 +1,7 @@
 import React from "react";
 import HeaderOfSection from "../customHook/HeaderOfSection";
 import FAQSection from "./FAQSection";
-import ServiceSection from "../aboutUs/Services/ServiceSection";
+import ServiceSection from "../aboutUs/services/ServiceSection";
 import AccordionSection from "./AccordionSection";
 
 const FAQ = () => {

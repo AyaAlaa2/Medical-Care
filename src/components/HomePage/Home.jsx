@@ -8,7 +8,7 @@ import FixedSection from "./fixedSection.jsx/FixedSection";
 import LatestProduct from "./latestProducts/LatestProducts";
 import DealOfTheWeek from "./dealOfTheWeek/DealOfTheWeek";
 import FeaturedProduct from "./featuredProduct/FeaturedProduct";
-import FeatureBar from "./featureBar/FeatureBAr";
+import FeatureBar from "./featureBar/FeatureBar";
 import { advs1, advs2 } from "./AdvSec/advData";
 import ReviewsSec from "./review/ReviewsSec";
 import Error from "../customHook/Error";
