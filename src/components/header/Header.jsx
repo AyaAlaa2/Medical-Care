@@ -1,7 +1,7 @@
 import React from "react";
 import { useMediaQuery, AppBar, Toolbar, Box } from "@mui/material";
 import PercentIcon from "@mui/icons-material/Percent";
-import HeaderLinks from "./HeaderLinks";
+import HeaderLinks from "./headerLinks";
 import { Link } from "react-router-dom";
 import Links from "./Links";
 
