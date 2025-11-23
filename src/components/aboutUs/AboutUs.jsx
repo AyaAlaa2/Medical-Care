@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
 import AboutContactSection from "./aboutContactSection/AboutContactSection";
 import ImageSection from "./imagesSection/ImagesSection";
-import ServiceSection from "./Services/ServiceSection";
+import ServiceSection from "./services/ServiceSection";
 import OpportunitiesSection from "./opportunities/opportunitiesSection";
 import TeamStrategy from "./teamStrategy/TeamStrategy";
 import HeaderOfSection from "../customHook/HeaderOfSection";

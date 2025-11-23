@@ -1,5 +1,4 @@
 import React from "react";
-import useTeamStrategy from "./useTeamStrategy";
 import {
   Container,
   Tabs,
@@ -60,7 +59,7 @@ const TeamStrategyDesk = ({
           },
         }}
       >
-        {sections.map((section) => (
+        {sections.map((section, i) => (
           <Tab
             key={section.id}
             label={section.label}
@@ -70,8 +69,8 @@ const TeamStrategyDesk = ({
               color: "black",
               px: 3,
               border: "1px solid #e0e0e0",
-              borderBottom: i === selectedTab ? "none" : "1px solid #e0e0e0",
-              background: i === selectedTab ? "#fff" : "inherit",
+              borderBottom: i === section.id ? "none" : "1px solid #e0e0e0",
+              background: i === section.id ? "#fff" : "inherit",
               minHeight: 0,
               zIndex: 2,
               "&.Mui-selected": {
