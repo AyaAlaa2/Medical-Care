@@ -2,7 +2,7 @@ import { Box } from "@mui/material";
 import PriceFilter from "../filter/PriceFilter";
 import Divider from "@mui/material/Divider";
 import Typography from "@mui/material/Typography";
-import Ratingfilter from "../filter/Ratingfilter";
+import Ratingfilter from "../filter/RatingFilter";
 import TypeFilter from "../filter/TypeFilter";
 
 const ShopFilter = ({
