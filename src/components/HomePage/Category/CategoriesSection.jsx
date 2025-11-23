@@ -1,13 +1,11 @@
 import React from "react";
 import { Box, Container, Typography } from "@mui/material";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/css/pagination";
 import "swiper/css";
-
 import CategoryCard from "./CategoriesCard";
-import { CATEGORIES } from "./CategoriesData";
+import { CATEGORIES } from "./categoriesData";
 
 export default function CategoriesSection() {
   return (
