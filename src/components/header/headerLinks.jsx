@@ -5,11 +5,6 @@ const HeaderLinks = [
   },
 
   {
-    name: "Products",
-    path: "/products",
-  },
-
-  {
     name: "Shop",
     subLinks: [
       {
