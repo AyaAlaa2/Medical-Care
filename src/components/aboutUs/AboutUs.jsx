@@ -2,7 +2,7 @@ import { Box } from "@mui/material";
 import AboutContactSection from "./aboutContactSection/AboutContactSection";
 import ImageSection from "./imagesSection/ImagesSection";
 import ServiceSection from "./services/ServiceSection";
-import OpportunitiesSection from "./opportunities/opportunitiesSection";
+import OpportunitiesSection from "./opportunities/OpportunitiesSection";
 import TeamStrategy from "./teamStrategy/TeamStrategy";
 import HeaderOfSection from "../customHook/HeaderOfSection";
 function AboutUs() {
