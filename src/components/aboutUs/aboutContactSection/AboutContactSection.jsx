@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Button, Container, Typography } from "@mui/material";
-import { AboutcontactData } from "./AboutcontactData";
+import { AboutcontactData } from "./AboutContactData";
 const data = AboutcontactData();
 function AboutContactSection() {
   return (
