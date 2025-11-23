@@ -4,37 +4,77 @@ import { useGetProductsQuery } from "../store/apiSlice";
 import ImageGallery from "./ImageGallery";
 import ProductInfo from "./ProductInfo";
 import RelatedProductsSection from "../relatedProducts/RelatedProductsSection";
+import HeaderOfSection from "../customHook/HeaderOfSection";
+import ProductDetailSection from "./ProductDetailSection";
+import Loading from "../customHook/Loading"
 
 const ProductPage = () => {
   const { id } = useParams();
   const { data, isLoading, error } = useGetProductsQuery();
 
-  if (isLoading) return <CircularProgress sx={{ display: "block", m: 4 }} />;
-  if (error)
+  if (isLoading) {
+    return <Loading />;
+  }
+
+  if (error) {
     return <Typography sx={{ m: 4 }}>Error loading product</Typography>;
+  }
 
   const product = data?.find((p) => String(p.id) === String(id));
   if (!product) return <Typography sx={{ m: 4 }}>Product not found</Typography>;
 
   return (
     <>
-      <Box sx={{ display: "flex", justifyContent: "center", px: 2, py: 4 }}>
+      <HeaderOfSection
+        title={product.name}
+        breadcrumbs={[
+          { label: "Home", href: "/" },
+          { label: "shop", href: "/shop/new" },
+          { label: product.name },
+        ]}
+      />
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          px: 1,
+          py: 1,
+        }}
+      >
         <Box
           sx={{
             display: "flex",
             width: "100%",
             maxWidth: 1100,
-            gap: 4,
-            "@media (max-width: 768px)": { flexDirection: "column" },
+            alignItems: "flex-start",
+            justifyContent: "center",
+            "@media (max-width: 1024px)": {
+              flexDirection: "column",
+              alignItems: "center",
+              textAlign: "center",
+            },
           }}
         >
-          <Box sx={{ flex: 1 }}>
+          <Box
+            sx={{
+              mr: { xs: 0, md: 3 },
+              mb: { xs: 2, md: 0 },
+            }}
+          >
             <ImageGallery product={product} />
           </Box>
-          <Box sx={{ flex: 1 }}>
+          <Box
+            sx={{
+              ml: { xs: 0, md: 3 },
+            }}
+          >
             <ProductInfo product={product} />
           </Box>
         </Box>
+      </Box>
+
+      <Box sx={{ px: 2, pb: 4 }}>
+        <ProductDetailSection product={product} />
       </Box>
 
       <Box sx={{ px: 2, pb: 4 }}>

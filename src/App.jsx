@@ -13,10 +13,12 @@ import CartPage from "./components/cart/CartPage";
 import Wishlist from "./components/wishList/Wishlist";
 import SearchResult from "./components/search/SearchResult";
 import CheckoutPage from "./components/checkout/CheckoutPage";
+import ScrollToTop from "./components/scrollToTop";
 
 const App = () => {
   return (
     <>
+      <ScrollToTop />
       <Toaster position="top-center" reverseOrder={false} />
       <Routes>
         <Route element={<UserInterface />}>

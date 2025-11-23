@@ -5,24 +5,21 @@ import ProductRating from "./ProductRating";
 import ProductDescription from "./ProductDescription";
 import ProductActions from "./ProductActions";
 import ProductStatus from "./ProductStatus";
-import ProductShare from "./ProductShare";
 
 const ProductInfo = ({ product }) => (
   <Box
     sx={{
-      textAlign: "left",
-      "@media (max-width: 768px)": {
-        textAlign: "center",
-      },
+      width: "100%",
+      maxWidth: 500, 
+      textAlign: { xs: "center", md: "left" }, 
     }}
   >
-    <ProductTitle name={product.name} />
+    <ProductTitle product={product} />
     <ProductPrice price={product.price} />
     <ProductRating product={product} />
-    <ProductDescription description={product.description} />
+    <ProductDescription product={product} />
     <ProductActions product={product} />
     <ProductStatus stock_quantity={product.stock_quantity} />
-    <ProductShare />
   </Box>
 );
 

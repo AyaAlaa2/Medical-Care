@@ -8,7 +8,7 @@ import {
   Typography,
 } from "@mui/material";
 
-export default function TeamStrategyMobile({ index, onChange, data }) {
+const TeamStrategyMobile = ({ index, onChange, data }) => {
   return (
     <Container maxWidth="sm" sx={{ my: { xs: 2, md: 4 } }}>
       <Box sx={{ border: 1, borderColor: "divider", borderRadius: 1 }}>
@@ -71,4 +71,5 @@ export default function TeamStrategyMobile({ index, onChange, data }) {
       </Box>
     </Container>
   );
-}
+};
+export default TeamStrategyMobile;
