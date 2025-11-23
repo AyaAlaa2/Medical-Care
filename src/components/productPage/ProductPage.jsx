@@ -6,7 +6,8 @@ import ProductInfo from "./ProductInfo";
 import RelatedProductsSection from "../relatedProducts/RelatedProductsSection";
 import HeaderOfSection from "../customHook/HeaderOfSection";
 import ProductDetailSection from "./ProductDetailSection";
-import Loading from "../customHook/Loading"
+import Loading from "../customHook/Loading";
+import Error from "../customHook/Error";
 
 const ProductPage = () => {
   const { id } = useParams();
@@ -17,7 +18,7 @@ const ProductPage = () => {
   }
 
   if (error) {
-    return <Typography sx={{ m: 4 }}>Error loading product</Typography>;
+    return <Error />;
   }
 
   const product = data?.find((p) => String(p.id) === String(id));

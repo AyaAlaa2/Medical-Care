@@ -4,10 +4,10 @@ import {
   Paper,
   Typography,
   Divider,
-  Skeleton,
   Avatar,
   Stack,
 } from "@mui/material";
+import Loading from "../customHook/Loading";
 
 const CheckoutCart = ({
   loading,
@@ -20,21 +20,7 @@ const CheckoutCart = ({
   }, [fetchCartFromFirebase]);
 
   if (loading) {
-    return (
-      <Paper
-        elevation={3}
-        sx={{
-          minHeight: 200,
-          p: 3,
-          display: { xs: "none", lg: "flex" },
-          justifyContent: "center",
-          alignItems: "center",
-          borderRadius: 3,
-        }}
-      >
-        <Skeleton variant="circular" width={80} height={80} />
-      </Paper>
-    );
+    return <Loading />;
   }
 
   if (cartFirebase.length === 0) {
