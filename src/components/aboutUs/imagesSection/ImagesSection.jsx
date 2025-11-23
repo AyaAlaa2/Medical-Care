@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Container, Box, Typography } from "@mui/material";
-import { AllimagesData } from "./AllimagesData";
+import { AllimagesData } from "./AllImagesData";
 import { ImgStyle, useImageSectionStyles } from "./useImageSectionStyles";
 
 const Img = ({ src, alt, ...rest }) => {
