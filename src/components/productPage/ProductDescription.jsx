@@ -30,7 +30,7 @@ const ProductDescription = ({ product }) => {
         </>
       )}
 
-      {product.skin_type.length > 0 && (
+      {product.skin_type?.length > 0 && (
         <Box sx={{ mb: 2 }}>
           <Typography
             variant="subtitle2"

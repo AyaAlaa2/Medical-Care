@@ -14,6 +14,7 @@ import Wishlist from "./components/wishList/Wishlist";
 import SearchResult from "./components/search/SearchResult";
 import CheckoutPage from "./components/checkout/CheckoutPage";
 import ScrollToTop from "./components/scrollToTop";
+import ErrorPage from "./components/ErrorPage"
 
 const App = () => {
   return (
@@ -42,7 +43,7 @@ const App = () => {
           <Route element={<CheckoutPage />} path="/checkout" />
         </Route>
 
-        <Route path="*" element={<h1>Page Not Found</h1>} />
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
     </>
   );

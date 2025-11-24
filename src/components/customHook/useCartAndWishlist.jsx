@@ -7,6 +7,7 @@ import { useNavigate } from "react-router-dom";
 
 export const useCartAndWishlist = () => {
   const [cartCount, setCartCount] = useState(0);
+  const [wishlistCount, setWishlistCount] = useState(0);
   const [loading, setLoading] = useState(false);
 
   const navigate = useNavigate();
@@ -16,6 +17,7 @@ export const useCartAndWishlist = () => {
     const unsubscribeAuth = auth.onAuthStateChanged((currentUser) => {
       if (!currentUser) {
         setCartCount(0);
+        setWishlistCount(0);
         return;
       }
 
@@ -23,9 +25,11 @@ export const useCartAndWishlist = () => {
       const unsubscribe = onSnapshot(userRef, (snapshot) => {
         const data = snapshot.data();
         const cart = data?.cart || [];
+        const wishlist = data?.wishlist || [];
         setCartCount(
           cart.reduce((total, item) => total + (item.quantity || 1), 0)
         );
+        setWishlistCount(wishlist.length);
       });
 
       return () => unsubscribe();
@@ -103,15 +107,11 @@ export const useCartAndWishlist = () => {
       );
 
       let updatedWishlist;
-      if (existingIndex !== -1) {
-        updatedWishlist = wishlistFirebase.map((item, i) =>
-          i === existingIndex ? { ...item, quantity: item.quantity + 1 } : item
-        );
+
+      if (existingIndex === -1) {
+        updatedWishlist = [...wishlistFirebase, { ...product }];
       } else {
-        updatedWishlist = [
-          ...wishlistFirebase,
-          { ...product, inCard: true, quantity: 1 },
-        ];
+        toast.error("Product is already in wishlist !");
       }
 
       await updateDoc(userRef, { wishlist: updatedWishlist });
@@ -130,5 +130,6 @@ export const useCartAndWishlist = () => {
     addProductToWishlist,
     loading,
     cartCount,
+    wishlistCount,
   };
 };

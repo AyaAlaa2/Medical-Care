@@ -6,6 +6,7 @@ import {
   Box,
   Typography,
   Avatar,
+  Badge,
 } from "@mui/material";
 import LogoutIcon from "@mui/icons-material/Logout";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
@@ -22,16 +23,14 @@ import { signOut } from "firebase/auth";
 import { auth } from "../firebase/firebase";
 import Swal from "sweetalert2";
 import toast from "react-hot-toast";
+import { useCartAndWishlist } from "../customHook/useCartAndWishlist";
 
 const NavBar = () => {
+  const { cartCount, wishlistCount } = useCartAndWishlist();
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const user = useSelector((state) => state.logged.user);
   const isLogged = useSelector((state) => state.logged.logged);
-  const icons = [
-    { icon: FavoriteBorderIcon, path: "/favorites" },
-    { icon: ShoppingBagOutlinedIcon, path: "/cart" },
-  ];
 
   const handleLogout = () => {
     Swal.fire({
@@ -53,6 +52,11 @@ const NavBar = () => {
       }
     });
   };
+
+  const icons = [
+    { icon: FavoriteBorderIcon, path: "/favorites", count: wishlistCount || 0 },
+    { icon: ShoppingBagOutlinedIcon, path: "/cart", count: cartCount || 0 },
+  ];
 
   return (
     <AppBar
@@ -90,9 +94,10 @@ const NavBar = () => {
 
             <Box
               sx={{
-                display: "flex",
-                gap: 1,
-                alignItems: "center",
+                display: { xs: "none", lg: "flex" },
+                flexGrow: 1,
+                maxWidth: 300,
+                ml: 2,
               }}
             >
               <SearchBar />
@@ -105,6 +110,7 @@ const NavBar = () => {
             display: { xs: "none", lg: "flex" },
             flexDirection: "column",
             alignItems: "flex-start",
+            ml: 30,
             minWidth: 180,
           }}
         >
@@ -129,15 +135,14 @@ const NavBar = () => {
           sx={{
             display: "flex",
             alignItems: "center",
+            gap: { xs: 1, md: 2 },
           }}
         >
           <Box
             sx={{
-              display: { xs: "none", lg: "flex" },
-              flexDirection: "row",
-              alignItems: "flex-start",
-              mr: 2,
-              gap: { xs: 1, md: 1.5 },
+              display: "flex",
+              gap: 1,
+              alignItems: "center",
             }}
           >
             {icons.map((icon, i) => (
@@ -152,16 +157,30 @@ const NavBar = () => {
                   },
                 }}
               >
-                <icon.icon
+                <Badge
+                  badgeContent={icon.count}
+                  overlap="circular"
                   sx={{
-                    fontSize: 28,
-                    color: "black",
-                    transition: "0.2s",
-                    "&:hover": {
-                      color: "var(--main-color)",
+                    "& .MuiBadge-badge": {
+                      fontSize: 12,
+                      height: 20,
+                      minWidth: 20,
+                      bgcolor: "var(--main-color)",
+                      color: "white",
                     },
                   }}
-                />
+                >
+                  <icon.icon
+                    sx={{
+                      fontSize: 28,
+                      color: "black",
+                      transition: "0.2s",
+                      "&:hover": {
+                        color: "var(--main-color)",
+                      },
+                    }}
+                  />
+                </Badge>
               </IconButton>
             ))}
 

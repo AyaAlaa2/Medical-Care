@@ -72,7 +72,7 @@ const SearchBar = () => {
           color: "black",
           width: {
             xs: "100%",
-            sm: "200px",
+            sm: "250px",
             lg: "500px",
           },
         }}

@@ -5601,6 +5601,23 @@
         "status": "Processing",
         "createdAt": "2025-11-23T10:55:43.426Z"
       }
+    },
+    {
+      "id": "deed",
+      "order": {
+        "id": "1763977139379",
+        "firstName": "aya",
+        "lastName": "alaa",
+        "email": "a@a.com",
+        "phone": "0595846388",
+        "country": "Antigua And Barbuda",
+        "state": "Saint Mary Parish",
+        "city": "Bolands",
+        "shoppingMethod": "pickup",
+        "total": 282,
+        "status": "Processing",
+        "createdAt": "2025-11-24T09:38:59.379Z"
+      }
     }
   ]
 }

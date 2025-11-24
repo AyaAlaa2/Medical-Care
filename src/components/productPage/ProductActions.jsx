@@ -26,15 +26,6 @@ const ProductActions = ({ product }) => {
         >
           ADD TO CART
         </Button>
-        <Button
-          variant="outlined"
-          sx={{
-            borderColor: "var(--main-color)",
-            color: "var(--main-color)",
-          }}
-        >
-          BUY NOW
-        </Button>
         <Box
           sx={{
             display: "flex",
