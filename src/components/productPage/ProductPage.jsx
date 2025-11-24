@@ -46,14 +46,15 @@ const ProductPage = () => {
           sx={{
             display: "flex",
             width: "100%",
-            maxWidth: 1100,
             alignItems: "flex-start",
             justifyContent: "center",
+            gap: 1,
             "@media (max-width: 1024px)": {
               flexDirection: "column",
               alignItems: "center",
               textAlign: "center",
             },
+            mb: 5,
           }}
         >
           <Box
@@ -66,7 +67,7 @@ const ProductPage = () => {
           </Box>
           <Box
             sx={{
-              ml: { xs: 0, md: 3 },
+              mx: { xs: 4, md: 2 },
             }}
           >
             <ProductInfo product={product} />
@@ -74,7 +75,7 @@ const ProductPage = () => {
         </Box>
       </Box>
 
-      <Box sx={{ px: 2, pb: 4 }}>
+      <Box sx={{ px: 4, pb: 2 }}>
         <ProductDetailSection product={product} />
       </Box>
 

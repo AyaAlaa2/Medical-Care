@@ -6,8 +6,8 @@ const ImageGallery = ({ product }) => (
     <Box
       sx={{
         width: "100%",
-        maxWidth: 520,
-        height: 360,
+        minWidth: { xs: 400, md: 600 },
+        height: 400,
         mx: "auto",
         border: "1px solid rgba(0,0,0,0.15)",
         borderRadius: 2,

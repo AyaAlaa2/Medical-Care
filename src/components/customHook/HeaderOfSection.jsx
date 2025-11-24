@@ -12,10 +12,11 @@ const HeaderOfSection = ({ title, breadcrumbs = [] }) => {
         display: "flex",
         alignItems: "center",
         justifyContent: "space-between",
+        gap: 5,
       }}
       bgcolor="var(--third-color)"
     >
-      <Typography variant="h5" fontWeight="bold">
+      <Typography variant="h5" fontWeight="bold" fontSize={{ xs: 20, md: 25 }}>
         {title}
       </Typography>
       <Breadcrumbs aria-label="breadcrumb">

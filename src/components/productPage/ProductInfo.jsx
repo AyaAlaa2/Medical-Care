@@ -10,7 +10,7 @@ const ProductInfo = ({ product }) => (
   <Box
     sx={{
       width: "100%",
-      maxWidth: 500, 
+      maxWidth: 580, 
       textAlign: { xs: "center", md: "left" }, 
     }}
   >

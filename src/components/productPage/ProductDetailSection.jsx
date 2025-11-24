@@ -11,7 +11,7 @@ const ProductDetailSection = ({ product }) => {
       sx={{
         display: "flex",
         flexWrap: { xs: "wrap", md: "nowrap" },
-        gap: { xs: 1, md: 1 },
+        gap: { xs: 3, md: 8 },
         mt: 4,
         alignItems: "flex-start",
         justifyContent: "center",
@@ -44,7 +44,6 @@ const ProductDetailSection = ({ product }) => {
               position: "absolute",
               inset: 0,
               width: "100%",
-              height: "100%",
               objectFit: "cover",
             }}
           />
