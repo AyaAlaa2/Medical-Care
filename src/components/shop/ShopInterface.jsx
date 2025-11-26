@@ -20,7 +20,7 @@ const ShopInterface = () => {
   const filteredProducts = (products || []).filter((product) => {
     const price = parseFloat(product.price);
     const machingPrice = price >= priceSelected[0] && price <= priceSelected[1];
-    const rating = parseFloat(product.customer_reviews.average_rating);
+    const rating = parseFloat(product.average_rating);
     const machingRating = rating >= selectedRating;
     const matchingType = type === "All" || product.product_type === type;
 
@@ -42,7 +42,7 @@ const ShopInterface = () => {
 
     case "bestsellers":
       filteredPageProducts = filteredProducts.filter(
-        (item) => item.customer_reviews.average_rating > 4.5
+        (item) => item.average_rating > 4.5
       );
       break;
 

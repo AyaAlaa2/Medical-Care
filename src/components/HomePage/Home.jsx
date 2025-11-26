@@ -34,7 +34,7 @@ const Home = () => {
   return (
     <div>
       <Hero />
-      <Adv advs={advs1} />
+     <Adv advs={advs1} />
       <CategoriesSection />
       <LatestProduct latestProduct={latestProduct} />
       <DealOfTheWeek dealOfTheWeekProduct={dealOfTheWeekProduct} />
@@ -43,9 +43,11 @@ const Home = () => {
       <FeaturedProduct featuredProducts={featuredProducts} />
       <FeatureBar />
       <ReviewsSec />
-      <PopularBrands />
+      <PopularBrands /> 
     </div>
   );
 };
+
+
 
 export default Home;

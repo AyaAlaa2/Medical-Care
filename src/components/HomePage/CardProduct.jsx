@@ -99,7 +99,7 @@ const CardProduct = ({ product }) => {
           </Typography>
           <Box display="flex" alignItems="center" mb={1}>
             <Rating
-              value={product.customer_reviews.average_rating}
+              value={product.average_rating}
               precision={0.5}
               readOnly
               size="small"

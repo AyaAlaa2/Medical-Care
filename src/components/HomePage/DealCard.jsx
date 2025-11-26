@@ -81,13 +81,13 @@ const DealCard = ({ product }) => {
 
         <Box display="flex" alignItems="center" mb={1}>
           <Rating
-            value={product.customer_reviews.average_rating}
+            value={product.average_rating}
             precision={0.5}
             readOnly
             size="small"
           />
           <Typography variant="body2" sx={{ ml: 1 }}>
-            ({product.customer_reviews.total_reviews})
+            ({product.total_reviews})
           </Typography>
         </Box>
 

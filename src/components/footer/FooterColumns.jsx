@@ -20,11 +20,11 @@ const FooterColumns = [
       },
       {
         label: "Contact Us",
-        path: "/contact",
+        path: "/elements/contact",
       },
       {
         label: "About Us",
-        path: "/about",
+        path: "/elements/about",
       },
     ],
   },
