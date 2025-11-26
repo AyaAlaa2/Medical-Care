@@ -120,7 +120,6 @@ const CheckoutForm = ({ total, user, setCartFirebase, setShippingMethod }) => {
 
     await updateCartInFirebase();
     await addOrder(newOrder);
-    console.log(newOrder);
     setLoading(false);
     navigate(-1);
   };
@@ -274,7 +273,7 @@ const CheckoutForm = ({ total, user, setCartFirebase, setShippingMethod }) => {
                   >
                     <Grid
                       item
-                      size={{ xs: 6 }}
+                      size={{ xs: 12, md: 6 }}
                       sx={{
                         border:
                           field.value === "pickup"
@@ -306,7 +305,7 @@ const CheckoutForm = ({ total, user, setCartFirebase, setShippingMethod }) => {
                     </Grid>
                     <Grid
                       item
-                      size={{ xs: 6 }}
+                      size={{ xs: 12, md: 6 }}
                       sx={{
                         border:
                           field.value === "express"

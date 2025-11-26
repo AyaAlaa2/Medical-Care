@@ -1,19 +1,10 @@
 import { Box, Typography } from "@mui/material";
 
 const ProductDescription = ({ product }) => {
-  const ingredients = Array.isArray(product.ingredients_list)
-    ? product.ingredients_list
-    : product.ingredient_list
-    ? product.ingredient_list.split(",").map((i) => i.trim())
-    : [];
-
-  Array.isArray(product.skin_type)
-    ? product.skin_type
-    : typeof product.skin_type === "string"
-    ? product.skin_type.split(",").map((i) => i.trim())
-    : [];
-
-  const manufacturer = product.manufacturer_name || product.manufacturer || "";
+  const skinTypes = Object.keys(product)
+    .filter((key) => key.startsWith("skin_type"))
+    .map((key) => product[key])
+    .filter((v) => v != null && v !== "");
 
   return (
     <Box sx={{ my: 2 }}>
@@ -30,7 +21,7 @@ const ProductDescription = ({ product }) => {
         </>
       )}
 
-      {product.skin_type?.length > 0 && (
+      {skinTypes?.length > 0 && (
         <Box sx={{ mb: 2 }}>
           <Typography
             variant="subtitle2"
@@ -40,7 +31,7 @@ const ProductDescription = ({ product }) => {
           </Typography>
 
           <Typography variant="body2" sx={{ p: 1 }}>
-            {product.skin_type.join(", ")}
+            {skinTypes.join(" , ")}
           </Typography>
         </Box>
       )}

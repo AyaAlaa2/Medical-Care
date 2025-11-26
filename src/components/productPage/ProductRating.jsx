@@ -1,15 +1,15 @@
 import { Box, Rating, Typography } from "@mui/material";
 
 const ProductRating = ({ product }) => {
-  const averageRating = product.customer_reviews?.average_rating || 0;
-  const totalReviews = product.customer_reviews?.total_reviews || 0;
+  const averageRating = product?.average_rating || 0;
+  const totalReviews = product?.total_reviews || 0;
 
   return (
     <Box
       sx={{
         display: "flex",
         alignItems: "center",
-        flexWrap: "wrap", 
+        flexWrap: "wrap",
         gap: 1,
         mb: 1,
         justifyContent: { xs: "center", sm: "flex-start" },

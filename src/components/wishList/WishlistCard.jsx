@@ -12,8 +12,10 @@ import {
   IconButton,
   CardActions,
 } from "@mui/material";
+import { slugify } from "../productPage/slug";
 
 const WishlistCard = ({ product, handleDelete }) => {
+  const slug = slugify(product.name);
   const { addProductToCart } = useCartAndWishlist();
 
   return (
@@ -59,7 +61,7 @@ const WishlistCard = ({ product, handleDelete }) => {
 
       <Box
         component={Link}
-        to={`/product/${product.id}`}
+        to={`/product/${product.id}/${slug}`}
         sx={{ textDecoration: "none" }}
       >
         <CardMedia
@@ -82,6 +84,7 @@ const WishlistCard = ({ product, handleDelete }) => {
             fontSize={15}
             noWrap
             sx={{
+              color: "black",
               cursor: "pointer",
               transition: "0.3s",
               py: "8px",

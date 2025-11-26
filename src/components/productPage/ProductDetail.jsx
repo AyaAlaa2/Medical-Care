@@ -20,14 +20,10 @@ import HealthAndSafetyIcon from "@mui/icons-material/HealthAndSafety";
 const ProductDetail = ({ product }) => {
   const [expanded, setExpanded] = useState("ingredients");
 
-  const ingredients = Array.isArray(product?.ingredients_list)
-    ? product.ingredients_list
-    : product?.ingredient_list
-    ? String(product.ingredient_list)
-        .split(",")
-        .map((i) => i.trim())
-        .filter(Boolean)
-    : [];
+  const ingredients = Object.keys(product)
+    .filter((key) => key.startsWith("ingredients_list"))
+    .map((key) => product[key])
+    .filter(Boolean);
 
   const manufacturer =
     product?.manufacturer_name || product?.manufacturer || "";
