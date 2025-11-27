@@ -67,22 +67,22 @@ The website also provides users with detailed information to help them decide wh
 
 ### Frontend
 
-**React (Vite)**
-**Material UI (MUI)**
-**Redux Toolkit**
-**Redux Persist**
-**React Query**
-**Axios**
-**Firebase**
-**Framer Motion**
-**SweetAlert2**
-**React Hot Toast**
-**Swiper**
-**Zod**
-**React Router DOM**
-**Country-State-City**
-**Leaflet + React Leaflet**
-**React Icons**
+- **React (Vite)**
+- **Material UI (MUI)**
+- **Redux Toolkit**
+- **Redux Persist**
+- **React Query**
+- **Axios**
+- **Firebase**
+- **Framer Motion**
+- **SweetAlert2**
+- **React Hot Toast**
+- **Swiper**
+- **Zod**
+- **React Router DOM**
+- **Country-State-City**
+- **Leaflet + React Leaflet**
+- **React Icons**
 
 ## Backend / Services
 
