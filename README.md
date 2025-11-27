@@ -27,7 +27,7 @@ The website also provides users with detailed information to help them decide wh
 
 ## Features
 
-## User Features
+### User Features
 
 -Browse all medical products.
 -Advanced search system.
@@ -39,7 +39,7 @@ The website also provides users with detailed information to help them decide wh
 -Checkout page.
 -Responsive design for all devices.
 
-## Technical Features
+### Technical Features
 
 -State management with Redux Toolkit.
 -Data caching and synchronization using React Query.
