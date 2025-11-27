@@ -63,18 +63,22 @@ const DealCard = ({ product }) => {
         component="img"
         image={product.image}
         alt={product.name}
-        sx={{ width: 180, height: 180, objectFit: "contain", mx: 2 }}
+        sx={{
+          width: { xs: "100%", md: 180 },
+          height: { xs: "40%", md: 180 },
+          objectFit: "cover",
+          mx: 2,
+        }}
       />
 
-      <CardContent sx={{ flex: 1 }}>
+      <CardContent sx={{ flex: 1, mt: 3 }}>
         <Typography variant="subtitle2" color="text.secondary">
           {product.category}
         </Typography>
 
         <Typography
           variant="h6"
-          sx={{ fontWeight: "bold", mb: 1, width: "80%", overflow: "hidden" }}
-          noWrap
+          sx={{ fontWeight: "bold", mb: 1, width: "80%" }}
         >
           {product.name}
         </Typography>

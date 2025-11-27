@@ -46,8 +46,8 @@ const TeamStrategy = () => {
         {sections.map((section, idx) => (
           <Accordion
             key={section.id}
-            expanded={index === i}
-            onChange={() => setIndex(i)}
+            expanded={index === idx}
+            onChange={() => setIndex(idx)}
             disableGutters
           >
             <AccordionSummary>
@@ -61,7 +61,7 @@ const TeamStrategy = () => {
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
-              {index === i && emptyContent ? (
+              {index === idx && emptyContent ? (
                 <Alert severity="warning">
                   Section content is missing or empty.
                 </Alert>

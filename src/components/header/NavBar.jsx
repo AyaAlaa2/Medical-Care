@@ -135,7 +135,7 @@ const NavBar = () => {
           sx={{
             display: "flex",
             alignItems: "center",
-            gap: { xs: 1, md: 2 },
+            gap: { xs: 0.5, md: 2 },
           }}
         >
           <Box
@@ -185,21 +185,22 @@ const NavBar = () => {
             ))}
 
             {isLogged ? (
-              <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-                <Avatar
-                  src={user.profilePic}
-                  alt={user.username}
-                  sx={{ width: 35, height: 35, cursor: "pointer" }}
-                  onClick={() => navigate("/")}
-                />
+              <Box sx={{ display: "flex", alignItems: "center" }}>
+                <Box sx={{ display: { xs: "none", md: "flex" } }}>
+                  <Avatar
+                    src={user.profilePic}
+                    alt={user.username}
+                    sx={{ width: 35, height: 35, cursor: "pointer" }}
+                    onClick={() => navigate("/")}
+                  />
+                </Box>
 
                 <IconButton
                   onClick={handleLogout}
                   sx={{
                     display: "flex",
                     alignItems: "center",
-                    gap: 0.5,
-                    border: "1px solid ",
+                    fontWeight: "bold",
                     borderRadius: 1,
                     paddingX: 1,
                     paddingY: 0.5,
@@ -211,10 +212,7 @@ const NavBar = () => {
                     },
                   }}
                 >
-                  <LogoutIcon fontSize="small" />
-                  <Typography variant="subtitle2" sx={{ fontWeight: "bold" }}>
-                    Logout
-                  </Typography>
+                  <LogoutIcon fontSize="medium" />
                 </IconButton>
               </Box>
             ) : (

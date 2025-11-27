@@ -111,7 +111,25 @@ const CardProduct = ({ product }) => {
             fontWeight={700}
             textDecoration="none"
           >
-            {product.price} $
+            {product.discount ? (
+              <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+                <Typography variant="h6" color="var(--main-color)">
+                  ${product.price - (product.price * product.discount) / 100}
+                </Typography>
+                <Typography
+                  variant="body2"
+                  sx={{
+                    textDecoration: "line-through",
+                    color: "text.secondary",
+                    mr: 1,
+                  }}
+                >
+                  ${product.price}
+                </Typography>
+              </Box>
+            ) : (
+              product.price
+            )}
           </Typography>
         </CardContent>
       </Box>
