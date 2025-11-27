@@ -18,10 +18,10 @@ The website also provides users with detailed information to help them decide wh
 ## Objectives
 
 - Build a fully functional and responsive e-commerce platform for medical and healthcare products.
-  -Allow users to explore product information clearly and easily.
-  -Enable users to search and filter products efficiently.
-  -Provide a smooth login and signup experience.
-  -Deliver a modern and user-friendly UI.
+  - Allow users to explore product information clearly and easily.
+  - Enable users to search and filter products efficiently.
+  - Provide a smooth login and signup experience.
+  - Deliver a modern and user-friendly UI.
 
 ---
 
@@ -29,42 +29,43 @@ The website also provides users with detailed information to help them decide wh
 
 ### User Features
 
--Browse all medical products.
--Advanced search system.
--Product filtering by category and attributes.
--Full product details (description, benefits, ingredients, skin type, etc.).
--Wishlist page.
--Cart page.
--Login & Signup system.
--Checkout page.
--Responsive design for all devices.
+- Browse all medical products.
+- Advanced search system.
+- Product filtering by category and attributes.
+- Full product details (description, benefits, ingredients, skin type, etc.).
+- Wishlist page.
+- Cart page.
+- Login & Signup system.
+- Checkout page.
+- Responsive design for all devices.
 
 ### Technical Features
 
--State management with Redux Toolkit.
--Data caching and synchronization using React Query.
--Notifications using React Hot Toast and SweetAlert2.
--Smooth animations using Framer Motion.
--Address/location support using Leaflet.
--Backend powered by Supabase (Database + API).
+- State management with Redux Toolkit.
+- Data caching and synchronization using React Query.
+- Notifications using React Hot Toast and SweetAlert2.
+- Smooth animations using Framer Motion.
+- Address/location support using Leaflet.
+- Backend powered by Supabase (Database + API).
 
 ## Pages
 
--Home Page
--Shop Page
--Category Page
--Product Page
--Search Page
--Wishlist
--Cart
--Checkout
--Login
--Signup
--About
--Contact Us
--Tech Stack
+- Home Page
+- Shop Page
+- Category Page
+- Product Page
+- Search Page
+- Wishlist
+- Cart
+- Checkout
+- Login
+- Signup
+- About
+- Contact Us
 
-## Frontend
+## Tech Stack
+
+### Frontend
 
 **React (Vite)**
 **Material UI (MUI)**
@@ -82,7 +83,9 @@ The website also provides users with detailed information to help them decide wh
 **Country-State-City**
 **Leaflet + React Leaflet**
 **React Icons**
-**Backend / Services**
+
+## Backend / Services
+
 **Supabase**
 
 ---
