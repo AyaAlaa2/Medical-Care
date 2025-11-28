@@ -12,7 +12,7 @@ const Hero = () => {
         backgroundSize: "cover",
         backgroundPosition: "center",
         width: "100%",
-        height: { xs: "60vh", sm: "90vh", md: "100vh" },
+        height: { xs: "auto", sm: "90vh", md: "100vh" },
         display: "flex",
         alignItems: "center",
         color: "var(--main-color)",
@@ -37,7 +37,7 @@ const Hero = () => {
               variant="span"
               fontWeight="normal"
               sx={{
-                fontSize: { xs: "30px", sm: "34px", md: "37px" },
+                fontSize: { xs: "25px", sm: "34px", md: "37px" },
               }}
             >
               Make Someone
@@ -58,7 +58,7 @@ const Hero = () => {
               variant="h3"
               fontWeight="bold"
               sx={{
-                fontSize: { xs: "70px", sm: "114px" },
+                fontSize: { xs: "60px", sm: "114px" },
                 background:
                   "linear-gradient(to bottom, var(--second-color), var(--main-color))",
                 WebkitBackgroundClip: "text",
@@ -89,7 +89,7 @@ const Hero = () => {
               variant="span"
               fontWeight="normal"
               sx={{
-                fontSize: { xs: "30px", sm: "34px", md: "37px" },
+                fontSize: { xs: "25px", sm: "34px", md: "37px" },
               }}
             >
               With

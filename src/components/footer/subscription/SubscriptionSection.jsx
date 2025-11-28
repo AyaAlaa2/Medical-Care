@@ -11,10 +11,10 @@ const SubscriptionSection = () => {
         p: 4,
       }}
     >
-      <Typography variant="h5" mb={1}>
+      <Typography variant="h5" mb={1} fontSize={{ xs: 17, md: 28 }}>
         Join our newsletter and get
       </Typography>
-      <Typography variant="h5" mb={3}>
+      <Typography variant="h5" mb={3} fontSize={{ xs: 17, md: 28 }}>
         $20 discount for your first order
       </Typography>
       <SubscriptionForm />
