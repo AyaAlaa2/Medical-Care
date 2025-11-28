@@ -12,7 +12,7 @@ const Hero = () => {
         backgroundSize: "cover",
         backgroundPosition: "center",
         width: "100%",
-        height: { xs: "auto", sm: "90vh", md: "100vh" },
+        height: { xs: "70vh", sm: "90vh", md: "100vh" },
         display: "flex",
         alignItems: "center",
         color: "var(--main-color)",
