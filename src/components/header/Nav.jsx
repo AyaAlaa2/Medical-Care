@@ -7,6 +7,7 @@ const Nav = () => {
   return (
     <AppBar
       position="static"
+      width="100%"
       sx={{
         backgroundColor: "var(--main-color)",
         height: 50,

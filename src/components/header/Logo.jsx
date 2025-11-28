@@ -7,7 +7,7 @@ const Logo = ({ onClick }) => {
       to="/"
       sx={{ display: "flex", alignItems: "center", textDecoration: "none" }}
       onClick={onClick}
-      minWidth={150}
+      minWidth={120}
     >
       <Box
         component="img"
@@ -16,7 +16,7 @@ const Logo = ({ onClick }) => {
         loading="lazy"
         sx={{
           padding: "10px",
-          maxHeight: { xs: 50, md: 70 },
+          maxHeight: { xs: 60, md: 70 },
         }}
       />
       <Typography
@@ -25,6 +25,7 @@ const Logo = ({ onClick }) => {
           color: "var(--main-color)",
           fontWeight: "bold",
           fontSize: { xs: 14, sm: 16, md: 22 },
+          display: { xs: "none", sm: "block" },
         }}
       >
         Medical Care

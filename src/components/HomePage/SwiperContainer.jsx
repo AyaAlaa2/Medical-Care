@@ -1,6 +1,5 @@
 import React from "react";
 import { Box, Typography, IconButton } from "@mui/material";
-import { motion } from "framer-motion";
 import { FaChevronLeft } from "react-icons/fa";
 import { FaChevronRight } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";

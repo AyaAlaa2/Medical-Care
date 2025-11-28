@@ -43,13 +43,14 @@ const DealCard = ({ product }) => {
     <Card
       sx={{
         display: "flex",
+        alignItems: "center",
         border: "1px solid var(--main-color)",
         borderRadius: 3,
-        p: 5,
-        alignItems: "center",
+        p: { xs: 2, sm: 3, md: 4 },
         position: "relative",
-        flexDirection: { xs: "column", lg: "row" },
-        height: { xs: "auto", lg: 350 },
+        flexDirection: { xs: "column", md: "row" },
+        gap: { xs: 2, md: 4 },
+        height: "auto",
       }}
     >
       <Chip
@@ -59,26 +60,35 @@ const DealCard = ({ product }) => {
         sx={{ position: "absolute", top: 10, left: 10, fontWeight: "bold" }}
       />
 
-      <CardMedia
-        component="img"
-        image={product.image}
-        alt={product.name}
-        sx={{
-          width: { xs: "100%", md: 180 },
-          height: { xs: "40%", md: 180 },
-          objectFit: "cover",
-          mx: 2,
-        }}
-      />
+      <Box sx={{ width: "60%" }}>
+        <CardMedia
+          component="img"
+          image={product.image}
+          alt={product.name}
+          sx={{
+            width: "100%",
+            height: "100%",
+            objectFit: "contain",
+          }}
+        />
+      </Box>
 
-      <CardContent sx={{ flex: 1, mt: 3 }}>
-        <Typography variant="subtitle2" color="text.secondary">
+      <CardContent sx={{ textAlign: "left", flexGrow: 1, width: "100%" }}>
+        <Typography
+          variant="subtitle2"
+          color="text.secondary"
+          fontSize={{ xs: 12, md: 12 }}
+        >
           {product.category}
         </Typography>
 
         <Typography
           variant="h6"
-          sx={{ fontWeight: "bold", mb: 1, width: "80%" }}
+          width="70%"
+          sx={{ fontWeight: "bold", mb: 1 }}
+          fontSize={{ xs: 18, md: 20 }}
+          noWrap
+          gutterBottom
         >
           {product.name}
         </Typography>
@@ -111,7 +121,13 @@ const DealCard = ({ product }) => {
           </Typography>
         </Box>
 
-        <Box display="flex" alignItems="center" gap={1} mb={2}>
+        <Box
+          display="flex"
+          alignItems="center"
+          gap={1}
+          mb={2}
+          flexWrap="noWrap"
+        >
           {["day", "hrs", "min", "sec"].map((key) => (
             <Box
               key={key}
@@ -120,22 +136,24 @@ const DealCard = ({ product }) => {
                 backgroundColor: "#e4e2e2ff",
                 p: 1,
                 borderRadius: 1,
-                width: 40,
-                height: 50,
+                width: { xs: 30, sm: 50 },
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
               }}
             >
               <Typography
                 variant="body1"
                 color="error"
-                lineHeight={1.2}
                 fontWeight="bold"
+                fontSize={{ xs: 15, sm: 18 }}
               >
                 {timeLeft[key]}
               </Typography>
               <Typography
-                variant="caption "
+                variant="caption"
                 color="text.secondary"
-                fontSize="10px"
+                fontSize={{ xs: 10, sm: 12 }}
               >
                 {key.toUpperCase()}
               </Typography>
@@ -150,13 +168,12 @@ const DealCard = ({ product }) => {
             mt: 1,
             borderRadius: 2,
             backgroundColor: "var(--main-color)",
-            width: "280px",
+            width: "100%",
             textTransform: "capitalize",
             "&:hover": {
-              bgcolor: "var( --blue-color)",
+              bgcolor: "var(--blue-color)",
               color: "white",
             },
-            transition: "0.5s",
             fontSize: "16px",
           }}
         >
