@@ -24,7 +24,7 @@ const Logo = ({ onClick }) => {
         sx={{
           color: "var(--main-color)",
           fontWeight: "bold",
-          fontSize: { xs: 14, sm: 16, md: 22 },
+          fontSize: { sm: 20, md: 22 },
           display: { xs: "none", sm: "block" },
         }}
       >
