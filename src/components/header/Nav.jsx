@@ -23,7 +23,13 @@ const Nav = () => {
           padding: "0 16px",
         }}
       >
-        <Typography sx={{ textAlign: "center", fontSize: 14, fontWeight: 500 }}>
+        <Typography
+          sx={{
+            textAlign: "center",
+            fontSize: { xs: 10, md: 15 },
+            fontWeight: 500,
+          }}
+        >
           Get Upto 25% Cashback On First Order: GET25OFF -{" "}
           <Link
             to="#"

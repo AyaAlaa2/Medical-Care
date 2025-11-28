@@ -13,8 +13,9 @@ export default function CategoriesSection() {
       <Container maxWidth="xl">
         <Typography
           variant="h4"
-          align="center"
-          sx={{ fontWeight: 800, mb: { xs: 3, md: 5 } }}
+          sx={{ mb: 2, textAlign: "center" }}
+          fontWeight="bold"
+          fontSize={{ xs: 30, md: 35 }}
         >
           Popular Categories
         </Typography>

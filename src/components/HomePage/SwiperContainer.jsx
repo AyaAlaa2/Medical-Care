@@ -29,6 +29,7 @@ const SwiperContainer = ({
         variant="h4"
         sx={{ mb: 2, textAlign: "center" }}
         fontWeight="bold"
+        fontSize={{ xs: 30, md: 35 }}
       >
         {headerOfSection}
       </Typography>
